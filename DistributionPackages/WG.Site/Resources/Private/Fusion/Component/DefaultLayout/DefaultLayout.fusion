@@ -1,0 +1,9 @@
+prototype(WG.Site:Component.DefaultLayout) < prototype(Neos.Fusion:Component) {
+    content = ''
+
+    renderer = afx`
+        <WG.Site:Component.Header />
+        {props.content}
+        <WG.Site:Component.Footer />
+    `
+}

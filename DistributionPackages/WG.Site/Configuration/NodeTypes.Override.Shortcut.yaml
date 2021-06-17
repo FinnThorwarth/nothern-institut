@@ -1,0 +1,6 @@
+
+'Neos.Neos:Shortcut':
+  constraints:
+    nodeTypes:
+      'WG.Site:Document.HomePage': false
+      'WG.Site:Constraint.Document.Restricted': false
