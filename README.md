@@ -1,3 +1,3 @@
 # Neos Master Seite
 
-Hier entsteht der Master für Neos
+Hier entsteht der Neos-Master
