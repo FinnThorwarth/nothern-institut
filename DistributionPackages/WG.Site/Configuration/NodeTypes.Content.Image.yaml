@@ -3,6 +3,6 @@
     'Neos.Neos:Content': true
     'WG.Site:Mixin.Image': true
   ui:
-    label: Image
+    label: Bild
     icon: icon-picture
     position: 300

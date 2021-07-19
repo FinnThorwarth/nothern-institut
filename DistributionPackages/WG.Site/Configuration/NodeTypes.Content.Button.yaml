@@ -1,0 +1,24 @@
+'WG.Site:Content.Button':
+  superTypes:
+    'Neos.Neos:Content': true
+    'WG.Site:Mixin.InspectorGeneral': true
+  ui:
+    label: Button
+    icon: icon-link
+    position: 400
+    inlineEditable: true
+  properties:
+    label:
+      ui: 
+        aloha:
+          placeholder: 'Buttontext hier eingeben'
+      options:
+        preset: 'text.plain'
+    link:
+      type: string
+      ui:
+        label: 'Linkziel'
+        inspector:
+          group: general
+          editor: 'Neos.Neos/Inspector/Editors/LinkEditor'
+

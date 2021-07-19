@@ -1,6 +1,6 @@
 {
     "name": "codeq/skeleton",
-    "description": "Best practice skeleton for Neos",
+    "description": "WG Master",
     "config": {
         "vendor-dir": "Packages/Libraries",
         "bin-dir": "bin",

@@ -1,6 +1,6 @@
 {
     "name": "wg/site",
-    "description": "A Neos website",
+    "description": "WG Master",
     "type": "neos-site",
     "require": {
         "neos/neos": "^7.0",
