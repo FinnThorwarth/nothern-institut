@@ -8,6 +8,7 @@ composer install
 
 ## SCSS Compilation
 mit Prepros, die Files liegen unter: ./DistributionPackages/WG.Site/Resources/Public/Frontend/foundation-sites
+in Prepros das Verzeichnis WG.Site importieren!!!
 
 ## Datenbank
 für die Entwicklung über MAMP hosten
