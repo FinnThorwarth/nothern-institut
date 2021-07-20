@@ -3,8 +3,12 @@
 ## Laden der Abhängigkeiten
 composer install
 
-## Server local Starten
+## Server local starten
 ./flow server:run
+
+## SCSS Foundation starten
+cd ./DistributionPackages/WG.Site/Resources/Public/Frontend/foundation-sites
+yarn start
 
 ## Datenbank
 für die Entwicklung über MAMP hosten
