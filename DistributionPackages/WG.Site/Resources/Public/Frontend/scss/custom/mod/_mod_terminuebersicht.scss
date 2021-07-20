@@ -1,0 +1,278 @@
+/*Tabellenüberschriften*/
+$col-thead: $col-neg;
+$bg-thead: $col-important;
+$bg-thead-hightlight: $col-akzent;
+
+/*Tabellenzellen*/
+$bg-td: $col-bg;
+$bg-td-hightlight: $col-important;
+
+/*Schriften*/
+$font-highlight: $webfont-semibold;
+$font-thead: $webfont-semibold;
+$font-size-middle: 22px;
+
+/*Pagination*/
+$bg-col-pagination-active: $col-akzent;
+$col-pagination-active: $col-neg;
+$bg-col-pagination: $col-bg-light;
+
+/*Sortierung*/
+$bg-col-button: $col-bg-dark;
+$bg-col-button-active: $col-akzent;
+$col-button: $col-neg;
+$font-button: $webfont-semibold;
+
+/*Sortier Hinweis*/
+$font-hinweis: $webfont-semibold;
+
+.termin-uebersicht {
+    background-color: $col-bg;
+    margin-top: 45px;
+
+    .hinweis {
+        font-family: $font-hinweis;
+
+        @include breakpoint(middle down) {
+            width: 100%;
+            display: block;
+        }
+        &.h2 {
+            display: inline-block;
+            width: auto;
+            margin-right: 20px;
+            font-family: $webfont-semibold;
+        }
+    }
+
+    .highlight {
+        font-family: $font-highlight;
+        font-size: $font-size-middle;
+    }
+
+    table {
+        border-spacing: 0;
+        border-collapse: unset;
+        border: solid 1px $bg-col-button;
+
+        th {
+            text-align: left;
+            padding: 1rem;
+            background-color: $bg-col-button;
+            color: $white;
+            font-family: $font-thead;
+
+            &.highlight {
+                background-color: $bg-thead-hightlight;
+                color: $col-thead;
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    font-family: $font-highlight;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    vertical-align: top;
+
+                    &.infos {
+                        width: 500px;
+                        max-width: 30%;
+
+                        a {
+                            color: $black;
+                            text-decoration: underline;
+                        }
+                    }
+
+                    &.highlight {
+                        background-color: $white;
+                    }
+                }
+            }
+
+            & tr:nth-child(even) {
+                background-color: $bg-col-button;
+
+                td.highlight {
+                    background-color: $bg-col-button;
+                }
+            }
+        }
+    }
+
+    /*Responsive Tabellen reset*/
+    @include breakpoint(mobileNav down) {
+        &.table,
+        tr,
+        td {
+            padding: 0;
+        }
+
+        table {
+            border: none;
+
+            thead {
+                display: none;
+            }
+
+            tr {
+                width: 100%;
+                padding-bottom: 2em;
+                display: flex;
+                flex-flow: column;
+            }
+
+            tbody {
+                tr {
+                    td {
+                        width: 100%;
+                        padding: 0.5em;
+                        word-wrap: break-word;
+                        hyphens: auto;
+
+                        &.infos {
+                            width: inherit;
+                            max-width: inherit;
+                        }
+
+                        &.highlight {
+                            background-color: $col-bg;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*Pagination*/
+    .wrapper-pagination {
+        width: 100%;
+
+        a {
+            color: $font-highlight;
+            font-family: $font-highlight;
+        }
+
+        hr.pagination-hr {
+            width: 70px;
+            margin: 0.5rem 20px;
+            border-bottom: 2px solid $bg-col-pagination-active;
+        }
+
+        .pagination-nav {
+            width: 20px;
+            height: 20px;
+            background-color: $bg-col-pagination;
+            padding: 2px;
+            font-size: 80%;
+
+            &:hover,
+            &.active {
+                background-color: $bg-col-pagination-active;
+                color: $col-pagination-active;
+                cursor: pointer;
+                a {
+                    color: $col-neg;
+                }
+            }
+        }
+
+        .pagination-arrow {
+            height: 14px;
+            display: inline-block;
+            position: relative;
+
+            &.left {
+                margin-right: 20px;
+            }
+
+            &.right {
+                margin-left: 20px;
+            }
+
+            svg {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 100%;
+            }
+        }
+
+        .cls-arrowp-1,
+        .cls-arrowp-3 {
+            fill: none;
+        }
+
+        .cls-arrowp-2 {
+            clip-path: url(#clip-path);
+        }
+
+        .cls-arrowp-3 {
+            stroke: $bg-col-pagination-active;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 2px;
+        }
+    }
+}
+
+/*Sortier Buttons*/
+button.sortieren {
+    padding: 15px;
+    margin-left: 20px;
+
+    background-color: $col-bg-dark;
+    cursor: pointer;
+
+    &.active,
+    &:hover {
+        background-color: $bg-col-button-active;
+
+        a {
+            color: $col-neg;
+        }
+    }
+
+    a {
+        font-family: $font-button;
+        color: $col-bg;
+    }
+
+    svg {
+        margin-left: 50px;
+        height: 15px;
+    }
+
+    .cls-arrowd-1,
+    .cls-arrowd-3 {
+        fill: none;
+    }
+
+    .cls-arrowd-2 {
+        clip-path: url(#clip-path);
+    }
+
+    .cls-arrowd-3 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+    }
+
+    @include breakpoint(mobileNav down) {
+        width: 100%;
+
+        svg {
+            margin-left: 10px;
+        }
+    }
+
+    @include breakpoint(middle down) {
+        width: 20%;
+        margin-left: 0px;
+        margin-top: 15px;
+        margin-right: 20px;
+    }
+}

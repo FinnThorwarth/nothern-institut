@@ -1,0 +1,26 @@
+@charset 'utf-8';
+//custom modul handling - Wird in die app.scss als letzte Datei includiert
+
+@import "custom/mixins",
+				"custom/layout_global",
+				"custom/layout_header",
+				"custom/layout_main",
+				"custom/layout_footer",
+				"custom/mod/mod_navigations",
+				"custom/mod/mod_parallax",
+				"custom/mod/mod_video",
+				"custom/mod/mod_newsslider",
+				"custom/mod/mod_terminuebersicht",
+				//"custom/mod/mod_pageimage",
+				//"custom/mod/mod_pageslider",
+				//"custom/mod/mod_news",
+				"custom/mod/mod_gallery",
+				//"custom/mod/mod_contact_form",
+				//"custom/mod/mod_ansprechpartner",
+        "custom/mod/mod_accordion",
+        //"custom/mod/mod_card_accordion",
+        "custom/mod/mod_header_picture",
+				"custom/mod/mod_consent_manager",  
+				"custom/mod/mod_sidebar",  
+        "custom/typography",
+				"custom/print";

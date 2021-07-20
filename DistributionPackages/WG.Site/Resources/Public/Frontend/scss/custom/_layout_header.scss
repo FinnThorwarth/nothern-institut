@@ -1,0 +1,81 @@
+$border-height: 8px;
+
+@media screen {
+
+  .wg-page-header {
+    height: $header-height;
+    background-color: $white;
+    border-top: $border-height solid $col-akzent;
+    border-bottom: 1px solid $col-bg-light;
+
+    body.fixed-header & {
+      position: fixed;
+      top: 0;
+      left: 0px;
+      right: 0px;
+      z-index: 10; //overflow: hidden;
+    }
+    .tel {
+      position: absolute;
+      width: 200px;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+    }
+  } // end .wg-page-header
+
+
+  #logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 240px;
+    height: 48px;
+    background: transparent url('../images/logo.svg') no-repeat 0 0; 
+    //background-size: 240px auto;
+
+    @include breakpoint (small only) {
+      width: 210px;
+      height: 40px;
+    }
+  } // end #logo
+
+
+  #nav-trigger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 80px; 
+    //border: 1px solid $white;
+    background: url('../images/icon_menu.svg') no-repeat center center;
+    background-size: 45px 45px;
+    cursor: pointer;
+
+    &.open {
+      background-image: url('../images/icon_menu_close.svg');
+    }
+
+    @include breakpoint (medium down) {
+      right: 0px;
+      width: 70px;
+      height: 70px;
+      background-size: 35px 35px;
+    } // end media
+    
+    &.button {
+      border: none;
+    }
+  } // end #nav-trigger
+} // end media screen
+
+
+//Anpassungen damit die absolut positionierten Elemente im Header sich an das Grid halten
+.position-header {
+  position: relative;
+  height: $header-height -$border-height;
+}

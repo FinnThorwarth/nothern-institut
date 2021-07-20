@@ -1,0 +1,220 @@
+// config file width native foundation classes - Wird in der app.scss nach der settings.scss eingebunden
+
+// global styles
+// --------------
+
+$global-margin: 1rem;
+$global-padding: 1rem;
+$global-position: 1rem;
+
+$global-radius: 0;
+$global-menu-padding: 0.7rem 1rem;
+$global-menu-nested-margin: 1rem;
+
+// Breakpoints
+// --------------
+$breakpoints: (
+  small: 0, 
+  medium: 480px,
+  large: 768px,
+  mobileNav: 960px, //Custom Breakpoint
+  xlarge: 991px,
+  xxlarge: 1200px, //Custom Breakpoint
+
+);
+
+$breakpoint-classes: (small medium large mobileNav xlarge xxlarge);
+
+$unused: inherit;
+
+/*
+$lg: "(max-width: 1200px)";
+$md: "(max-width: 991px)";
+$sm: "(max-width: 767px)";
+$xs: "(max-width: 480px)";
+*/
+
+// colors
+// --------------
+$light-gray: #e6e6e6;
+$medium-gray:#cacaca;
+$dark-gray:  #8a8a8a;
+$darker-grey: #414B50;
+$black: #000;
+$white: #fff;
+
+
+// custom colors (Projektfarben)
+// --------------
+$green: #97b314;
+$red:   #e8511e;
+$himbeere: #BF409A;
+
+
+$foundation-palette: (
+  primary:   $darker-grey,
+  secondary: $dark-gray,
+  success:   $green,
+  warning:   $red,
+  alert:     $red,
+);
+
+// element-colors
+// --------------
+$col-bg: 				  $white;
+$col-bg-light:	  $light-gray;
+$col-bg-dark:	    $himbeere;
+$col-bg-black:	  $black;
+$col-bg-nav:      $white;
+$col-border: 		  $himbeere;
+$col-ruler:			  $col-border;
+$col-akzent:      $himbeere;
+$col-important:	  $green;
+$col-warning:		  $unused;
+$col-error:			  $unused;
+$col_bg_button:	  $himbeere;
+$body-background: $black;
+
+
+// font-colors
+// --------------
+$body-font-color: $black;
+$fc-h1:  				  $black;
+$fc-h2: 				  $himbeere;
+$fc-h3: 				  $unused;
+$fc-h4: 				  $unused;
+$fc-h5: 				  $unused;
+$fc-h6: 				  $unused;
+$fc-a:					  $himbeere;
+$fc-a-hover:		  $himbeere;
+$fc-a-active:		  $himbeere;
+$fc-nav:				  $himbeere;
+$fc-nav-mobile:   $himbeere;
+$fc-nav-hover:	  $white;
+$fc-nav-active:	  $white;
+
+
+// negative colors areas
+// --------------
+$col-neg-bg:			$himbeere;
+$col-neg:					$white;
+$col-neg-a:				$white;
+$col-neg-active:	$white;
+
+
+// base typography
+// --------------
+$global-font-size:      110%;
+$global-lineheight:     1.5;
+$global-weight-normal:  normal;
+$global-weight-bold:    bold;
+
+
+/** Webfonts:
+font-family:'Hurme Geometric Sans_1 W01 Rg';
+font-family:'Frutiger LT W01_55 Roma1475738';
+font-family:'Eurostile LT W01 Bold1391134';
+font-family:'Eurostile LT W01 Demi1391154';
+font-family:'Eurostile LT W01 Medium1391130';
+*/
+
+$webfont-regular:     'Hurme Geometric Sans_1 W01 Rg', Helvetica, Roboto, Arial, sans-serif;
+$webfont-medium: 	    'Hurme Geometric Sans_1 W01 SmB', sans-serif;
+$webfont-semibold:    'Hurme Geometric Sans_1 W01 SmB', sans-serif;
+$webfont-bold: 		    'Hurme Geometric Sans_1 W01 SmB', sans-serif;
+$webfont-h1: 			    'Hurme Geometric Sans_1 W01 Lt', sans-serif;
+$webfont-h2: 			    'Hurme Geometric Sans_1 W01 Lt', sans-serif;
+$webfont-h3:          'Hurme Geometric Sans_1 W01 Lt', sans-serif;
+
+$semi-bold-font-family: $webfont-semibold;
+
+// base typography
+// --------------
+/*
+$global-font-size: rem_calc(16);
+$global-lineheight: 1.65;
+$global-weight-normal: normal;
+$global-weight-bold: bold;
+$body-font-color: $blue-dark;
+
+$paragraph-lineheight: 1.65;
+*/
+
+
+$header-styles: (
+  small: (
+    'h1': ('font-size': 24),
+    'h2': ('font-size': 20),
+    'h3': ('font-size': 19),
+    'h4': ('font-size': 18),
+    'h5': ('font-size': 17),
+    'h6': ('font-size': 16),
+  ),
+  medium: (
+    'h1': ('font-size': 48),
+    'h2': ('font-size': 38),
+    'h3': ('font-size': 31),
+    'h4': ('font-size': 25),
+    'h5': ('font-size': 20),
+    'h6': ('font-size': 16),
+  ),
+);
+
+// header styles
+// --------------
+$header-height: 100px;
+$header-lineheight: 1.4;
+$header-margin-bottom: 0.5rem;
+
+/**
+ * Print Styles
+ */
+
+ $print-fs-base:		10pt;
+
+// Menu
+// --------
+
+$menu-margin: 0;
+$menu-nested-margin: $global-menu-nested-margin;
+$menu-items-padding: $global-menu-padding;
+$menu-simple-margin: 1rem;
+$menu-item-color-active: $white;
+$menu-item-background-active: $col-akzent;
+$menu-icon-spacing: 0.25rem;
+$menu-item-background-hover: $col-akzent;
+$menu-state-back-compat: true;
+$menu-centered-back-compat: true;
+$menu-icons-back-compat: true;
+
+
+//Accordion
+// --------------
+
+$accordion-plusminus: false;
+$accordion-item-color: $black;
+$accordion-background: $white;
+$accordion-item-background-hover: $col-akzent;
+$accordion-content-border: 1px solid $col-akzent;
+
+
+//Buttons
+// --------------
+
+$button-font-family: inherit;
+$button-padding: 0.5em 0.5em;
+$button-margin: 0 0 $global-margin 0;
+$button-fill: solid;
+$button-background: $col-akzent;
+$button-background-hover: $white;
+$button-color: $white;
+$button-color-alt: $black;
+$button-radius: $global-radius;
+$button-hollow-border-width: 1px;
+
+//Links
+
+$anchor-color: $col-akzent;
+$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+$anchor-text-decoration: none;
+$anchor-text-decoration-hover: underline;

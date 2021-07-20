@@ -1,0 +1,45 @@
+/*
+ * Cookie-Bar
+ */
+
+@media screen {
+
+	#cookie-bar {
+		//position: fixed;
+		//left: 0;
+		//bottom: 0;
+		
+		position: absolute;
+		left: 0;
+		top: 80px;
+		border-bottom: 1px solid #163f65;
+		
+		width: 100%;
+		background-color: #f6f6f6;
+		z-index: 999;
+	
+		p {
+			max-width: 980px;
+			margin: 0 auto;
+			padding: 8px 15px; font-size: 85%;
+			line-height: 1.2em;
+			text-align: center;
+		}
+	
+		.cb-enable {
+			margin-left: 5px;
+			border: 1px solid #163f65;
+			padding: 0 3px;
+	    color: #163f65;
+			font-weight: 700;
+		}
+	}
+
+} // end media screen
+
+
+@media print {
+	
+	#cookie-bar { display: none; }
+	
+} // end media print

@@ -5,17 +5,17 @@ Carbon:
       aa_Theme:
         Path:
           Inline:
-            CSS: 'Public/Frontend/foundation-sites/dist/css'
-            JS: 'Public/Frontend/foundation-sites/dist/js'
+            CSS: 'Public/Frontend/css'
+            JS: 'Public/Frontend/js/min'
           File:
-            CSS: 'Public/Frontend/foundation-sites/dist/css'
-            JS: 'Public/Frontend/foundation-sites/dist/js'
+            CSS: 'Public/Frontend/css'
+            JS: 'Public/Frontend/js/min'
         # Asset files who get's loaded in live and backend view
         General:
           Head:
-            - foundation.min.css
+            - app.css
           Body:
-            - foundation.min.js
+            - app-min.js
 
       ##
       # Sitegeist.Lazybones required lazysizes, we recommend to include lazysizes javascript

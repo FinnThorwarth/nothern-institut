@@ -6,9 +6,8 @@ composer install
 ## Server local starten
 ./flow server:run
 
-## SCSS Foundation starten
-cd ./DistributionPackages/WG.Site/Resources/Public/Frontend/foundation-sites
-yarn start
+## SCSS Compilation
+mit Prepros, die Files liegen unter: ./DistributionPackages/WG.Site/Resources/Public/Frontend/foundation-sites
 
 ## Datenbank
 für die Entwicklung über MAMP hosten

@@ -20,7 +20,7 @@ prototype(WG.Site:Component.Header) < prototype(Neos.Fusion:Component) {
     ##
 
     renderer = afx`
-        <header class="main-header">
+        <header class="main-header grid-container">
             <a class="logo" href={props.homeLink}>WG Master</a>
             <WG.Site:Component.Header.MenuItemsRenderer items={props.menuItems} />
         </header>

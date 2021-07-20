@@ -1,0 +1,51 @@
+// Colors
+
+$fc-accordion-h4: $col-bg-black;
+$fc-accordion-h4-hover: $col-bg;
+$col-accordion-border-after: $col-bg-black;
+
+.accordion {
+  margin-top: 50px;
+}
+
+.accordion-item {
+  a.accordion-title {
+    border-right: none;
+    border-left: none;
+    &::after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 10px;
+      display: block;
+      content: "";
+      width: 31px;
+      height: 31px;
+      border: 1px solid $col-accordion-border-after;
+      border-radius: 100%;
+      background-image: url("../images/svg/acc-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 10px;
+      transition: all 0.2s ease-in;
+    }
+    .h4 {
+      color: $fc-accordion-h4;
+      margin-right: 30px;
+      display: inline-block;
+    }
+  }
+  &.is-active,
+  &:hover,
+  &:visited {
+    a.accordion-title {
+      .h4 {
+        color: $fc-accordion-h4-hover;
+      }
+      &::after {
+        transform: translateY(-50%) rotate(90deg);
+        background-image: url("../images/svg/acc-arrow-white.svg");
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+// Typography
+// --------------
+
+// Font Family
+// --------------
+$body-font-family: $webfont-regular;
+$h1-font-family:   $webfont-h1;
+$h2-font-family:   $webfont-h2;
+$nav-font-family:  $webfont-regular;
+
+// Font Colors
+// --------------
+$col-h1: $fc-h1;
+$col-h2: $fc-h2;
+$col-h3: $fc-h3;
+
+// Style Reset
+// --------------
+address { font-style: normal; }
+
+
+
+@media all {
+  h1,
+  .h1 {
+    font-family: $h1-font-family;
+    font-weight: 700;
+    color: $fc-h1;
+  }
+  h2,
+  .h2 {
+    font-family: $h1-font-family;
+    color: $col-h2;
+  }
+  h3,
+  .h3 {
+    font-family: $h1-font-family;
+    color: $fc-h3;
+  }
+
+} // end media all

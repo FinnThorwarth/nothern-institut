@@ -1,0 +1,11 @@
+// Colors
+// --------------
+
+$col-bg-video-layer: $col-bg-dark;
+$fc-video-layer: $col-bg;
+
+.video-layer {
+  padding: 180px 65px;
+  background-color: $col-bg-video-layer;
+  color: $fc-video-layer;
+}

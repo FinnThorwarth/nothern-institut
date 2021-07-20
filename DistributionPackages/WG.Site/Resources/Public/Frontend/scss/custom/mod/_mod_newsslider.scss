@@ -1,0 +1,136 @@
+// Colors
+// --------------
+$col-newsslider-bg: $col-bg-light;
+$fc-newsslider: $body-font-color;
+$col-card-bg: $body-background;
+
+// Font Family
+// --------------
+
+$h1-newsslider: $webfont-h1;
+$h2-newsslider: $webfont-h2;
+$h3-newsslider: $webfont-h3;
+
+#termin-carousel {
+  background-color: $col-newsslider-bg;
+
+
+  h1,
+  .h1 {
+
+    text-transform: uppercase; 
+    font-size: 3.5rem;
+    letter-spacing: 0.3rem;
+
+    @include breakpoint (mobileNav down) {
+      font-size: 2.2rem;
+    }
+
+  }
+
+  h2,
+  .h2 {
+    font-size: 1.3rem;
+
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+
+  }
+
+
+  a {
+
+    text-decoration: none;
+
+    p {
+      font-size: 0.9rem;
+      color: $fc-newsslider;
+
+    }
+
+  }
+
+  .owl-stage {
+    display: flex;
+  }
+
+  .card {
+
+    background-color: $col-card-bg;
+    padding: 25px;
+    height: 100%;
+    overflow: visible;
+    border: none;
+
+
+    @include breakpoint (medium down) {
+      height: auto;
+    }
+
+    .h2 {
+      font-size: 1.3rem;
+      color: $fc-newsslider;
+      text-transform: inherit;
+      letter-spacing: inherit;
+    }
+
+    .news-img {
+      display: block;
+      margin-top: 50px;
+
+    }
+
+    .news-teaser {
+      height: 100%;
+    }
+
+  }
+
+
+  .cell {
+    position: relative;
+    height: 100%;
+
+  }
+
+  .owl-prev {
+    position: absolute;
+    background: url('../images/svg/prev-slider.svg') no-repeat center center;
+    height: 20px;
+    width: 20px;
+
+    height: 25px;
+    width: 25px;
+    left: 0px;
+    top: 50%;
+
+    border-radius: inherit;
+
+
+  }
+
+  .owl-next {
+    position: absolute;
+    background: url('../images/svg/prev-slider.svg') no-repeat center center;
+    transform: rotate(180deg);
+    height: 20px;
+    width: 20px;
+
+    height: 25px;
+    width: 25px;
+    right: 0px;
+    top: 50%;
+
+    border-radius: inherit;
+
+  }
+
+  .pad-owl {
+    padding: 0 40px;
+  }
+
+}

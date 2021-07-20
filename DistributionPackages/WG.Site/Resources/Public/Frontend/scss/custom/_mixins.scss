@@ -1,0 +1,135 @@
+@mixin inline-block {
+  display: inline-block;
+  vertical-align: top;
+}	
+	
+@mixin transition($time) {
+  transition: all $time ease-in;
+  -webkit-transition: all $time ease-in;
+  -moz-transition: all $time ease-in;
+  -o-transition: all $time ease-in;
+}
+
+
+/**
+ * ================================================
+ * CUSTOM MIXINS - ROTATE
+ */
+
+@mixin rotate($value: 180) {
+  -moz-transform: rotate(#{$value}deg); /* Firefox 3.6 Firefox 4 */
+  -webkit-transform: rotate(#{$value}deg); /* Chrome, Safari, Opera */
+	-o-transform: rotate(#{$value}deg); /* Opera */
+  -ms-transform: rotate(#{$value}deg); /* IE 9 */
+	transform: rotate(#{$value}deg);
+}
+
+
+/**
+ * =============================
+ * CUSTOM MIXINS - ROUND BORDERS
+ */
+
+/* round-border all */
+@mixin round-border($radius: $default-border-radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+/* round-border top */
+@mixin round-border-top($radius: $default-border-radius) {
+	@include border-corner-radius(top, left, $radius);
+	@include border-corner-radius(top, right, $radius);
+}
+
+/* round-border bottom */
+@mixin round-border-bottom($radius: $default-border-radius) {
+	@include border-corner-radius(bottom, left, $radius);
+	@include border-corner-radius(bottom, right, $radius);
+}
+
+/* round-border left */
+@mixin round-border-left($radius: $default-border-radius) {
+	@include border-corner-radius(top, left, $radius);
+	@include border-corner-radius(bottom, left, $radius);
+}
+
+/* round-border right */
+@mixin round-border-right($radius: $default-border-radius) {
+	@include border-corner-radius(top, right, $radius);
+	@include border-corner-radius(bottom, right, $radius);
+}
+
+/* basic mixin to include in others */
+@mixin border-corner-radius($vert, $horz, $radius: $default-border-radius) {
+	-webkit-border-#{$vert}-#{$horz}-radius: $radius;
+	-moz-border-radius-#{$vert}#{$horz}: $radius;
+	border-#{$vert}-#{$horz}-radius: $radius;
+}
+
+
+/**
+ * ==========================
+ * CUSTOM MIXINS - BOX SHADOW
+ */
+
+@mixin ym-box-shadow($x: 3px, $y: 3px, $blur: 5px, $color: rgba(0,0,0,.5), $inset: false) {
+
+	@if $inset{
+	-webkit-box-shadow: inset $x $y $blur $color;
+			box-shadow: inset $x $y $blur $color;
+	}
+	@else {
+	-webkit-box-shadow: $x $y $blur $color;
+			box-shadow: $x $y $blur $color;
+	}
+}
+
+
+/**
+ * ===============================
+ * CUSTOM MIXINS - NEGATIVE COLORS
+ */
+
+ @mixin set-negative($bgcolor: $col-neg-bg, $fontcolor: $col-neg-font, $linkcolor: $col-neg-a) {
+	background-color: $bgcolor;
+	color: $fontcolor;
+	a, a:hover, a.active { color: $linkcolor; }
+}
+
+
+/**
+ * ===========================
+ * CUSTOM MIXINS - BUTTON-LINK
+ */
+
+ @mixin set-button-link($bgcolor: $col-neg-bg, $bghovercolor: $col-neg-bg, $linkcolor: $col-neg-a ) {
+	background-color: $bgcolor;
+   &, &:hover, &.active, span { color: $linkcolor; text-decoration: none; cursor: pointer; }
+   &:hover, &.active { background-color: $bghovercolor; }
+}
+
+
+/**
+ * ================================================
+ * CUSTOM MIXINS - RESPONSIVE IFRAME
+ */
+   
+ @mixin responsiveIframe($ratio-w: 16, $ratio-h: 9) {
+  $ratio: $ratio-h / $ratio-w * 100%;
+
+  position: relative; 
+  width: 100%; 
+  height: 0; 
+  height: auto; 
+  padding-bottom: $ratio; 
+  overflow: hidden; 
+  iframe { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+  }
+}

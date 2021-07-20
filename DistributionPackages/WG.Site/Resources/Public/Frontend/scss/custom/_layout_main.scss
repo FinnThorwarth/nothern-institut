@@ -1,0 +1,88 @@
+@media screen {
+  .page-main {
+    background-color: $white;
+
+    article.article,
+    .page-content {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /**
+     * Liste mit Icons
+     */
+
+    .linklist {
+      margin: 0;
+      list-style-type: none;
+
+      li {
+        margin-left: 0px;
+      }
+
+      a {
+        display: block;
+        position: relative;
+        padding-left: 23px;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 7px;
+          width: 10px;
+          height: 10px;
+          background: url("../images/svg/arrow_right_white.svg") no-repeat 0 0/10px 10px;
+          //border: 1px solid orange;
+        }
+      }
+    } // end .linklist
+
+    /**
+    * Link mit Pfeil
+    */
+
+    .pfeil-link {
+      a {
+        display: inline-block;
+        position: relative;
+        padding-right: 23px;
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 7px;
+          width: 10px;
+          height: 10px;
+          background: url("../images/svg/arrow_left_blue.svg") no-repeat 0 0/10px 10px;
+        }
+      }
+    }
+
+    
+  } // end .wg-page-content
+
+  /**
+   * Google-Maps Modul
+   */
+
+  #maps {
+    height: 400px;
+    margin-bottom: 0;
+    background-color: $col-bg-light;
+    text-align: center;
+
+    .large {
+      font-size: 40px;
+      color: $white;
+    }
+  }
+} // end media screen

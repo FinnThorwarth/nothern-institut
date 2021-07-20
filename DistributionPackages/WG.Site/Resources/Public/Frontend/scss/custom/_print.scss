@@ -1,0 +1,74 @@
+@media print {
+
+	* { margin: 0; padding: 0; }
+
+	body { font-size: $print-fs-base; padding: 0 5px; }
+
+	/* (de) Für den Druck nicht benötigte Container des Layouts abschalten */
+	nav {	display:none; }
+
+  /* Positionieren der Inhaltselemente */
+	.wrapper { position: relative; width: 940px; margin: 0 auto; }
+	#main .inside {	clear: both; }
+	
+	#logo {
+		display: block !important;
+		padding: 0 0 60px 0;
+		
+		img { display: inline; }
+	}
+	
+	footer {
+		margin-top: 40px;
+	
+		.ym-g50.ym-gl { width: 60%; }
+		.ym-g50.ym-gr { width: 40%; }
+		.ym-gbox-right .ym-gr { display: none; }
+		.ym-gbox-right .ym-g50.ym-gl { width: 100%; }
+	}
+
+/*	
+	.print-nav { width: 100%; margin-bottom: 60px; }
+	.print-nav td { font-size: 24px; font-weight: bold; }
+  
+  .news-teaser.inside { padding-bottom: 60px; overflow: hidden; }
+  .news-teaser .ym-gl { float: left; }
+  .news-teaser .ym-g25 { width: 25%; }
+  .news-teaser h1 { font-size: 12pt; }
+  .news-teaser .news-teaser-text { padding-top: 10px; padding-right: 10px; color: #000; text-transform: none; }
+  .news-teaser .news-teaser-link { display: none; }
+  .shadows { box-shadow: none; }
+  
+  .sidebox, .sidebox .ansprechpartner li { padding-top: 30px; }
+  
+  .mediathek { margin-top: 30px; }
+  .mediathek .selectOutside,
+  .mediathek .selectInside { display: inline; }
+  
+  ol.news-teaser { margin: 0px -5px; list-style: none; }
+	ol.news-teaser li { display: inline-block; width: 25%; margin: 0; padding: 40px 0 0 0; vertical-align: top; }
+	ol.news-teaser article { margin: 5px; }
+*/
+
+	/* (en) Avoid page breaks right after headings */
+	/* (de) Vermeidung von Seitenumbrüchen direkt nach einer Überschrift */
+	h1, h2, h3, h4, h5, h6 { page-break-after:avoid; }
+
+
+	.formular { width: 400px; }
+	.formular form { margin: 20px 0; }
+	.formular fieldset{ position: relative; margin-bottom: 10px; padding: 20px 0px 8px 0px; }
+	.formular div.nolabel { padding: 20px; font-weight: bold; }
+	.formular p.legend { margin-bottom: 20px; font-size: 125%; }
+	.formular label { width: 150px; display: block; float: left; text-align: left; padding-right: 10px; line-height: 2em; }
+	.formular input, .formular textarea { border: 1px solid #999; padding: 3px; }
+	.formular input.margin-top { margin-top: 3px; border: 0; }
+	.formular input.submit { display: none; }
+	.formular input.textfield,
+	.formular textarea.textfield { width: 210px; }
+	.formular textarea { height: 80px; }
+	.formular form fieldset div.floatbox { margin-bottom: 5px; overflow: hidden; }
+	.formular form fieldset div.pflichtfelder { display: none; }
+	.formular #mail { display: none; }
+
+}
