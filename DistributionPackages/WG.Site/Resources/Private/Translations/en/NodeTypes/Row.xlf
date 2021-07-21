@@ -35,7 +35,7 @@
 			<trans-unit id="ui.label" xml:space="preserve">
 				<source>Grid - Row</source>
 			</trans-unit>
-			<trans-unit id="groups.structurel" xml:space="preserve">
+			<trans-unit id="groups.structure" xml:space="preserve">
 				<source>Grid strucutre</source>
 			</trans-unit>
 		</body>

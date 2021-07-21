@@ -47,7 +47,7 @@
         large:
           type: string
           ui:
-            label: Large
+            label: Large (Desktop)
             editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
             editorOptions:
               values:
@@ -80,7 +80,7 @@
         medium:
           type: string
           ui:
-            label: Medium
+            label: Medium (Tablet)
             editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
             editorOptions:
               values:
@@ -113,7 +113,7 @@
         small:
           type: string
           ui:
-            label: Small
+            label: Small (Smartphone)
             editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
             editorOptions:
               values:
@@ -188,7 +188,7 @@
       defaultValue: ''
       type: string
       ui:
-        label: Large
+        label: Large (Desktop)
         reloadIfChanged: true
         inspector:
           group: structure
@@ -225,7 +225,7 @@
       defaultValue: ''
       type: string
       ui:
-        label: Medium
+        label: Medium (Tablet)
         reloadIfChanged: true
         inspector:
           group: structure
@@ -262,7 +262,7 @@
       defaultValue: ''
       type: string
       ui:
-        label: Small
+        label: Small (Smartphone)
         reloadIfChanged: true
         inspector:
           group: structure
