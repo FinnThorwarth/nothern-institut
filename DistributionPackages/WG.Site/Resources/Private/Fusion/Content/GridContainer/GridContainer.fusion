@@ -1,0 +1,8 @@
+prototype(WG.Site:Content.GridContainer) < prototype(Neos.Neos:ContentComponent) {
+  content = Neos.Neos:ContentCollection
+
+ renderer = afx`
+    <div class="grid-container">{props.content}</div>
+ `
+}
+
