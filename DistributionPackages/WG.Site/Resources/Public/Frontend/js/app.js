@@ -12,10 +12,10 @@ jQuery(document).ready(function () {
    * Functions on window resize
    */
 
-  $(window).resize($.debounce(500, function () {
+  $(window).resize(function () {
     reInitJs();
     //priv_ctrlNav();
-  }));
+  });
 
   /**
    * Functions on scrolling
@@ -254,7 +254,7 @@ function maps_loeschen() {
 
 
 /*News Slider*/
-
+/*
 $('.news-slider').owlCarousel({
   items: 4,
   margin: 20,
@@ -273,10 +273,10 @@ $('.news-slider').owlCarousel({
     }
   }
 });
-
+*/
 
 /*Shopslider*/
-
+/*
 $('.newsslider').owlCarousel({
   margin: 70,
   items: 3,
@@ -295,7 +295,7 @@ $('.newsslider').owlCarousel({
     }
   }
 });
-
+*/
 
 
 /*

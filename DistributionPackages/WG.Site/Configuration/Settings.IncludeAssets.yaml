@@ -15,6 +15,8 @@ Carbon:
           Head:
             - app.css
           Body:
+            - jquery.min.js
+            - foundation.min.js
             - app-min.js
 
       ##
