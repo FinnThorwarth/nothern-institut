@@ -23,7 +23,7 @@ $col-accordion-border-after: $col-bg-black;
       height: 31px;
       border: 1px solid $col-accordion-border-after;
       border-radius: 100%;
-      background-image: url("../images/svg/acc-arrow.svg");
+      //background-image: url("../images/svg/acc-arrow.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 10px;
@@ -44,7 +44,7 @@ $col-accordion-border-after: $col-bg-black;
       }
       &::after {
         transform: translateY(-50%) rotate(90deg);
-        background-image: url("../images/svg/acc-arrow-white.svg");
+      //  background-image: url("../images/svg/acc-arrow-white.svg");
       }
     }
   }

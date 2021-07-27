@@ -1,0 +1,8 @@
+Neos:
+  Media:
+    image:
+      defaultOptions:
+        quality: 80
+        webp_quality: 80
+        jpeg_quality: 80
+        png_compression_level: 80

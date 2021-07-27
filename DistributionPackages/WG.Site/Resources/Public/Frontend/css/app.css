@@ -3853,13 +3853,13 @@ button.sortieren .cls-arrowd-3 { stroke: #fff; stroke-linecap: round; stroke-lin
 
 .accordion-item a.accordion-title { border-right: none; border-left: none; }
 
-.accordion-item a.accordion-title::after { position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); right: 10px; display: block; content: ""; width: 31px; height: 31px; border: 1px solid #000; border-radius: 100%; background-image: url("../images/svg/acc-arrow.svg"); background-repeat: no-repeat; background-position: center center; background-size: 10px; transition: all 0.2s ease-in; }
+.accordion-item a.accordion-title::after { position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); right: 10px; display: block; content: ""; width: 31px; height: 31px; border: 1px solid #000; border-radius: 100%; background-repeat: no-repeat; background-position: center center; background-size: 10px; transition: all 0.2s ease-in; }
 
 .accordion-item a.accordion-title .h4 { color: #000; margin-right: 30px; display: inline-block; }
 
 .accordion-item.is-active a.accordion-title .h4, .accordion-item:hover a.accordion-title .h4, .accordion-item:visited a.accordion-title .h4 { color: #fff; }
 
-.accordion-item.is-active a.accordion-title::after, .accordion-item:hover a.accordion-title::after, .accordion-item:visited a.accordion-title::after { -webkit-transform: translateY(-50%) rotate(90deg); -ms-transform: translateY(-50%) rotate(90deg); transform: translateY(-50%) rotate(90deg); background-image: url("../images/svg/acc-arrow-white.svg"); }
+.accordion-item.is-active a.accordion-title::after, .accordion-item:hover a.accordion-title::after, .accordion-item:visited a.accordion-title::after { -webkit-transform: translateY(-50%) rotate(90deg); -ms-transform: translateY(-50%) rotate(90deg); transform: translateY(-50%) rotate(90deg); }
 
 .hero-image { margin-bottom: 130px; }
 

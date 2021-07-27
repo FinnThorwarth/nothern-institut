@@ -9,12 +9,18 @@
     inlineEditable: true
   properties:
     trigger:
-      ui: 
-        placeholder: 'Triggertext eingeben'
-      options:
-          preset: 'text.title'
+      type: string
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            placeholder: 'Hier den Titel für den Abschnitt eingeben'
+            preset: 'text.title'
     content:
-      ui: 
-        placeholder: 'Inhalt eingeben'
-      options:
-        preset: 'text.free'
+      type: string
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            placeholder: 'Hier den Inhalt für den Abschnitt'
+            preset: 'text.free'
