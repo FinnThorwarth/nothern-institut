@@ -15,7 +15,8 @@
         inline:
           editorOptions:
             placeholder: 'Hier den Titel für den Abschnitt eingeben'
-            preset: 'text.title'
+      options:
+        preset: 'text.title'
     content:
       type: string
       ui:
@@ -23,4 +24,5 @@
         inline:
           editorOptions:
             placeholder: 'Hier den Inhalt für den Abschnitt'
-            preset: 'text.free'
+      options:
+        preset: 'text.free'
