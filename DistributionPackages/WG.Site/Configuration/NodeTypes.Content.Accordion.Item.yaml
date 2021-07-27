@@ -1,0 +1,20 @@
+'WG.Site:Content.Accordion.Item':
+  superTypes:
+    'Neos.Neos:Content': true
+    'WG.Site:Constraint.Content.Restricted': true
+  ui:
+    label: 'Akkordeon Abschnitt'
+    icon: icon-folder-open
+    position: 300
+    inlineEditable: true
+  properties:
+    trigger:
+      ui: 
+        placeholder: 'Triggertext eingeben'
+      options:
+          preset: 'text.title'
+    content:
+      ui: 
+        placeholder: 'Inhalt eingeben'
+      options:
+        preset: 'text.free'

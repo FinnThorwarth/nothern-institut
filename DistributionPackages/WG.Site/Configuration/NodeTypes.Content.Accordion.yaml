@@ -1,0 +1,12 @@
+'WG.Site:Content.Accordion':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.Neos:ContentCollection': true
+  ui:
+    label: Akkordeon
+    icon: icon-folder-open
+    group: structure
+  constraints:
+    nodeTypes:
+      '*': false
+      'WG.Site:Content.Accordion.Item': true

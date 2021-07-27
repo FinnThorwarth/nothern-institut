@@ -12,6 +12,7 @@ Neos:
           title: 'Tablet'
           width: 768px
           height: 1024px
+          backgroundColor: 'black'
         mobile:
           isEditingMode: false
           isPreviewMode: true
@@ -19,6 +20,7 @@ Neos:
           title: 'Mobile'
           width: 360px
           height: 640px
+          backgroundColor: 'black'
 
 ##
 # Alternatively use this to disable all other modes
