@@ -11,5 +11,5 @@
       '*': false
       'WG.Site:Content.Accordion.Item': true
   childNodes:
-    tab1:
+    '':
       type: 'WG.Site:Content.Accordion.Item'
