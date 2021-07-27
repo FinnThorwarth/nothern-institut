@@ -1,9 +1,10 @@
 prototype(WG.Site:Content.Accordion) < prototype(Neos.Neos:ContentComponent) {
-  content = Neos.Neos:ContentCollection
-  attributes.class = 'accordion'
+  content = Neos.Neos:ContentCollection {
+    attributes.class.@process.collectionClass >
+    attributes = ' class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true"'
+  }
+
  renderer = afx`
-    <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
     {props.content}
-    </ul>
  `
 }
