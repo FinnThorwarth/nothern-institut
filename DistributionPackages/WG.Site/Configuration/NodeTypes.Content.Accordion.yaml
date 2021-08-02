@@ -5,6 +5,7 @@
   ui:
     label: Akkordeon
     icon: icon-folder-open
+    position: 500
     group: structure
   constraints:
     nodeTypes:

@@ -11,6 +11,7 @@
   superTypes:
     'Neos.Neos:Content': true
     'Neos.Neos:ContentCollection': true
+    
   options:
     template:
       childNodes:
@@ -29,6 +30,7 @@
           type: string
           ui:
             label: i18n
+            position: 200
             editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
             editorOptions:
               values:
@@ -183,6 +185,7 @@
   constraints:
     nodeTypes:
       '*': true
+      'WG.Site:Constraint.Content.Restricted': false
   properties:
     large:
       defaultValue: ''
@@ -412,3 +415,4 @@
   constraints:
     nodeTypes:
       'WG.Site:Column': false
+      'WG.Site:Constraint.Content.Restricted': false

@@ -5,7 +5,7 @@
   ui:
     label: Grid-Container
     icon: icon-columns
-    position: 400
+    position: 100
     group: structure
     inlineEditable: true
   constraints:
