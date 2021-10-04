@@ -7,6 +7,16 @@ Neos:
           variables:
             # We prefer URLs without the ".html" suffix
             defaultUriSuffix: ''
+    resource:
+      targets:
+        localWebDirectoryPersistentResourcesTarget:
+          target: 'Neos\Flow\ResourceManagement\Target\FileSystemSymlinkTarget'
+          targetOptions:
+            relativeSymlinks: true
+        localWebDirectoryStaticResourcesTarget:
+          target: 'Neos\Flow\ResourceManagement\Target\FileSystemSymlinkTarget'
+          targetOptions:
+            relativeSymlinks: true
   Neos:
     eventLog:
       enabled: true
@@ -15,9 +25,9 @@ Neos:
         nodeTree:
           # number of levels inside the node tree which shall be loaded eagerly, at start.
           # if you have lots of nodes you should maybe reduce this number of elements.
-          loadingDepth: 2
+          loadingDepth: 4
         structureTree:
-          loadingDepth: 2
+          loadingDepth: 4
       translation:
         autoInclude:
           WG.Site: ['NodeTypes/*']

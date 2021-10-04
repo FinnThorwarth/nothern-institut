@@ -1,4 +1,16 @@
-a.button-link, .button-link a, .button-link {
-  color: red;
-  background-color: blue;
+a.button-link,
+.button-link a,
+.button-link {
+  transition: all 0.3s;
+  color: $white;
+  background-color: $green;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid $green;
+
+  &:hover {
+    color: $green;
+    background-color: $white;
+    text-decoration: none;
+  }
 }

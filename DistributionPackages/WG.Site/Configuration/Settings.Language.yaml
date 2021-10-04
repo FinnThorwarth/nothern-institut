@@ -2,6 +2,8 @@ Neos:
   Flow:
     i18n:
       defaultLocale: de
+      fallbackRule:
+        order: ['en']
   ContentRepository:
     contentDimensions:
       language:

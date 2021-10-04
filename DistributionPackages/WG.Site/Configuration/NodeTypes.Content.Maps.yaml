@@ -1,0 +1,71 @@
+##
+# Google Maps Einbindung
+#
+'WG.Site:Content.GoogleMaps':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: GoogleMaps
+    icon: 'icon-map'
+    inspector:
+      groups:
+        'general':
+          label: i18n
+          icon: 'icon-map'
+          position: 50
+    help:
+      message: 'Dieses Modul zeigt eine Google-Maps Karte an.'
+  properties:
+    'maps':
+      type: string
+      defaultValue: ''
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: 'general'
+          editor: 'Neos.Neos/Inspector/Editors/CodeEditor'
+        help:
+          message: |
+            Bitte den iFrame-Code für die Einbettung eingeben.
+    'layerImage':
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        label: Platzhalter-Bild
+        reloadIfChanged: true
+        inspector:
+          group: 'general'
+        help:
+          message: 'Dieses Bild wird angezeigt, wenn die Google-Maps Cookies noch nicht aktzeptiert wurden.'
+    'layerText':
+      type: string
+      ui:
+        label: Platzhalter-Text
+        reloadIfChanged: true
+        inspector:
+          group: 'general'
+          editor: 'Neos.Neos/Inspector/Editors/RichTextEditor'
+          editorOptions: 
+            placeholder: 'Es werden externe Inhalte von Google Maps geladen.<br>Nähere Informationen entnehmen Sie bitte unserer Datenschutzerklärung.'
+            required: true
+            autoparagraph: true
+            linking:
+              anchor: true
+              title: true
+              relNofollow: true
+              targetBlank: true
+            formatting:
+              strong: true
+              p: true
+              h1: true
+              h2: true
+              h3: true
+              pre: true
+              removeFormat: true
+              left: true
+              right: true
+              center: true
+              justify: true
+              a: true
+        help:
+          message: 'Dieser Text wird angezeigt, wenn die Google-Maps Cookies noch nicht aktzeptiert wurden.'

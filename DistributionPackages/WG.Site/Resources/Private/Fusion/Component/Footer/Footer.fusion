@@ -1,23 +1,36 @@
 prototype(WG.Site:Component.Footer) < prototype(Neos.Neos:ContentComponent) {
     @context.node = ${site}
-    year = ${Date.format(Date.now(), 'Y')}
-    footerInfo = Neos.Neos:Editable {
+
+    footerInfoLeft = Neos.Neos:Editable {
         node = ${site}
-        property = 'footerInfo'
+        property = 'footerInfoLeft'
     }
-    footerItems = Neos.Fusion:Collection {
-        collection = ${q(site).property('footerItems')}
-        itemName = 'node'
-        itemRenderer = Carbon.Link:Link {
-            node = ${node}
-        }
+        footerInfoMiddle = Neos.Neos:Editable {
+        node = ${site}
+        property = 'footerInfoMiddle'
+    }
+        footerInfoRight = Neos.Neos:Editable {
+        node = ${site}
+        property = 'footerInfoRight'
     }
 
     renderer = afx`
         <footer class="main-footer">
-            <div>{props.footerInfo}</div>
-            <div>&copy; {props.year}</div>
-            {props.footerItems}
+        <div class="grid-container">
+          <div class="neos-contentcollection">
+            <div class="grid-x grid-padding-x grid-padding-y">
+              <div class="cell large-4 text-center">
+                {props.footerInfoLeft}
+              </div>
+              <div class="cell large-4 text-center">
+                {props.footerInfoMiddle}
+              </div>
+              <div class="cell large-4 text-center">
+                {props.footerInfoRight}
+              </div>
+            </div>
+          </div>
+        </div>
         </footer>
     `
 

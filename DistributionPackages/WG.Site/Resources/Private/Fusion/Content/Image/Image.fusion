@@ -25,14 +25,15 @@ prototype(WG.Site:Content.Image) < prototype(Neos.Neos:ContentComponent) {
     alternativeText = ${q(node).property('alternativeText')}
 
     renderer = afx`
-        <Sitegeist.Lazybones:Image
+        <Sitegeist.Lazybones:Picture
             class="container-image"
             lazy={true}
             lazyWidth={200}
             imageSource={props.src}
-            srcset="320w, 400w, 480w, 600w, 640w, 720w, 768w, 800w, 960w, 1024px, 1280w, 1440w, 1600w, 1680w, 1920w, 2560w"
+            srcset="320w, 400w, 480w, 600w, 768w, 800w, 960w, 1024px, 1280w, 1440w, 1680w, 1920w"
             sizes={props.sizes}
             alt={props.alternativeText}
+            formats="webp, jpeg"
             />
 	`
 

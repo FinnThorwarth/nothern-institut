@@ -10,10 +10,10 @@ Neos:
                 inlineEditable: true
                 inline:
                   editorOptions:
-                    placeholder: 'Enter headline here...'
+                    placeholder: 'Überschrift eintragen...'
                     hyphens: true
                     formatting:
-                      h1: false
+                      h1: true
                       h2: true
                       h3: true
                       h4: true
@@ -26,7 +26,7 @@ Neos:
                 inlineEditable: true
                 inline:
                   editorOptions:
-                    placeholder: 'Enter headline here...'
+                    placeholder: 'Text eintragen...'
                     autoparagraph: false
                     hyphens: true
             'free':
@@ -34,9 +34,10 @@ Neos:
               defaultValue: ''
               ui:
                 inlineEditable: true
+                codeBlock: true
                 inline:
                   editorOptions:
-                    placeholder: 'Enter text here...'
+                    placeholder: 'Text eintragen...'
                     autoparagraph: true
                     hyphens: true
                     formatting:
@@ -49,7 +50,7 @@ Neos:
                       h2: true
                       h3: true
                       h4: true
-                      h5: true
+                      h5: false
                       h6: false
                       pre: false
                       table: true

@@ -12,13 +12,13 @@ prototype(WG.Site:Content.Accordion.Item) < prototype(Neos.Neos:ContentComponent
 
  renderer = afx`
     <li @if.render={props.renderFrontend} class="accordion-item" data-accordion-item>
-      <a href="#" class="accordion-title">{props.trigger}</a>
+      <a href="#" class="accordion-title font-large">{props.trigger}</a>
         <div class="accordion-content" data-tab-content>
         {props.content}
         </div>
     </li>
   <li @if.render={!props.renderFrontend} class="accordion-item">
-      <div class="accordion-title">{props.trigger}</div>
+      <div class="accordion-title font-large">{props.trigger}</div>
         <div class="">
         {props.content}
         </div>

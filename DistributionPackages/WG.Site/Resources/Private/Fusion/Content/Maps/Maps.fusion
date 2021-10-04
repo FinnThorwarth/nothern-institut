@@ -1,0 +1,47 @@
+##
+# Google Maps Einbindung
+#
+prototype(WG.Site:Content.GoogleMaps) < prototype(Neos.Neos:ContentComponent) {
+    maps = ${q(node).property('maps')}
+    layerText = ${q(node).property('layerText')}
+
+
+    layerImage = Neos.Fusion:Case {
+        image {
+            condition = ${q(node).property('layerImage') ? true : false}
+            renderer = Neos.Neos:ImageUri {
+                asset = ${q(node).property('layerImage')}
+                maximumWidth = 900
+            }
+        }
+    }
+
+allowMaps = Neos.Fusion:Renderer {
+  type = 'Neos.Fusion:Value'
+  @if.hasCookie = ${request.httpRequest.cookieParams.customMaps}
+  element.value = true
+}
+
+    renderer = afx`
+        <div @if.hasMaps={props.maps && props.allowMaps == true} class="responsive-maps">
+            {props.maps}
+        </div>
+         <div @if.hasMaps={props.maps && !props.allowMaps == true} class="cell text-center">
+          <div class="maps-layer">
+           <img class="img-layer" @if.hasImg={props.layerImage} src={props.layerImage} />
+           <div class="text-layer">
+              {props.layerText}
+              <br/>
+              <a class="button-link google confirm" title="Google Maps laden">Google Maps laden</a>
+              </div>
+            </div>
+        </div>
+         <div @if.hasMaps={!props.maps && !props.renderFrontend}>
+            Bitte den Google Maps Code eingeben!
+        </div>
+    `
+}
+
+prototype(Neos.Fusion:GlobalCacheIdentifiers) {
+  legalaccept = ${request.httpRequest.cookieParams.customMaps}
+}

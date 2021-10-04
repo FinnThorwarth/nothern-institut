@@ -36,7 +36,7 @@ prototype(WG.Site:Component.ImageUri) < prototype(Neos.Fusion:Value) {
         dummyImage {
             condition = ${site.context.inBackend}
             renderer = Neos.Fusion:ResourceUri {
-                path = 'resource://Neos.Neos/Public/Images/dummy-image.svg'
+                path = 'resource://WG.Site/Public/Frontend/images/placeholder.png'
             }
         }
     }

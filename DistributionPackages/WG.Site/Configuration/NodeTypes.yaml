@@ -24,6 +24,8 @@
             small: '${data.small || ""}'
           withItems: '${Array.range(1, data.numberOfColumns)}'
   ui:
+    help:
+      message: "Dieses Element wird für die Strukturierung der Seite verwendet. Es bieter die Möglichkeit Grid-Spalten nebeneinander zu Plazieren."
     creationDialog:
       elements:
         numberOfColumns:
@@ -149,7 +151,7 @@
     group: structure
     position: start
     inlineEditable: true
-    icon: icon-minus
+    icon: icon-columns
     inspector:
       groups:
         structure:
@@ -175,13 +177,15 @@
   ui:
     label: i18n
     group: structure
-    icon: icon-columns
+    icon: icon-minus
     inlineEditable: true
     inspector:
       groups:
         structure:
           label: i18n
           position: 10
+    help:
+      message: 'Die Webseite hat insgesamt 12 Spalten als Struktur. Hier kann festgelegt werden wie viele dieses Element belegen soll. 6 bedeutet 50% der Seitenbreite. 12 bedeutet 100% der Seitenbreite.'
   constraints:
     nodeTypes:
       '*': true

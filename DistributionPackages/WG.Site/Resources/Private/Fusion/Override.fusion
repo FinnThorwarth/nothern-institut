@@ -3,7 +3,7 @@
 ###
 
 prototype(WG.Site:Row) < prototype(Neos.Fusion:Tag) {
-	attributes.class = ${'grid-x ' + q(node).property('large') + ' ' + q(node).property('additionalClass')}
+	attributes.class = ${'grid-x grid-padding-x grid-padding-y' + q(node).property('large') + ' ' + q(node).property('additionalClass')}
 	content = Neos.Neos:ContentCollectionRenderer
 	# Add contentElementWrapping so it would be possible to edit row's properties
 	@process.contentElementWrapping = Neos.Neos:ContentElementWrapping
@@ -35,7 +35,34 @@ prototype(WG.Site:FourColumn) < prototype(WG.Site:MultiColumn)
 # Error matcher to render 4xx status code
 #
 error {
-    4xx {
+      404 {
+		@position = 'start'
+        condition = ${statusCode == 404}
+        renderer = WG.Site:Document.AbstractPage {
+            @context.documentNode = ${site}
+            @context.node = ${site}
+            prototype(Neos.Seo:TitleTag) {
+                title = ${I18n.translate('404 die Seite wurde nicht gefunden')}
+            }
+            body.content = Neos.Fusion:Component {
+                renderer = afx`
+                    <main class="main">
+                      <div class="grid-container">
+                        <div class="grid-x grid-padding-y">
+                            <div class="cell">
+                            <h1>404 Seite nicht gefunden</h1>
+                            <p>Die von Ihnen aufgerufene Seite ist nicht oder nicht mehr verfügbar.</p>
+                            <a href="/">Hier gehts zurück zur Startseite ></a>
+                            <br /><br /><br /><br />
+                          </div>
+                        </div>
+                      </div>
+                    </main>
+                `
+            }
+        }
+    }
+      4xx {
 		@position = 'start'
         condition = ${statusCode >= 400 && statusCode < 500}
         renderer = WG.Site:Document.AbstractPage {

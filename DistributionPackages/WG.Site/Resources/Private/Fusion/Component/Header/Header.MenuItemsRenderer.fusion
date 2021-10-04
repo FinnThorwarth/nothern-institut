@@ -3,7 +3,8 @@ prototype(WG.Site:Component.Header.MenuItemsRenderer) < prototype(Neos.Fusion:Co
 
     @if.has = ${this.items}
     renderer = afx`
-        <ul class="navigation">
+    <nav class="main-navigation">
+        <ul class="vertical menu mobileNav-horizontal main-nav" data-responsive-menu="accordion mobileNav-dropdown">
             <Neos.Fusion:Loop items={props.items} itemName="menuItem" @children="itemRenderer">
                 <li class={'navigation-item ' + (menuItem.state ? 'navigation-item--state-' + menuItem.state : '') }>
                     <Carbon.Link:Link
@@ -13,9 +14,29 @@ prototype(WG.Site:Component.Header.MenuItemsRenderer) < prototype(Neos.Fusion:Co
                         { menuItem.label }
                     </Carbon.Link:Link>
 
-                    <WG.Site:Component.Header.MenuItemsRenderer
-                        items={menuItem.subItems}
-                        />
+                    <WG.Site:Component.Header.MenuSubItemsRenderer items={menuItem.subItems}  />
+                </li>
+            </Neos.Fusion:Loop>
+        </ul>
+      </nav>
+    `
+}
+
+// Submenu
+prototype(WG.Site:Component.Header.MenuSubItemsRenderer) < prototype(Neos.Fusion:Component) {
+      items = false
+
+    @if.has = ${this.items}
+    renderer = afx`
+        <ul class="vertical menu subnavigation">
+            <Neos.Fusion:Loop items={props.items} itemName="menuItem" @children="itemRenderer">
+                <li class={'subnavigation-item navigation-item ' + (menuItem.state ? 'navigation-item--state-' + menuItem.state : '') }>
+                    <Carbon.Link:Link
+                        node={menuItem.node}
+                        backendLink={true}
+                        renderDefaultTagIfNoLink={true}>
+                        { menuItem.label }
+                    </Carbon.Link:Link>
                 </li>
             </Neos.Fusion:Loop>
         </ul>

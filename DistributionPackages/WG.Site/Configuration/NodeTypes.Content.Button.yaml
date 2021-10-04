@@ -10,8 +10,7 @@
   properties:
     label:
       ui: 
-        aloha:
-          placeholder: 'Buttontext hier eingeben'
+        placeholder: 'Buttontext hier eingeben'
       options:
         preset: 'text.plain'
     link:

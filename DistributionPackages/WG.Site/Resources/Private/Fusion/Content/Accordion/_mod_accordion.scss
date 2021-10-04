@@ -1,0 +1,24 @@
+// Colors
+
+$fc-accordion-h4: $body-font-color;
+$fc-accordion-h4-hover: $col-bg;
+$col-accordion-border-after: $body-font-color;
+
+.accordion-item {
+  a.accordion-title,div.accordion-title {
+    border-right: none;
+    border-left: none;
+    font-family: $webfont-semibold;
+    color: $fc-accordion-h4;
+  }
+
+  &.is-active,
+  &:hover,
+  &:visited {
+    a.accordion-title {}
+  }
+}
+
+.accordion-content {
+  border: none;
+}

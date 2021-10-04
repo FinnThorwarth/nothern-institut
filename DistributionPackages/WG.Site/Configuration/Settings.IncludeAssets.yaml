@@ -16,6 +16,7 @@ Carbon:
             - app.css
           Body:
             - jquery.min.js
+            - js.cookie.js
             - foundation.min.js
             - app-min.js
 

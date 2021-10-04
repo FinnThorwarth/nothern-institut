@@ -1,0 +1,23 @@
+.responsive-maps {
+  iframe {
+    width: 100%;
+  }
+}
+
+.maps-layer {
+  position: relative;
+}
+
+.img-layer {
+  filter: grayscale(0.5);
+}
+
+.text-layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+}

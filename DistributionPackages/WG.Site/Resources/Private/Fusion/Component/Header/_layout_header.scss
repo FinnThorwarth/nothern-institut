@@ -1,0 +1,137 @@
+.header-bg {
+  background: rgb(215, 223, 55);
+  background: linear-gradient(90deg, rgba(215, 223, 55, 1) 18%, rgba(46, 164, 80, 1) 100%);
+  padding: 0 0 40px 0;
+  //position: sticky;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+// Header Height for fixed Element
+.header-height {
+  height: 600px;
+}
+
+//Header Container
+.main-header {
+  padding: 20px 0px;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  background: linear-gradient(90deg, #d7df37 18%, #2ea450 100%);
+
+  @include breakpoint(mobileNav) {
+    padding: 40px 0px;
+  }
+}
+
+// Logo
+.page-logo {
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 99;
+
+  @include breakpoint(mobileNav) {
+    transform: translateY(-30%);
+    right: 0;
+  }
+
+  img {
+    width: 120px;
+    height: auto;
+
+    margin-bottom: 1px;
+
+    @include breakpoint(mobileNav) {
+      width: 220px;
+      height: auto;
+    }
+  }
+}
+
+// Menü
+.menu-trigger {
+  &:hover {
+    cursor: pointer;
+  }
+
+  width: 40px;
+
+  &.close {
+    display: none;
+  }
+
+  &.nav-open {
+    &.close {
+      display: block;
+    }
+
+    &.open {
+      display: none;
+    }
+  }
+
+
+
+  .color-menu {
+    fill: $col-bg-nav;
+  }
+}
+
+// HeaderIMG
+.header-image {
+  transition: all 0.3s;
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  border: solid 20px white;
+  border-radius: 30px;
+  align-self: flex-start;
+
+  .sticky-shrinknav:not(.neos-backend) & {
+    //  transition: all 0.3s;
+    //  max-height: 0px;
+    // border: none;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+// Background Img
+.bg-img {
+  background: url("../images/ellipsen.png") no-repeat;
+  background-position: top center;
+}
+
+// Phone
+.phone {
+  transition: all 0.3s;
+  padding: 15px 20px 12px 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: rgb(215, 223, 55);
+  background: linear-gradient(90deg, rgba(215, 223, 55, 1) 18%, rgba(46, 164, 80, 1) 100%);
+  color: white;
+  font-size: rem-calc(21px);
+  position: absolute;
+  left: 0px;
+  bottom: 20px;
+  max-height: 80px;
+  opacity: 1;
+
+  .sticky-shrinknav & {
+    opacity: 0;
+    max-height: 0px;
+  }
+
+  @include breakpoint(mobileNav) {
+    bottom: 25%;
+  }
+
+  a {
+    color: white;
+  }
+}

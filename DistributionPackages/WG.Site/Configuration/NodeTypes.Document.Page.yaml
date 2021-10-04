@@ -5,3 +5,13 @@
     label: i18n
     icon: icon-file-o
     position: 100
+  properties:
+    'headerImage':
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: 'document'
+        help:
+          message: 'Dieses Bild ersetzt das Platzhalterbild oben auf der Seite.'

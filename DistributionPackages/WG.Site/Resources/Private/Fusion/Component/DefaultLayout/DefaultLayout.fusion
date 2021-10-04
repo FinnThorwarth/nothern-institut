@@ -2,8 +2,12 @@ prototype(WG.Site:Component.DefaultLayout) < prototype(Neos.Fusion:Component) {
     content = ''
 
     renderer = afx`
+    <div class="content-wrapper">
+        <div class="headerHeight"></div>
         <WG.Site:Component.Header />
         {props.content}
+    </div>
         <WG.Site:Component.Footer />
+    
     `
 }
