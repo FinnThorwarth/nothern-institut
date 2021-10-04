@@ -6,7 +6,7 @@ prototype(WG.Site:Document.HomePage) < prototype(WG.Site:Document.AbstractPage) 
       head {
         titleTag = Neos.Fusion:Tag {
             tagName = 'title'
-            content = ${q(node).property('title') + ' | Diana Friedrichs Zahnarztpraxis'}
+            content = ${q(node).property('title') + ' | WG Neos Master'}
         }
       }
 
