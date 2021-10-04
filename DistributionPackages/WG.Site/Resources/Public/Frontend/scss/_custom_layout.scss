@@ -3,21 +3,33 @@
 
 @import "custom/mixins",
 				"custom/layout_global",
-				"custom/layout_header",
 				"custom/layout_main",
-				"custom/layout_footer",
-				"custom/mod/mod_navigations",
-				"custom/mod/mod_parallax",
-				"custom/mod/mod_video",
-				"custom/mod/mod_newsslider",
-				"custom/mod/mod_terminuebersicht",
-				"custom/mod/mod_gallery",
-        "custom/mod/mod_accordion",
-        "custom/mod/mod_header_picture",
-				"custom/mod/mod_consent_manager",  
-				"custom/mod/mod_sidebar",  
+		//		"custom/mod/mod_parallax", 
+		//		"custom/mod/mod_video",
+		//		"custom/mod/mod_newsslider",
+		//		"custom/mod/mod_terminuebersicht",
+		//		"custom/mod/mod_gallery",
+    //    "custom/mod/mod_header_picture",
+		//    "custom/mod/mod_consent_manager",  
+		//		"custom/mod/mod_sidebar",  
         "custom/typography",
 				"custom/print";
 
 // Module aus dem Fusion Content Elementen importieren
-@import "../../../Private/Fusion/Content/Button/button"
+// Header
+@import "../../../Private/Fusion/Component/Header/layout_header";
+
+// Footer
+@import "../../../Private/Fusion/Component/Footer/layout_footer";
+
+// Navigation
+@import "../../../Private/Fusion/Component/Header/mod_navigations";
+
+// Accordion
+@import "../../../Private/Fusion/Content/Accordion/mod_accordion";
+
+// Button Styles
+@import "../../../Private/Fusion/Content/Button/button";
+
+// Maps Styles
+@import "../../../Private/Fusion/Content/Maps/mod_maps";

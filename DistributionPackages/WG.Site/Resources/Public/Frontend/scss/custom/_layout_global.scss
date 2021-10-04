@@ -1,23 +1,13 @@
 body {
   background-color: $col-bg;
   color: $black;
-
   .print {
     display: none;
   }
+}
 
-  &.fixed-header {
-
-    // Abstand oben
-    //padding-top: $header-height;
-    // alternative: Pseudo Element
-    &::before {
-      content: "";
-      display: block;
-      width: 100%;
-      height: $header-height;
-    }
-  }
+.content-wrapper {
+  padding-bottom: 50px;
 }
 
 // Button
@@ -47,4 +37,14 @@ body {
 // --------------
 .column-2 {
   column-count: 2;
+}
+
+// Positionen Styles
+// --------------
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
 }

@@ -1,12 +1,34 @@
 // Typography
 // --------------
 
+/* Schriften einbinden */
+@font-face {
+  font-family: 'rooney-regular';
+  src: url('../fonts/rooney_0.eot') format('eot'),
+    url('../fonts/rooney_0.woff') format('woff'),
+    url('../fonts/rooney_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'rooney-light';
+  src: url('../fonts/rooney_2.eot') format('eot'),
+    url('../fonts/rooney_2.woff') format('woff'),
+    url('../fonts/rooney_2.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'rooney-light-italic';
+  src: url('../fonts/rooney_1.eot') format('eot'),
+    url('../fonts/rooney_1.woff') format('woff'),
+    url('../fonts/rooney_1.ttf') format('truetype');
+}
+
 // Font Family
 // --------------
 $body-font-family: $webfont-regular;
-$h1-font-family:   $webfont-h1;
-$h2-font-family:   $webfont-h2;
-$nav-font-family:  $webfont-regular;
+$h1-font-family: $webfont-h1;
+$h2-font-family: $webfont-h2;
+$nav-font-family: $webfont-regular;
 
 // Font Colors
 // --------------
@@ -16,26 +38,56 @@ $col-h3: $fc-h3;
 
 // Style Reset
 // --------------
-address { font-style: normal; }
+address {
+  font-style: normal;
+}
 
 
 
 @media all {
+
+  body {
+    color: $body-font-color;
+  }
+
   h1,
   .h1 {
     font-family: $h1-font-family;
     font-weight: 700;
     color: $fc-h1;
   }
+
   h2,
   .h2 {
     font-family: $h1-font-family;
     color: $col-h2;
   }
+
   h3,
   .h3 {
     font-family: $h1-font-family;
     color: $fc-h3;
   }
 
-} // end media all
+  // Font-Styles
+
+  .headline {
+    margin-top: 1rem;
+  }
+
+  .font-large {
+    font-size: rem-calc(21px);
+  }
+
+
+  // Navigation
+  ul.menu {
+    li a {
+      font-family: $webfont-regular;
+      font-size: rem-calc(21px);
+    }
+  }
+
+}
+
+// end media all

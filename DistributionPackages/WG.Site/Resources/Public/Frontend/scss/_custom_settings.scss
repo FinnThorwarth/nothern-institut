@@ -39,14 +39,14 @@ $xs: "(max-width: 480px)";
 $light-gray: #e6e6e6;
 $medium-gray:#cacaca;
 $dark-gray:  #8a8a8a;
-$darker-grey: #414B50;
+$darker-grey: #635f4c;
 $black: #000;
 $white: #fff;
 
 
 // custom colors (Projektfarben)
 // --------------
-$green: #97b314;
+$green: #2da450;
 $red:   #e8511e;
 $himbeere: #BF409A;
 
@@ -63,40 +63,40 @@ $foundation-palette: (
 // --------------
 $col-bg: 				  $white;
 $col-bg-light:	  $light-gray;
-$col-bg-dark:	    $himbeere;
+$col-bg-dark:	    $darker-grey;
 $col-bg-black:	  $black;
 $col-bg-nav:      $white;
-$col-border: 		  $himbeere;
+$col-border: 		  $darker-grey;
 $col-ruler:			  $col-border;
-$col-akzent:      $himbeere;
+$col-akzent:      $green;
 $col-important:	  $green;
 $col-warning:		  $unused;
 $col-error:			  $unused;
-$col_bg_button:	  $himbeere;
+$col_bg_button:	  $green;
 $body-background: $black;
 
 
 // font-colors
 // --------------
-$body-font-color: $black;
-$fc-h1:  				  $black;
-$fc-h2: 				  $himbeere;
+$body-font-color: $darker-grey;
+$fc-h1:  				  $darker-grey;
+$fc-h2: 				  $darker-grey;
 $fc-h3: 				  $unused;
 $fc-h4: 				  $unused;
 $fc-h5: 				  $unused;
 $fc-h6: 				  $unused;
-$fc-a:					  $himbeere;
-$fc-a-hover:		  $himbeere;
-$fc-a-active:		  $himbeere;
-$fc-nav:				  $himbeere;
-$fc-nav-mobile:   $himbeere;
+$fc-a:					  $green;
+$fc-a-hover:		  $green;
+$fc-a-active:		  $green;
+$fc-nav:				  $green;
+$fc-nav-mobile:   $green;
 $fc-nav-hover:	  $white;
 $fc-nav-active:	  $white;
 
 
 // negative colors areas
 // --------------
-$col-neg-bg:			$himbeere;
+$col-neg-bg:			$green;
 $col-neg:					$white;
 $col-neg-a:				$white;
 $col-neg-active:	$white;
@@ -110,23 +110,19 @@ $global-weight-normal:  normal;
 $global-weight-bold:    bold;
 
 
-/** Webfonts:
-font-family:'Hurme Geometric Sans_1 W01 Rg';
-font-family:'Frutiger LT W01_55 Roma1475738';
-font-family:'Eurostile LT W01 Bold1391134';
-font-family:'Eurostile LT W01 Demi1391154';
-font-family:'Eurostile LT W01 Medium1391130';
-*/
+/** Webfonts:*/
 
-$webfont-regular:     'Hurme Geometric Sans_1 W01 Rg', Helvetica, Roboto, Arial, sans-serif;
-$webfont-medium: 	    'Hurme Geometric Sans_1 W01 SmB', sans-serif;
-$webfont-semibold:    'Hurme Geometric Sans_1 W01 SmB', sans-serif;
-$webfont-bold: 		    'Hurme Geometric Sans_1 W01 SmB', sans-serif;
-$webfont-h1: 			    'Hurme Geometric Sans_1 W01 Lt', sans-serif;
-$webfont-h2: 			    'Hurme Geometric Sans_1 W01 Lt', sans-serif;
-$webfont-h3:          'Hurme Geometric Sans_1 W01 Lt', sans-serif;
+$webfont-regular:     'rooney-light', sans-serif;
+$webfont-medium: 	    'rooney-regular', sans-serif;
+$webfont-semibold:    'rooney-regular', sans-serif;
+$webfont-bold: 		    'rooney-regular', sans-serif;
+$webfont-h1: 			    'rooney-regular', sans-serif;
+$webfont-h2: 			    'rooney-regular', sans-serif;
+$webfont-h3:          'rooney-light', sans-serif; 
 
 $semi-bold-font-family: $webfont-semibold;
+
+$body-font-family: $webfont-regular;
 
 // base typography
 // --------------
@@ -143,19 +139,19 @@ $paragraph-lineheight: 1.65;
 
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
+    'h1': ('font-size': 21),
+    'h2': ('font-size': 21),
+    'h3': ('font-size': 18),
     'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
+    'h5': ('font-size': 18),
     'h6': ('font-size': 16),
   ),
   medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 38),
-    'h3': ('font-size': 31),
-    'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
+    'h1': ('font-size': 21),
+    'h2': ('font-size': 21),
+    'h3': ('font-size': 18),
+    'h4': ('font-size': 18),
+    'h5': ('font-size': 18),
     'h6': ('font-size': 16),
   ),
 );
@@ -188,14 +184,48 @@ $menu-centered-back-compat: true;
 $menu-icons-back-compat: true;
 
 
+// 8. Accordion Menu
+// -----------------
+
+$accordionmenu-padding: $global-menu-padding;
+$accordionmenu-nested-margin: $global-menu-nested-margin;
+$accordionmenu-submenu-padding: $accordionmenu-padding;
+$accordionmenu-arrows: true;
+$accordionmenu-arrow-color: $white;
+$accordionmenu-item-background: null;
+$accordionmenu-border: null;
+$accordionmenu-submenu-toggle-background: null;
+$accordion-submenu-toggle-border: $accordionmenu-border;
+$accordionmenu-submenu-toggle-width: 40px;
+$accordionmenu-submenu-toggle-height: $accordionmenu-submenu-toggle-width;
+$accordionmenu-arrow-size: 6px;
+
+// 18. Dropdown Menu
+// -----------------
+
+$dropdownmenu-arrows: true;
+$dropdownmenu-arrow-color: $white;
+$dropdownmenu-arrow-size: 6px;
+$dropdownmenu-arrow-padding: 1.5rem;
+$dropdownmenu-min-width: 200px;
+$dropdownmenu-background: rgba(215, 223, 55, 1);
+$dropdownmenu-submenu-background: $dropdownmenu-background;
+$dropdownmenu-padding: 20px;
+$dropdownmenu-nested-margin: 0;
+$dropdownmenu-submenu-padding: $dropdownmenu-padding;
+$dropdownmenu-border: none;
+$dropdown-menu-item-color-active: $fc-nav-active;
+$dropdown-menu-item-background-active: $col-akzent;
+
+
 //Accordion
 // --------------
 
-$accordion-plusminus: false;
+$accordion-plusminus: true;
 $accordion-item-color: $black;
 $accordion-background: $white;
-$accordion-item-background-hover: $col-akzent;
-$accordion-content-border: 1px solid $col-akzent;
+$accordion-item-background-hover: none;
+$accordion-content-border: 1px solid $col-bg-dark;
 
 
 //Buttons

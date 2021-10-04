@@ -66,7 +66,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(920);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #1779ba,
@@ -82,7 +82,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Hurme Geometric Sans_1 W01 Rg', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: '';
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -239,7 +239,7 @@ $accordion-content-padding: 1rem;
 $accordionmenu-padding: $global-menu-padding;
 $accordionmenu-nested-margin: $global-menu-nested-margin;
 $accordionmenu-submenu-padding: $accordionmenu-padding;
-$accordionmenu-arrows: true;
+$accordionmenu-arrows: false;
 $accordionmenu-arrow-color: $primary-color;
 $accordionmenu-item-background: null;
 $accordionmenu-border: null;

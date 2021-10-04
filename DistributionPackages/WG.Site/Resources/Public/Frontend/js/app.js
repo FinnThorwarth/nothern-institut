@@ -14,6 +14,8 @@ jQuery(document).ready(function () {
 
   $(window).resize(function () {
     reInitJs();
+    // headerHeight();
+    footerHeight();
     //priv_ctrlNav();
   });
 
@@ -22,7 +24,7 @@ jQuery(document).ready(function () {
    */
 
   $(window).scroll(function () {
-    closeOpenElements();
+    //closeOpenElements();
     //headerControle();
     //hideLayer();
   });
@@ -42,11 +44,13 @@ function initJs() {
   resizeFn();             // resize Funktionen on page load
   wg_toggleNav();         // Navigation ein- und ausblenden
   wg_toggleSubItems();    // Subitems ein- und ausblenden
-  wg_toggleLanguageNav(); // Sprach-Navigation ein- und ausblenden
-  wg_toggleSidebar();     // Sidebar ein und ausblenden
+  wg_setStartActive();    // Den Nav Eintrag zur Startseite active setzten
+  //wg_toggleLanguageNav(); // Sprach-Navigation ein- und ausblenden
+  //wg_toggleSidebar();     // Sidebar ein und ausblenden
   wg_moveUp();            // scrolls to top of the page
   wg_shrinkNav();         // Shrinknav
-  wg_toggleForm();        // Katalog Formular ausblenden
+  // headerHeight();
+  footerHeight();
   // wg_showIconInfo();      // Iconset Infos
 }
 
@@ -83,15 +87,51 @@ function resizeFn() {
 
 
 /**
+* Navigationseintrag für die Startseite active setzten
+ */
+function wg_setStartActive() {
+  if (window.location.href === "https://relaunch.zahnarzt-friedrichs.de/" || window.location.href === "https://www.zahnarzt-friedrichs.de/" || window.location.href === "http://127.0.0.1:8081/") {
+    $("a").each(function () {
+      if ($(this).attr("href") === "/") {
+        $(this).parent(".navigation-item").addClass("navigation-item--state-current");
+      }
+    })
+  }
+}
+
+
+/**
+ * Static Header Height
+ */
+function headerHeight() {
+  var height = $(".main-header").outerHeight();
+  if ($("body").hasClass("neos-backend")) {
+    // Do Nothing
+  } else {
+    // console.log(height);
+    //  $(".header-image").css("margin-top", height);
+  }
+}
+
+/*
+* Footer Height
+*/
+function footerHeight() {
+  var fHeight = $(".main-footer").outerHeight();
+  // console.log(fHeight);
+  $(".content-wrapper").css("min-height", "calc(100vh - " + fHeight + "px)");
+}
+
+/**
  * Toggle Referenzen Layer
  */
 
 function wg_toggleNav() {
 
-  $("#nav-trigger").click(function () {
+  $(".menu-trigger").click(function () {
     //var trigger = $(this);
-    $('#navigation').toggle();
-    $("#nav-trigger").toggleClass('open');
+    $('.main-nav').toggle();
+    $(".menu-trigger").toggleClass('nav-open');
   });
 
 }  // end function toggleLayer()
@@ -124,23 +164,25 @@ function wg_toggleSidebar() {
   });
 }
 
+
+/**
+ * Scroll Detection
+ */
 function wg_shrinkNav() {
   $(window).scroll(function () {
     var winTop = $(window).scrollTop();
-    if (winTop >= 30) {
-      $("body").addClass("sticky-shrinknav");
+    if ($("body").hasClass("neos-backend")) {
+      // Do Nothing
     } else {
-      $("body").removeClass("sticky-shrinknav");
+      if (winTop >= 20) {
+        $("body").addClass("sticky-shrinknav");
+      } else {
+        $("body").removeClass("sticky-shrinknav");
+      }
     }
   });
 };
 
-/** Toggle Katalog Formular */
-function wg_toggleForm() {
-  $(".form-trigger").click(function(){
-    $(".form-catalog").slideToggle(500);
-  });
-}
 
 // helper function
 // Navigation scrollbar machen, wenn erforderlich
@@ -195,41 +237,6 @@ function wg_moveToAnker(ankerID) {
 
 
 /**
- * Show Icon-Infos
- */
-
-function wg_showIconInfo() {
-
-  $(".iconset a").mouseenter(function () {
-    var info = $(this).attr('data-info');
-    $('.iconinfo').text(info);
-  }).mouseleave(function () {
-    $('.iconinfo').text('');
-  });
-
-  $(".iconset-svg a").mouseenter(function () {
-    var info = $(this).attr('data-info');
-    $('.iconinfo').text(info);
-  }).mouseleave(function () {
-    $('.iconinfo').text('');
-  });
-
-  /*  
-    $("#iconset span").click( function() {
-      var content = $("#iconinfo").text();
-      var info = $(this).attr('data-info');
-      if(content == info) { 
-        $('#iconinfo').text('');
-      }
-      else {
-        $('#iconinfo').text(info);
-      }
-    })
-  */
-}  // end function showIconInfo()
-
-
-/**
  * Sidebar und Navi schließen
  */
 
@@ -247,8 +254,24 @@ function closeOpenElements() {
 } // end function moveUp()
 
 
+// Maps
+
+$(".confirm.google").on('click', function(){
+  maps_laden();
+})
+
+$(".delete.google").on('click', function(){
+  maps_loeschen();
+})
+
+function maps_laden() {
+  Cookies.set('customMaps', 'yes')
+  location.reload();
+}
+
+
 function maps_loeschen() {
-  Cookies.remove('custom_google_maps');
+  Cookies.remove('customMaps');
   location.reload();
 }
 
@@ -275,34 +298,12 @@ $('.news-slider').owlCarousel({
 });
 */
 
-/*Shopslider*/
-/*
-$('.newsslider').owlCarousel({
-  margin: 70,
-  items: 3,
-  nav: true,
-  dots: false,
-  navText: ['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.05 52.75"><defs><style>.arrow-prev-cls-1{fill:#002640;}</style></defs><title>pfeil-produktslider-prev</title><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><g id="Ebene_1-2-2" data-name="Ebene 1-2"><path class="cls-1" d="M23.85,51.75,1.05,29h0a3.62,3.62,0,0,1,0-5.1l22.8-22.8A3.61,3.61,0,0,1,29,6.15L8.75,26.35,29,46.65a3.41,3.41,0,0,1,1.1,2.5,3.59,3.59,0,0,1-3.6,3.6A3.54,3.54,0,0,1,23.85,51.75Z"/></g></g></g></svg>', '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.05 52.75"><defs><style>.arrow-for-cls-1{fill:#002640;}</style></defs><title>Element 1</title><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><g id="Ebene_1-2-2" data-name="Ebene 1-2"><path class="cls-1" d="M3.6,52.75A3.59,3.59,0,0,1,0,49.15a3.41,3.41,0,0,1,1.1-2.5l20.2-20.3L1.1,6.15a3.61,3.61,0,0,1,5.1-5.1L29,23.85A3.62,3.62,0,0,1,29,29h0L6.2,51.75A3.54,3.54,0,0,1,3.6,52.75Z"/></g></g></g></svg>'],
-  responsive: {
-    0: {
-      items: 1
-    },
-    600: {
-      items: 2
-    },
-    1028: {
-      items: 3
-    }
-  }
-});
-*/
-
 
 /*
 E-Mailadressen Ver- und Entschlüsseln
 */
 
-
+/*
 function EnCrypt_mailaddress(s) {
   var n = 0;
   var r = "";
@@ -335,3 +336,4 @@ function test_encryption(s, enc_s) {
   var dec_s = UnCrypt_mailaddress(enc_s);
   alert('decrypted: ' + dec_s);
 }
+*/

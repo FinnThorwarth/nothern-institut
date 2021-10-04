@@ -42,7 +42,9 @@
           //border: 1px solid orange;
         }
       }
-    } // end .linklist
+    }
+
+    // end .linklist
 
     /**
     * Link mit Pfeil
@@ -67,8 +69,10 @@
       }
     }
 
-    
-  } // end .wg-page-content
+
+  }
+
+  // end .wg-page-content
 
   /**
    * Google-Maps Modul
@@ -85,4 +89,20 @@
       color: $white;
     }
   }
-} // end media screen
+
+
+  /**
+  * Neos Backend
+  */
+
+  .neos-backend {
+    picture.container-image {
+      .style__notInlineEditableOverlay___9Lzv1 {
+        display: none;
+      }
+    }
+  }
+
+}
+
+// end media screen
