@@ -11,7 +11,6 @@
 		//		"custom/mod/mod_gallery",
     //    "custom/mod/mod_header_picture",
 		//    "custom/mod/mod_consent_manager",  
-		//		"custom/mod/mod_sidebar",  
         "custom/typography",
 				"custom/print";
 
@@ -21,6 +20,9 @@
 
 // Footer
 @import "../../../Private/Fusion/Component/Footer/layout_footer";
+
+//Sidebar
+@import "../../../Private/Fusion/Component/Sidebar/layout_sidebar"; 
 
 // Navigation
 @import "../../../Private/Fusion/Component/Header/mod_navigations";

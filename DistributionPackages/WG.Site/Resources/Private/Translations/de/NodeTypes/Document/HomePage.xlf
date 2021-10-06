@@ -27,6 +27,10 @@
         <source>Footer Menu Items</source>
         <target xml:lang="de" state="translated">Fußzeilen Menü-Einträge</target>
       </trans-unit>
+      <trans-unit id="properties.SidebarInfo.ui.inline.editorOptions.placeholder">
+        <source>Sidebar Informations</source>
+        <target xml:lang="de" state="translated">Inhalt Seitenleiste</target>
+      </trans-unit>
       <trans-unit id="properties.headerImage" xml:space="preserve">
         <source>Chapter image</source>
          <target xml:lang="de" state="translated">Bild im Kopf der Seite</target>

@@ -12,6 +12,9 @@
       <trans-unit id="properties.footerItems">
         <source>Footer Menu Items</source>
       </trans-unit>
+      <trans-unit id="properties.SidebarInfo.ui.inline.editorOptions.placeholder">
+        <source>Sidebar Informations</source>
+      </trans-unit>
       <trans-unit id="properties.headerImage" xml:space="preserve">
         <source>Header image</source>
       </trans-unit>

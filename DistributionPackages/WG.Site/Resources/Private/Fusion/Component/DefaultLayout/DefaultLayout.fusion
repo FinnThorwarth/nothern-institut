@@ -8,6 +8,6 @@ prototype(WG.Site:Component.DefaultLayout) < prototype(Neos.Fusion:Component) {
         {props.content}
     </div>
         <WG.Site:Component.Footer />
-    
+        <WG.Site:Component.Sidebar />
     `
 }

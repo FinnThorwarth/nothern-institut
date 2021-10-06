@@ -1,0 +1,25 @@
+prototype(WG.Site:Component.Sidebar) < prototype(Neos.Neos:ContentComponent) {
+    @context.node = ${site}
+
+    SidebarInfo = Neos.Neos:Editable {
+        node = ${site}
+        property = 'SidebarInfo'
+    }
+    renderer = afx`
+        <aside class="sidebar">
+            <div class="neos-contentcollection">
+                  {props.SidebarInfo}
+            </div>
+        </aside>
+    `
+
+    @cache {
+        mode = 'cached'
+        entryIdentifier {
+            site = ${site}
+        }
+        entryTags {
+            1 = ${Neos.Caching.nodeTag(site)}
+        }
+    }
+}
