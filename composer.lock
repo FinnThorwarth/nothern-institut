@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8188b323e3d573548c172711ca2affdf",
+    "content-hash": "c2fb463089207da5c734370c023755dd",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -11835,6 +11835,64 @@
             "time": "2021-05-26T17:43:10+00:00"
         },
         {
+            "name": "techdivision/ckstyles",
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/techdivision/ckstyles.git",
+                "reference": "4a59c1cfc759c67980e5573f97e61ba2fd8716f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/techdivision/ckstyles/zipball/4a59c1cfc759c67980e5573f97e61ba2fd8716f9",
+                "reference": "4a59c1cfc759c67980e5573f97e61ba2fd8716f9",
+                "shasum": ""
+            },
+            "require": {
+                "neos/neos-ui": ">=3.8 <8.0"
+            },
+            "type": "neos-plugin",
+            "extra": {
+                "neos": {
+                    "package-key": "TechDivision.CkStyles",
+                    "loading-order": {
+                        "after": [
+                            "neos/neos"
+                        ]
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Neos developer team",
+                    "email": "neos@techdivision.com",
+                    "homepage": "https://www.techdivision.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Neos package which enables you adding your custom style classes for the CkEditor with a simple Yaml configuration",
+            "homepage": "https://www.techdivision.com",
+            "keywords": [
+                "CKEditor",
+                "Neos",
+                "classes",
+                "editing",
+                "flow",
+                "inline",
+                "styling",
+                "wysiwyg"
+            ],
+            "support": {
+                "issues": "https://github.com/techdivision/ckstyles/issues",
+                "source": "https://github.com/techdivision/ckstyles/tree/v1.2.1"
+            },
+            "time": "2021-09-08T14:27:06+00:00"
+        },
+        {
             "name": "tedivm/jshrink",
             "version": "v1.4.0",
             "source": {
@@ -12435,7 +12493,7 @@
             "dist": {
                 "type": "path",
                 "url": "./DistributionPackages/WG.Site",
-                "reference": "f954872cfdb3bce3c16442034e1f8bdc00e3f51c"
+                "reference": "1fb2f57236fb592b074fc9e26e36ef35604845d2"
             },
             "require": {
                 "carbon/compression": "^3.0",
@@ -12542,7 +12600,12 @@
                     "Neos.Flow-20201207104500"
                 ]
             },
-            "description": "A Neos website",
+            "autoload": {
+                "psr-4": {
+                    "WG\\Grid\\": "Classes"
+                }
+            },
+            "description": "WG Master",
             "transport-options": {
                 "relative": true
             }

@@ -1,0 +1,38 @@
+Neos:
+  Neos:
+    Ui:
+      resources:
+        javascript:
+          'TechDivision.CkStyles:Styles':
+            resource: resource://TechDivision.CkStyles/Public/JavaScript/CkStyles/Plugin.js
+      frontendConfiguration:
+        'TechDivision.CkStyles:InlineStyles': '${Configuration.setting(''TechDivision.CkStyles.InlineStyles'')}'
+        'TechDivision.CkStyles:BlockStyles': '${Configuration.setting(''TechDivision.CkStyles.BlockStyles'')}'
+
+
+# Achtung!!! Die Definierten Klassen müssen in der CSS Datei definiert sein!!!
+TechDivision:
+ CkStyles:
+   InlineStyles:
+     presets:
+       'fontColor':
+         label: 'Schriftfarbe'
+         options:
+           'blau':
+             label: 'Blau'
+             cssClass: 'col-blue'
+           'blau-hell':
+             label: 'Helles Blau'
+             cssClass: 'col-blue-light'
+           'cyan':
+             label: 'Cyan'
+             cssClass: 'col-cyan'
+           'gruen':
+             label: 'Grün'
+             cssClass: 'col-green'
+           '':
+             label: 'keine Farbe'
+             cssClass: null
+
+  # BlockStyles:
+  #   presets:

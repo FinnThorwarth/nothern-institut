@@ -3680,7 +3680,11 @@ address { font-style: normal; }
   h3, .h3 { font-family: "rooney-regular", sans-serif; color: inherit; }
   .headline { margin-top: 1rem; }
   .font-large { font-size: 1.19318rem; }
-  ul.menu li a { font-family: "rooney-light", sans-serif; font-size: 1.19318rem; } }
+  ul.menu li a { font-family: "rooney-light", sans-serif; font-size: 1.19318rem; }
+  .col-blue { color: #006d89; }
+  .col-blue-light { color: #0099a9; }
+  .col-cyan { color: #37b5a7; }
+  .col-green { color: #2da450; } }
 
 @media print { * { margin: 0; padding: 0; }
   body { font-size: 10pt; padding: 0 5px; }

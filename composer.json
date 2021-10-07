@@ -5,11 +5,12 @@
         "vendor-dir": "Packages/Libraries",
         "bin-dir": "bin",
         "platform": {
-            "php": "7.3"
+            "php": "7.4"
         }
     },
     "require": {
-        "wg/site": "@dev"
+        "wg/site": "@dev",
+        "techdivision/ckstyles": "^1.2"
     },
     "repositories": {
         "distribution": {
