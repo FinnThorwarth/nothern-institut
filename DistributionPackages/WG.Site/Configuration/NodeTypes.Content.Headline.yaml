@@ -1,6 +1,7 @@
 'WG.Site:Content.Headline':
   superTypes:
     'Neos.Neos:Content': true
+    'Neos.NodeTypes.BaseMixins:HeadlineMixin': true #Wenn man CSS Styles wählen können soll.
   ui:
     label: Überschrift
     icon: icon-header
@@ -10,4 +11,36 @@
     title:
       options:
         preset: 'text.title'
+
+    'alignVertical':
+      type: string
+      defaultValue: ''
+      ui:
+        label: 'Vertikal zentrieren'
+        reloadIfChanged: true
+        inspector:
+          group: 'structure'
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            values:
+              '':
+                label: '---'
+              center-vertical:
+                label: 'Vertikal zentrieren'
+
+    'alignHorizontal':
+      type: string
+      defaultValue: ''
+      ui:
+        label: 'Horizontal zentrieren'
+        reloadIfChanged: true
+        inspector:
+          group: 'structure'
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            values:
+              '':
+                label: '---'
+              align-center: 
+                label: 'Horizontal zentrieren'
 

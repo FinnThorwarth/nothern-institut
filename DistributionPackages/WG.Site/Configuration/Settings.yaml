@@ -5,7 +5,7 @@ Neos:
         'Neos.Neos':
           variables:
             # We prefer URLs without the ".html" suffix
-            defaultUriSuffix: ''
+            defaultUriSuffix: '' 
     resource:
       targets:
         localWebDirectoryPersistentResourcesTarget:

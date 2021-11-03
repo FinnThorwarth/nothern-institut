@@ -10,7 +10,8 @@
     },
     "require": {
         "wg/site": "@dev",
-        "techdivision/ckstyles": "^1.2"
+        "techdivision/ckstyles": "^1.2",
+        "unikka/neos-slick": "^4.0"
     },
     "repositories": {
         "distribution": {

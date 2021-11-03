@@ -1,0 +1,90 @@
+'WG.Site:Content.BackgroundColor':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.Neos:ContentCollection': true
+    'WG.Site:Constraint.Content.Restricted': false
+  ui:
+    label: Hintergrundfarbe
+    icon: icon-fill-drip
+    position: 100
+    group: structure
+    inlineEditable: true
+    inspector:
+      groups:
+        structure:
+          label: 'Optionen'
+          position: 10
+    help:
+      message: "Dieses Element wird für die Ausgabe von Hintergrundfarben verwendet."
+    creationDialog:
+      elements:
+        color:
+          type: string
+          ui:
+            label: Farbe
+            editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+            editorOptions:
+              values:
+                '':
+                  label: Farbe wählen
+                bg-orange:
+                  label: Orange
+                bg-lightgreen:
+                  label: hell Grün
+                bg-yellow:
+                  label: Gelb
+  properties:
+    'color':
+      type: string
+      defaultValue: ''
+      ui:
+        label: 'Farbe'
+        reloadIfChanged: true
+        inspector:
+          group: structure
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            values:
+              '':
+                label: Farbe wählen
+              bg-orange:
+                label: Orange
+              bg-lightgreen:
+                label: hell Grün
+              bg-yellow:
+                label: Gelb
+                
+    'padding':
+      type: string
+      defaultValue: ''
+      ui:
+        label: 'Padding Oben & Unten'
+        reloadIfChanged: true
+        inspector:
+          group: structure
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            values:
+              '':
+                label: Padding wählen
+              padding-vertical-1:
+                label: 1 rem
+              padding-vertical-2:
+                label: 2 rem
+              padding-vertical-3:
+                label: 3 rem
+              padding-vertical-4:
+                label: 4 rem
+              padding-vertical-7:
+                label: 7 rem
+                
+    additionalClass:
+      type: string
+      ui:
+        label: 'Zusätzliche CSS Klassen'
+        reloadIfChanged: true
+        inspector:
+          group: structure
+  constraints:
+    nodeTypes:
+      'WG.Site:Content.BackgroundColor': false

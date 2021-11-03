@@ -1,0 +1,26 @@
+'Unikka.Slick:Content.Slide':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Unikka.Slick:Mixin.BackgroundImage': true
+    'Unikka.Slick:Mixin.ContentBackground': true
+    'Unikka.Slick:Mixin.LazyLoading': true
+    'Unikka.Slick:Mixin.AdditionalClass': true
+    'Neos.Neos:ContentCollection': true
+  constraints:
+    nodeTypes:
+      'Unikka.Slick:Content.Slider': false
+      'Unikka.Slick:Content.Slide': false
+
+  ui:
+    label: 'Slide'
+    icon: 'image'
+    inspector:
+      groups:
+        'slide':
+          label: 'i18n'
+          icon: 'icon-picture'
+          tab: 'default'
+        'slick-appearance':
+          label: 'i18n'
+          icon: 'icon-picture'
+          tab: 'default'

@@ -1,9 +1,9 @@
-'WG.Site:Document.Page':
+'WG.Site:Document.Redirect':
   superTypes:
-    'WG.Site:Document.AbstractPage': true
+    'Neos.Neos:Shortcut': true
   ui:
     label: i18n
-    icon: icon-file-o
+    icon: icon-share
     position: 100
   properties:
     'navImage':

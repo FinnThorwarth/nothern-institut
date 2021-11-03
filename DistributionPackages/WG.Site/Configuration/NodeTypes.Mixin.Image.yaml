@@ -18,7 +18,7 @@
     inspector:
       groups:
         image:
-          label: 'Image'
+          label: 'Bild'
           position: 5
           icon: 'icon-image'
   properties:

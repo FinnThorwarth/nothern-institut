@@ -1,0 +1,76 @@
+Neos:
+  Form:
+    presets:
+      wgForm:
+        title: 'Standard Formular'
+        parentPreset: 'default'
+        formElementTypes:
+          'Neos.Form:SingleLineText':
+            renderingOptions:
+              templatePathPattern: 'resource://WG.Site/Private/Form/SingleLineText.html'
+          'Neos.Form:MultipleSelectCheckboxes':
+            renderingOptions:
+              templatePathPattern: 'resource://WG.Site/Private/Form/MultipleSelectCheckboxes.html'
+          'Neos.Form:StaticText':
+            renderingOptions:
+              templatePathPattern: 'resource://WG.Site/Private/Form/StaticText.html'
+          'Neos.Form:SingleSelectDropdown':
+            renderingOptions:
+              templatePathPattern: 'resource://WG.Site/Private/Form/SingleSelectDropdown.html'
+          'Neos.Form:SingleSelectRadiobuttons':
+            renderingOptions:
+              templatePathPattern: 'resource://WG.Site/Private/Form/SingleSelectRadiobuttons.html'
+          'Neos.Form:MultiLineText':
+            renderingOptions:
+              templatePathPattern: 'resource://WG.Site/Private/Form/MultiLineText.html'
+          'Neos.Form:Page':
+            renderingOptions:
+              templatePathPattern: 'resource://WG.Site/Private/Form/Page.html'
+          'Neos.Form:Section':
+            renderingOptions:
+              templatePathPattern: 'resource://WG.Site/Private/Form/Section.html'
+  Fusion:
+    defaultContext:
+      Neos.Form.Builder.Node: 'Neos\Form\Builder\Fusion\Helper\NodeHelper'
+  Neos:
+    fusion:
+      autoInclude:
+        'Neos.Form.Builder': true
+    userInterface:
+      translation:
+        autoInclude:
+          'Neos.Form.Builder':
+            - 'NodeTypes/*'
+# Gruppen für die Feldauswahl
+    nodeTypes:
+      groups:
+        'form.elements':
+          label: 'Formular Elemente für Text'
+          collapsed: false
+        'form.select':
+          label: 'Formular Elemente für eine Auswahl'
+          collapsed: false
+        'form.custom':
+          label: 'Spezielle Formular Elemente'
+          collapsed: false
+        'form.container':
+          label: 'Formular Container'
+          collapsed: false
+        'form.pages':
+          label: 'Formular Seiten'
+          collapsed: false
+        'form.finisher':
+          label: 'Form Finisher'
+          collapsed: false
+        'form.validator':
+          label: 'Form Validators'
+          collapsed: false
+        'form.selectOptions':
+          label: 'Select options'
+          collapsed: false
+
+    Ui:
+      resources:
+        javascript:
+          "Neos.Form.Builder:PlaceholderInsert":
+            resource: '${"resource://Neos.Form.Builder/Public/JavaScript/PlaceholderInsert/Plugin.js"}'

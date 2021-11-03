@@ -1,5 +1,5 @@
 # Plugin zum auswählen von CSS Styles
-'Neos.NodeTypes.BaseMixins:TextMixin':
+'Neos.NodeTypes.BaseMixins:HeadlineMixin':
   abstract: true
   properties:
     text:
@@ -8,10 +8,7 @@
           editorOptions:
             inlineStyling:
               fontColor: true
-              fontSize: true
-              fontStyle: true
-              linkStyle: true
             blockStyling:
               indent: true
               textAlign: true
-              listStyle: true
+    

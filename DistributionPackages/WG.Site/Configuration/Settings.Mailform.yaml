@@ -1,0 +1,11 @@
+Neos:
+  SwiftMailer:
+    transport:
+      type: 'Swift_SmtpTransport'
+      options:
+        host: 'mail.agenturserver.de'
+        port: '465'
+        encryption: 'ssl'
+        username: 'moin@wilde-bluete.de'
+        password: ',k!19Juuusvhqg'
+        localDomain: 'wilde-bluete.de'

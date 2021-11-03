@@ -13,10 +13,12 @@ Carbon:
         # Asset files who get's loaded in live and backend view
         General:
           Head:
+            - ../libs/owl-carousel/owl.carousel.min.css
             - app.css
           Body:
             - jquery.min.js
             - js.cookie.js
+            - ../../libs/owl-carousel/owl.carousel.min.js
             - foundation.min.js
             - app-min.js
 

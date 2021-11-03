@@ -6,8 +6,10 @@ Neos:
           'text':
             'title':
               type: string
+              defaultValue: ''
               ui:
                 inlineEditable: true
+                codeBlock: true
                 inline:
                   editorOptions:
                     placeholder: 'Überschrift eintragen...'
@@ -27,6 +29,16 @@ Neos:
                 inline:
                   editorOptions:
                     placeholder: 'Text eintragen...'
+                    autoparagraph: false
+                    hyphens: true
+            'plainHeadline':
+              type: string
+              defaultValue: ''
+              ui:
+                inlineEditable: true
+                inline:
+                  editorOptions:
+                    placeholder: 'Überschrift eintragen...'
                     autoparagraph: false
                     hyphens: true
             'free':

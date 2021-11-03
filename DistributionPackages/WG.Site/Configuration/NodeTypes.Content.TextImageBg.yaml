@@ -1,9 +1,10 @@
-'WG.Site:Content.Text':
+'WG.Site:Content.TextImageBg':
   superTypes:
     'Neos.Neos:Content': true
     'Neos.NodeTypes.BaseMixins:TextMixin': true #Wenn man CSS Styles wählen können soll.
+    'WG.Site:Mixin.Image': true
   ui:
-    label: Text
+    label: Text mit Hintergrundbild
     icon: icon-file-text
     position: 200
     inlineEditable: true
@@ -11,3 +12,10 @@
     text:
       options:
         preset: 'text.free'
+    headline:
+      options:
+        preset: 'text.plainHeadline'
+    headlineSub:
+      options:
+        preset: 'text.plainHeadline'
+    

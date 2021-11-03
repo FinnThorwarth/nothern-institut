@@ -2,7 +2,7 @@
   superTypes:
     'Neos.Neos:Content': true
     'Neos.Neos:ContentCollection': true
-    'WG.Site:Constraint.Content.Restricted': true
+    'WG.Site:Constraint.Content.Restricted': false
   ui:
     label: Grid-Container
     icon: icon-columns

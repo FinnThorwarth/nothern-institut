@@ -407,6 +407,39 @@
                 label: small-offset-10
               small-offset-11:
                 label: small-offset-11
+                
+    'alignVertical':
+      type: string
+      defaultValue: ''
+      ui:
+        label: 'Vertikal zentrieren'
+        reloadIfChanged: true
+        inspector:
+          group: 'structure'
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            values:
+              '':
+                label: '---'
+              center-vertical:
+                label: 'Vertikal zentrieren'
+
+    'alignHorizontal':
+      type: string
+      defaultValue: ''
+      ui:
+        label: 'Horizontal zentrieren'
+        reloadIfChanged: true
+        inspector:
+          group: 'structure'
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            values:
+              '':
+                label: '---'
+              align-center: 
+                label: 'Horizontal zentrieren'
+
     additionalClass:
       type: string
       ui:
