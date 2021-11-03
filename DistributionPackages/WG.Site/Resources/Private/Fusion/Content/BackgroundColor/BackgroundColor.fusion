@@ -1,0 +1,15 @@
+prototype(WG.Site:Content.BackgroundColor) < prototype(Neos.Neos:ContentComponent) {
+  content = Neos.Neos:ContentCollection
+
+  color = ${q(node).property('color')}
+
+  padding = ${q(node).property('padding')}
+
+ renderer = afx`
+  <div class={props.color}>
+    <div class={props.padding}>
+      {props.content}
+    </div>
+  </div>
+ `
+}

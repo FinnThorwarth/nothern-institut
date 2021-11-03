@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0a4bb5560fb78b33e87993440b929c2",
+    "content-hash": "7119ff971786c1d5d448708ba85ed142",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -4740,6 +4740,52 @@
                 }
             ],
             "time": "2021-08-05T11:19:05+00:00"
+        },
+        {
+            "name": "neos/form-builder",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/neos/form-builder.git",
+                "reference": "eb8f4b8e743b28a51ddc237e8d9799159da68405"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neos/form-builder/zipball/eb8f4b8e743b28a51ddc237e8d9799159da68405",
+                "reference": "eb8f4b8e743b28a51ddc237e8d9799159da68405",
+                "shasum": ""
+            },
+            "require": {
+                "neos/form": "^5.0",
+                "neos/neos": "^5.0 || ^7.0"
+            },
+            "type": "neos-package",
+            "extra": {
+                "neos": {
+                    "package-key": "Neos.Form.Builder"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Neos\\Form\\Builder\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "description": "Flow Form Framework integration into Neos CMS",
+            "support": {
+                "issues": "https://github.com/neos/form-builder/issues",
+                "source": "https://github.com/neos/form-builder/tree/2.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://neosfunding.sandstorm.de/en",
+                    "type": "custom"
+                }
+            ],
+            "time": "2020-12-07T16:05:17+00:00"
         },
         {
             "name": "neos/fusion",

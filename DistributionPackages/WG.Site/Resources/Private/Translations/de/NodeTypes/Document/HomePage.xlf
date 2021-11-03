@@ -35,6 +35,10 @@
         <source>Chapter image</source>
          <target xml:lang="de" state="translated">Bild im Kopf der Seite</target>
       </trans-unit>
+      <trans-unit id="properties.navImage" xml:space="preserve">
+        <source>Nav image</source>
+        <target xml:lang="de" state="translated">Icon für die Navigation</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

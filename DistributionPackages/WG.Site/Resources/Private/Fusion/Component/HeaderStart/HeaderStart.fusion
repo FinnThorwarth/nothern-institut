@@ -1,0 +1,87 @@
+prototype(WG.Site:Component.HeaderStart) < prototype(Neos.Fusion:Component) {
+    homeLink = Neos.Neos:NodeUri {
+        node = ${site}
+    }
+    menuItems = Neos.Neos:MenuItems {
+        startingPoint = ${site}
+        maximumLevels = 3
+    }
+
+    // Logo Referenzieren
+    includeLogo = Neos.Fusion:Tag {
+      tagName = 'img'
+      attributes {
+        src = Neos.Fusion:ResourceUri {
+          path = 'resource://WG.Site/Public/Frontend/images/logo.png'
+        }
+      }
+    }
+
+  // Header Img 
+	lazy = ${q(node).prev().is()}
+
+    headerImageSrc = Neos.Fusion:Case {
+        image {
+            condition = ${q(node).property('headerImage') ? true : false}
+            renderer = Sitegeist.Kaleidoscope:AssetImageSource {
+                asset = ${q(node).property('headerImage')}
+            }
+        }
+        dummyImage {
+            condition = ${site.context.inBackend}
+            renderer = Sitegeist.Kaleidoscope:DummyImageSource
+        }
+    }
+   imageAlt = ${String.isBlank( q(node).property('alternativeText') ) ? this.image.caption : q(node).property('alternativeText')}
+
+  // Header Img ENDE
+
+    ##
+    # If you want to use a default rendering for a menu, you can just use:
+    ##
+    # <Neos.Neos:Menu
+    #     startingPoint={site}
+    #     attributes.class="navigation"
+    #     normal.attributes.class="navigation-item"
+    #     active.attributes.class="navigation-item navigation-item--state-active"
+    #     current.attributes.class="navigation-item navigation-item--state-current"
+    #     />
+    ##
+
+    renderer = afx`
+        <header class="main-header">
+          <div class="grid-container position-relative">
+            <div class="menu-trigger open hide-for-mobileNav">
+              <svg version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                <g>
+                  <rect class="color-menu" x="4" y="5" width="16" height="2"/>
+                  <rect class="color-menu" x="4" y="11" width="16" height="2"/>
+                  <rect class="color-menu" x="4" y="17" width="16" height="2"/>
+                </g>
+              </svg>
+            </div>
+            <div class="menu-trigger close hide-for-mobileNav">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                <polygon class="color-menu" points="18.707,6.707 17.293,5.293 12,10.586 6.707,5.293 5.293,6.707 10.586,12 5.293,17.293 6.707,18.707 12,13.414 17.293,18.707 18.707,17.293 13.414,12 "/>
+              </svg>
+            </div>
+              <WG.Site:Component.Header.MenuItemsRenderer items={props.menuItems} />
+              <a class="logo page-logo position-absolute" href={props.homeLink}>
+                {props.includeLogo}
+              </a>
+            </div>
+        </header>
+    `
+
+	@cache {
+		mode = 'cached'
+		entryIdentifier {
+			documentNode = ${documentNode}
+		}
+		entryTags {
+			1 = ${Neos.Caching.nodeTypeTag('Neos.Neos:Document', documentNode)}
+		}
+	}
+}

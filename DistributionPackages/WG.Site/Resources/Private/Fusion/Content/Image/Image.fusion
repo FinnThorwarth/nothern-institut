@@ -33,7 +33,7 @@ prototype(WG.Site:Content.Image) < prototype(Neos.Neos:ContentComponent) {
             srcset="320w, 400w, 480w, 600w, 768w, 800w, 960w, 1024px, 1280w, 1440w, 1680w, 1920w"
             sizes={props.sizes}
             alt={props.alternativeText}
-            formats="webp, jpeg"
+            formats="webp, png"
             />
 	`
 

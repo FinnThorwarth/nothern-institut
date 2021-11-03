@@ -1,127 +1,204 @@
-
-// Header Height for fixed Element
-.header-height {
-  height: 600px;
-}
-
-//Header Container
-.main-header {
-  padding: 20px 0px;
-  position: sticky;
-  top: 0px;
-  z-index: 100;
-
-  @include breakpoint(mobileNav) {
-    padding: 40px 0px;
-  }
-}
-
-// Logo
-.page-logo {
-  right: 10px;
-  transform: translateY(-50%);
-  z-index: 99;
-
-  @include breakpoint(mobileNav) {
-    transform: translateY(-30%);
-    right: 0;
-  }
-
-  img {
-    width: 120px;
-    height: auto;
-
-    margin-bottom: 1px;
-
-    @include breakpoint(mobileNav) {
-      width: 220px;
-      height: auto;
+@media screen {
+    .wg-page-header {
+        transition: all 0.3s;
+        position: relative;
+        background-color: $white;
+        border-top: $header-border solid $col-border;
+        // box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.75);
+        z-index: 30;
+        transition-duration: 0.3s;
+        // position: sticky;
+        // top: 0;
+        @include breakpoint(large) {
+        }
+        margin-bottom: 150px;
     }
-  }
-}
-
-// Menü
-.menu-trigger {
-  &:hover {
-    cursor: pointer;
-  }
-
-  width: 40px;
-
-  &.close {
-    display: none;
-  }
-
-  &.nav-open {
-    &.close {
-      display: block;
+    .wrapper-header {
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        grid-template-columns: auto auto 100px;
+        @include breakpoint(large) {
+            margin-top: 30px;
+        }
+    }
+    // end .wg-page-header
+    /**
+  * Header hintergrund und grafiken
+  **/
+    .header-bg {
+        height: 345px;
+        background: linear-gradient(#c6f2ff 50%, #afc013 50%);
+        position: relative;
+        margin-top: 77px;
+    }
+    .img-header {
+        bottom: -10px;
+        position: absolute;
+        max-width: 95%;
+        @media (min-width: 800px) {
+            bottom: -20px;
+            // max-width: 100%;
+            @media (min-width: 1024px) {
+                bottom: -19px;
+                max-width: 850px;
+                // max-width: 100%;
+            }
+        }
+    }
+    .border-bottom {
+        margin-top: 84px;
+        border-bottom: 8px solid $green;
+    }
+    .frosch {
+        left: 10%;
+        bottom: -10px;
+        z-index: 100;
+    }
+    .blatt {
+        display: none;
+        right: 6%;
+        bottom: 0px;
+        z-index: 99;
+        @media (min-width: 1490px) {
+            display: block;
+        }
+    }
+    .pilz {
+        display: none;
+        left: 6%;
+        bottom: -44px;
+        z-index: 99;
+        @media (min-width: 1490px) {
+            display: block;
+        }
+    }
+    .blatt2 {
+        position: absolute;
+        bottom: -14px;
+        right: 13%;
+        display: none;
+        @media (min-width: 1890px) {
+            display: block;
+        }
     }
 
-    &.open {
-      display: none;
+    /**
+  * Logo
+  **/
+    .logo {
+        display: none;
+        @media (min-width: 1024px) {
+            display: block;
+            position: absolute;
+            margin: 10px;
+            bottom: -9px;
+            // text-align: right;
+        }
+        .logo-img {
+            min-height: 412px;
+            min-width: auto;
+        }
     }
-  }
 
+    /** 
+  * Linie
+  **/
+    .border-green {
+        border-top: 8px solid #005f39;
+    }
 
+    /**
+  * Button Header
+  **/
+    .button-rechts-link {
+        position: fixed;
+        right: 0px;
+        z-index: 100;
+        transform: translateY(8px);
 
-  .color-menu {
-    fill: $col-bg-nav;
-  }
+        &.default {
+            position: fixed;
+            right: 0px;
+            z-index: 100;
+            transform: inherit;
+            top: 202px;
+        }
+    }
+    .button-rechts {
+        cursor: pointer;
+        height: 345px;
+        width: auto;
+
+        &:hover {
+            .button-rechts-st1 {
+                fill: $light-green;
+            }
+        }
+    }
+
+    /**
+  * Grafiken
+  **/
+
+    .menu-image {
+        max-height: 40px;
+        width: auto;
+        max-width: 50px;
+        margin-left: 5px;
+    }
+
+    /**
+ * Navigation Trigger
+ */
+    button.mainnav-trigger,
+    button.mglnav-trigger {
+        cursor: pointer;
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        width: 41px;
+        height: 41px;
+        margin: 0;
+        border: none;
+        transition-duration: 0.3s;
+        transition-property: top;
+        transform: translateY(-50%);
+        @include breakpoint(mobileNav) {
+            display: none;
+        }
+    }
+    button.mglnav-trigger {
+        .closed {
+            display: block;
+        }
+        .open {
+            display: none;
+        }
+        .mgl-nav-open & {
+            .closed {
+                display: none;
+            }
+            .open {
+                display: block;
+            }
+        }
+    }
+    button.mainnav-trigger {
+        background: transparent url("../images/icon_menu.svg") no-repeat center center;
+        .nav-open & {
+            background: transparent url("../images/icon_menu_x.svg") no-repeat center center;
+        }
+    }
+    // end #nav-trigger
 }
 
-// HeaderIMG
-.header-image {
-  transition: all 0.3s;
-  width: 100%;
-  height: auto;
-  max-height: 600px;
-  border: solid 20px white;
-  border-radius: 30px;
-  align-self: flex-start;
+// end media screen
+//Anpassungen damit die absolut positionierten Elemente im Header sich an das Grid halten
 
-  .sticky-shrinknav:not(.neos-backend) & {
-    //  transition: all 0.3s;
-    //  max-height: 0px;
-    // border: none;
-  }
-
-  img {
-    width: 100%;
-  }
+/*
+.position-header {
+position: relative;
+height: $header-height -$header-border;
 }
-
-// Background Img
-.bg-img {
-  background: url("../images/ellipsen.png") no-repeat;
-  background-position: top center;
-}
-
-// Phone
-.phone {
-  transition: all 0.3s;
-  padding: 15px 20px 12px 20px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background: rgb(215, 223, 55);
-  background: linear-gradient(90deg, rgba(215, 223, 55, 1) 18%, rgba(46, 164, 80, 1) 100%);
-  color: white;
-  font-size: rem-calc(21px);
-  position: absolute;
-  left: 0px;
-  bottom: 20px;
-  max-height: 80px;
-  opacity: 1;
-
-  .sticky-shrinknav & {
-    opacity: 0;
-    max-height: 0px;
-  }
-
-  @include breakpoint(mobileNav) {
-    bottom: 25%;
-  }
-
-  a {
-    color: white;
-  }
-}
+*/

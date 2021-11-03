@@ -5,7 +5,8 @@ $fc-accordion-h4-hover: $col-bg;
 $col-accordion-border-after: $body-font-color;
 
 .accordion-item {
-  a.accordion-title,div.accordion-title {
+  a.accordion-title,
+  div.accordion-title {
     border-right: none;
     border-left: none;
     font-family: $webfont-semibold;
@@ -15,10 +16,16 @@ $col-accordion-border-after: $body-font-color;
   &.is-active,
   &:hover,
   &:visited {
-    a.accordion-title {}
+    a.accordion-title {
+    }
   }
 }
 
 .accordion-content {
-  border: none;
+  p {
+    border: none;
+    color: $green;
+    font-size: 20px;
+    font-family: $webfont-medium;
+  }
 }

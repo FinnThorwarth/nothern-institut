@@ -4,8 +4,8 @@
   <file original="" source-language="en" datatype="plaintext" target-language="de">
     <body>
       <trans-unit id="ui.label">
-        <source>Standard page</source>
-        <target xml:lang="de" state="translated">Standardseite</target>
+        <source>Redirect page</source>
+        <target xml:lang="de" state="translated">Weiterleitung</target>
       </trans-unit>
       <trans-unit id="properties.headerImage" xml:space="preserve">
         <source>Chapter image</source>

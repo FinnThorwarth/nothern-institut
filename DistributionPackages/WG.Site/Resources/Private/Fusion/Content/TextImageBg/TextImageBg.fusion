@@ -1,0 +1,39 @@
+prototype(WG.Site:Content.TextImageBg) < prototype(Neos.Neos:ContentComponent) {
+    text = Neos.Neos:Editable {
+        property = 'text'
+    }
+    headline1 = Neos.Neos:Editable {
+        property = 'headline'
+    }
+    
+    headline2 = Neos.Neos:Editable {
+        property = 'headlineSub'
+    }
+
+    image = Neos.Fusion:Case {
+        image {
+            condition = ${q(node).property('image') ? true : false}
+            renderer = Sitegeist.Kaleidoscope:AssetImageSource {
+                asset = ${q(node).property('image')}
+            }
+        }
+        dummyImage {
+            condition = ${site.context.inBackend}
+            renderer = Sitegeist.Kaleidoscope:DummyImageSource
+        }
+    }
+
+    renderer = afx`
+        <div class="text img-background" style={'background-image:url(\'' + props.image + '\''}>
+            <div class="grid-container align-center padding-vertical-7">
+                <div class="grid-x grid-margin-x grid-padding-x">
+                    <div class="cell">
+                        <h1 class="padding-vertical-1">{props.headline1}</h1>
+                        <h2>{props.headline2}</h2>
+                        {props.text}
+                    </div>
+                </div>
+            </div>
+        </div>
+    `
+}

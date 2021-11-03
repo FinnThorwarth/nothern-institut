@@ -11,8 +11,8 @@ prototype(WG.Site:Row) < prototype(Neos.Fusion:Tag) {
 
 prototype(WG.Site:Column) < prototype(Neos.Fusion:Tag) {
 	iterator = ${iterator}
-	attributes.class = ${'cell ' + q(node).property('large') + ' ' + q(node).property('medium') + ' ' + q(node).property('small') + ' ' + q(node).property('largeOffset') + ' ' + q(node).property('mediumOffset') + ' ' + q(node).property('smallOffset') + ' ' + q(node).property('additionalClass')}
-	content = Neos.Neos:ContentCollectionRenderer
+	attributes.class = ${'cell ' + q(node).property('large') + ' ' + q(node).property('medium') + ' ' + q(node).property('small') + ' ' + q(node).property('largeOffset') + ' ' + q(node).property('mediumOffset') + ' ' + q(node).property('smallOffset') + ' ' + q(node).property('additionalClass')  + ' ' +  q(node).property('alignHorizontal')  + ' ' +  q(node).property('alignVertical')}
+    content = Neos.Neos:ContentCollectionRenderer
 	# Add contentElementWrapping so it would be possible to edit column's properties
 	@process.contentElementWrapping = Neos.Neos:ContentElementWrapping
 }

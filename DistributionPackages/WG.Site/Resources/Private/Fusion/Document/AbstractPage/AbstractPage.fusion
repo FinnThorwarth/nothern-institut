@@ -18,8 +18,5 @@ prototype(WG.Site:Document.AbstractPage) < prototype(Neos.Neos:Page) {
             `
         }
     }
-    body = WG.Site:Component.DefaultLayout {
-        content = ''
-        @process.normalize = CodeQ.UnicodeNormalizer:Normalizer
-    }
+
 }

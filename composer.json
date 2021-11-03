@@ -11,7 +11,8 @@
     "require": {
         "wg/site": "@dev",
         "techdivision/ckstyles": "^1.2",
-        "unikka/neos-slick": "^4.0"
+        "unikka/neos-slick": "^4.0",
+        "neos/form-builder": "^2.2"
     },
     "repositories": {
         "distribution": {

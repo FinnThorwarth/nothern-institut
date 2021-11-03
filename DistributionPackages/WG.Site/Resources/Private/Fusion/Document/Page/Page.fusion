@@ -3,9 +3,14 @@ prototype(WG.Site:Document.Page) < prototype(WG.Site:Document.AbstractPage) {
       head {
         titleTag = Neos.Fusion:Tag {
             tagName = 'title'
-            content = ${q(node).property('title') + ' | Diana Friedrichs Zahnarztpraxis'}
+            content = ${q(node).property('title') + ' | WG Master'}
         }
       }
+
+    body = WG.Site:Component.DefaultLayout {
+        content = ''
+        @process.normalize = CodeQ.UnicodeNormalizer:Normalizer
+    }
 
     body.content = Neos.Fusion:Component {
 
@@ -14,7 +19,7 @@ prototype(WG.Site:Document.Page) < prototype(WG.Site:Document.AbstractPage) {
         }
 
         renderer = afx`
-            <main class="main grid-container">
+            <main class="main fontface wg-page-main">
                 {props.main}
             </main>
         `

@@ -6,9 +6,14 @@ prototype(WG.Site:Document.HomePage) < prototype(WG.Site:Document.AbstractPage) 
       head {
         titleTag = Neos.Fusion:Tag {
             tagName = 'title'
-            content = ${q(node).property('title') + ' | WG Neos Master'}
+            content = ${q(node).property('title') + ' | WG Master'}
         }
       }
+
+    body = WG.Site:Component.StartLayout {
+        content = ''
+        @process.normalize = CodeQ.UnicodeNormalizer:Normalizer
+    }
 
     body.content = Neos.Fusion:Component {
 
@@ -17,7 +22,7 @@ prototype(WG.Site:Document.HomePage) < prototype(WG.Site:Document.AbstractPage) 
         }
 
         renderer = afx`
-            <main class="main grid-container">
+            <main class="main position-relative wg-page-main fontface">
                 {props.main}
             </main>
         `

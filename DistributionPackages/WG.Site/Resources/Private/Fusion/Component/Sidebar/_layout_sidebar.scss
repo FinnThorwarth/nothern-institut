@@ -1,106 +1,153 @@
-// Sidebar
-// --------------
+/**
+ * Sidebar
+ */
 
+ $sb-tab-width: 220px; // only large devices
 
-$sb-tab-width: 240px;  // only large devices
-
-// Colors
-// --------------
-$col-sidebar-box-shadow: $col-bg-black;
-$col-sidebar-bg-inside: $col-bg-dark;
-$col-sidebar-bg-body: $col-bg;
-
-
-@media screen {
-
-	.sidebar {
-    display: none;
-    position: fixed; 
-    //position: absolute; 
-    top: 170px; 
-    left: -$sb-tab-width;  // Ausrichtung am Bildschirm:  L = left | R = right 
-    //left: 0;
-    z-index: 25;
-
-    @include breakpoint (hide_sidebar) { display: block; }
-    @include breakpoint (large) { top: 205px; }
-
-    .sbTab {
-      position: relative; 
-      width: $sb-tab-width;
-      //border-bottom: 2px solid $col-border;
-      margin-bottom: 15px; 
-      -webkit-transition: margin-left .5s;  // for older webkit browser
-      transition: margin-left .5s;  // all modern browser but not IE9
-      @include ym-box-shadow(1px, 1px, 3px, rgba($col-sidebar-box-shadow,.3), false);
-      //background-color: $col-bg;
-      //font-size: $fs-small;
-      //line-height: 1.2em;
-
-      &:hover { margin-left: $sb-tab-width; }  //  L = Wert im plus Bereich | R = Wert im minus Bereich
-
-      &.open {
-        margin-left: $sb-tab-width;  //  L = Wert im plus Bereich | R = Wert im minus Bereich
-        -webkit-transition: margin-left 0;
-        transition: margin-left 0;
-      }
-    }
-
-    .trigger {
-      position: absolute; 
-      right: -60px;  // Ausrichtung des Triggers:  L = right | R = left
-      top: 0px; 
-      width: 60px; 
-      height: 60px;
-      //border-bottom: 4px solid $col-bg;
-      cursor: pointer;
-
-      .inside {
-        width: 60px; 
-        height: 60px;
-        //border-left: 5px solid $col-border;
-        padding: 0;
-        background-color: $col-sidebar-bg-inside;
-        @include round-border-right(7px);
-        @include ym-box-shadow(1px, 1px, 3px, rgba($black,.3), false);
-      }
-
-      &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        left: 12px;
-        top: 12px;
-        width: 60px;
-        height: 60px;
-      }
-    }
-
-    .body {
-      position: relative; 
-      min-height: 60px; 
-      background-color: $col-sidebar-bg-body;
-      //background-color: $col-bg-dark;
-      //color: $white;
-      
-      .inside {
-        padding: 5px 9px 5px 11px;
-        display: table-cell;
-        height: 60px;
-        //padding: 10px 20px;
-        vertical-align: middle;
-        text-align: center;
-      }
-    
-      a.inside {
-        display: block;
-      }
-
-    }
-
-    #sbTab1 .trigger .inside { background: $col-sidebar-bg-inside url('../images/icon_tel.svg') no-repeat center center / 30px auto; }
-    #sbTab2 .trigger .inside { background: $col-sidebar-bg-inside url('../images/icon_email.svg') no-repeat center center / 30px auto; }
-    
-  }  // end .sidebar
-
-}
+ @media screen {
+ 
+   .sidebar {
+     transition: all 0.3s;
+     display: none;
+     position: fixed;
+     //position: absolute; 
+     top: 170px;
+     left: -$sb-tab-width; // Ausrichtung am Bildschirm:  L = left | R = right 
+     //left: 0;
+     z-index: 25;
+ 
+     @include breakpoint (mobileNav) {
+       display: block;
+     }
+ 
+     @include breakpoint (mobileNav) {
+       top: 325px;
+ 
+       .scroll & {
+         top: 155px;
+       }
+     }
+ 
+     .sbTab {
+       position: relative;
+       width: $sb-tab-width;
+       //border-bottom: 2px solid $col-border;
+       margin-bottom: 15px;
+       -webkit-transition: margin-left .5s; // for older webkit browser
+       transition: margin-left .5s; // all modern browser but not IE9
+       @include ym-box-shadow(1px, 1px, 3px, rgba($black, .3), false);
+       //background-color: $col-bg;
+       //font-size: $fs-small;
+       //line-height: 1.2em;
+ 
+       &:hover {
+         margin-left: $sb-tab-width;
+       }
+ 
+       //  L = Wert im plus Bereich | R = Wert im minus Bereich
+ 
+       &.open {
+         margin-left: $sb-tab-width; //  L = Wert im plus Bereich | R = Wert im minus Bereich
+         -webkit-transition: margin-left 0;
+         transition: margin-left 0;
+       }
+ 
+       a:hover {
+         text-decoration: none;
+       }
+     }
+ 
+     .trigger {
+       position: absolute;
+       right: -60px; // Ausrichtung des Triggers:  L = right | R = left
+       top: 0px;
+       width: 60px;
+       height: 60px;
+       //border-bottom: 4px solid $col-bg;
+       cursor: pointer;
+ 
+       .inside {
+         width: 60px;
+         height: 60px;
+         //border-left: 5px solid $col-border;
+         padding: 0;
+         background-color: $col-bg-dark;
+         @include round-border-right(7px);
+         @include ym-box-shadow(1px, 1px, 3px, rgba($black, .3), false);
+       }
+ 
+       &::after {
+         content: "";
+         display: block;
+         position: absolute;
+         left: 12px;
+         top: 12px;
+         width: 60px;
+         height: 60px;
+       }
+     }
+ 
+     .body {
+       position: relative;
+       min-height: 60px;
+       background-color: $col-neg-bg;
+       //background-color: $col-bg-dark;
+       color: $white;
+       display: grid;
+       justify-content: center;
+       align-content: center;
+       font-family: $webfont-medium;
+ 
+       .inside {
+         padding: 5px 9px 5px 11px;
+         display: table-cell;
+         height: 60px;
+         //padding: 10px 20px;
+         vertical-align: middle;
+         text-align: center;
+       }
+ 
+       a.inside {
+         display: block;
+       }
+ 
+     }
+ 
+     #sbTab1 .trigger .inside {
+       background: $col-neg-bg url('../images/icon_papierflieger.svg') no-repeat center center / 30px auto;
+     }
+ 
+     #sbTab2 .trigger .inside {
+       background: $col-neg-bg url('../images/icon_sprechblase.svg') no-repeat center center / 30px auto;
+     }
+ 
+     #sbTab3 .trigger .inside {
+       background: $col-neg-bg url('../images/icon_suche.svg') no-repeat center center / 30px auto;
+     }
+ 
+     #sbTab4 .trigger .inside {
+       background: $col-bg-akzent url('../images/icon_registrieren.svg') no-repeat center center / 30px auto;
+     }
+ 
+   }
+ 
+   // end .sidebar
+ 
+   // Sidebar in der mobilen Navigation
+   .mainnav {
+     .sidebar-mobile {
+       ul {
+         li {
+           a {
+             display: flex;
+             font-family: $webfont-book;
+ 
+             svg {
+               margin-right: 10px;
+             }
+           }
+         }
+       }
+     }
+   }
+ }
