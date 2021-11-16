@@ -50,6 +50,7 @@ $blue-dark: #006d89;
 $blue-light: #0099a9;
 $cyan: #37b5a7;
 $green: #2da450;
+$light-green: inherit;
 $red:   #e8511e;
 $himbeere: #BF409A;
 
@@ -65,7 +66,9 @@ $foundation-palette: (
 // element-colors
 // --------------
 $col-bg: 				  $white;
+$col-bg-akzent: inherit;
 $col-bg-light:	  $light-gray;
+$col-bg-lightgreen: inherit;
 $col-bg-dark:	    $darker-grey;
 $col-bg-black:	  $black;
 $col-bg-nav:      $white;
@@ -75,7 +78,10 @@ $col-akzent:      $green;
 $col-important:	  $green;
 $col-warning:		  $unused;
 $col-error:			  $unused;
+$col_button:			$unused;
+$col_button_hover:$unused;
 $col_bg_button:	  $green;
+$col_bg_button_hover:	  $green;
 $body-background: $black;
 
 
@@ -92,6 +98,7 @@ $fc-a:					  $green;
 $fc-a-hover:		  $green;
 $fc-a-active:		  $green;
 $fc-nav:				  $green;
+$fc-subnav-hover:	$green;
 $fc-nav-mobile:   $green;
 $fc-nav-hover:	  $white;
 $fc-nav-active:	  $white;
@@ -116,6 +123,7 @@ $global-weight-bold:    bold;
 /** Webfonts:*/
 
 $webfont-regular:     'rooney-light', sans-serif;
+$webfont-book:     'rooney-light', sans-serif;
 $webfont-medium: 	    'rooney-regular', sans-serif;
 $webfont-semibold:    'rooney-regular', sans-serif;
 $webfont-bold: 		    'rooney-regular', sans-serif;

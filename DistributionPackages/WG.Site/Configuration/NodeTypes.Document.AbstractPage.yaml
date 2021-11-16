@@ -8,6 +8,16 @@
       constraints:
         nodeTypes:
           'WG.Site:Constraint.Content.Restricted': false
+  properties:
+    'headerImage':
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        label: Titelbild der Seite
+        reloadIfChanged: true
+        inspector:
+          group: 'document'
+        help:
+          message: 'Dieses Bild wird oben auf der Seite eingefügt.'
   constraints:
     nodeTypes:
       'WG.Site:Document.HomePage': false

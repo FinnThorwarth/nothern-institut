@@ -9,7 +9,7 @@ prototype(WG.Site:Document.HomePage) < prototype(WG.Site:Document.AbstractPage) 
             content = ${q(node).property('title') + ' | WG Master'}
         }
       }
-
+    # Alternatives Layout für die Startseite
     body = WG.Site:Component.StartLayout {
         content = ''
         @process.normalize = CodeQ.UnicodeNormalizer:Normalizer

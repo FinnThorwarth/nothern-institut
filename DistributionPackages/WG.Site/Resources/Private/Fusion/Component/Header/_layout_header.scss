@@ -3,7 +3,7 @@
         transition: all 0.3s;
         position: relative;
         background-color: $white;
-        border-top: $header-border solid $col-border;
+       // border-top: $header-border solid $col-border;
         // box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.75);
         z-index: 30;
         transition-duration: 0.3s;
@@ -132,7 +132,7 @@
 
         &:hover {
             .button-rechts-st1 {
-                fill: $light-green;
+         //       fill: $light-green;
             }
         }
     }

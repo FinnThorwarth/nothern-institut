@@ -3,7 +3,7 @@ prototype(WG.Site:Component.StartLayout) < prototype(Neos.Fusion:Component) {
 
     renderer = afx`
     <div class="content-wrapper">
-        <WG.Site:Component.HeaderStart />
+        <WG.Site:Component.Header />
         {props.content}
     </div>
         <WG.Site:Component.Footer />

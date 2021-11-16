@@ -12,7 +12,7 @@ prototype(WG.Site:Component.Header) < prototype(Neos.Fusion:Component) {
       tagName = 'img'
       attributes {
         src = Neos.Fusion:ResourceUri {
-          path = 'resource://WG.Site/Public/Frontend/images/logo.png'
+          path = 'resource://WG.Site/Public/Frontend/images/logo.svg'
         }
       }
     }
@@ -51,6 +51,7 @@ prototype(WG.Site:Component.Header) < prototype(Neos.Fusion:Component) {
     renderer = afx`
         <header class="main-header">
           <div class="grid-container position-relative">
+          <!--
             <div class="menu-trigger open hide-for-mobileNav">
               <svg version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -67,11 +68,22 @@ prototype(WG.Site:Component.Header) < prototype(Neos.Fusion:Component) {
                 <polygon class="color-menu" points="18.707,6.707 17.293,5.293 12,10.586 6.707,5.293 5.293,6.707 10.586,12 5.293,17.293 6.707,18.707 12,13.414 17.293,18.707 18.707,17.293 13.414,12 "/>
               </svg>
             </div>
+-->
               <WG.Site:Component.Header.MenuItemsRenderer items={props.menuItems} />
               <a class="logo page-logo position-absolute" href={props.homeLink}>
                 {props.includeLogo}
               </a>
             </div>
+            <Sitegeist.Lazybones:Picture
+            class="header-image"
+            lazy={true}
+            lazyWidth={200}
+            imageSource={props.headerImageSrc}
+            srcset="320w, 400w, 480w, 600w, 768w, 800w, 960w, 1024px, 1280w, 1440w, 1680w, 1920w"
+            sizes={props.sizes}
+            alt={props.imageAlt}
+            formats="webp, jpeg"
+            />
         </header>
     `
 

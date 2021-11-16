@@ -8,15 +8,7 @@
     label: i18n
     icon: icon-globe
   properties:
-    'navImage':
-      type: 'Neos\Media\Domain\Model\ImageInterface'
-      ui: 
-        label: i18n
-        reloadIfChanged: true
-        inspector:
-          group: 'document'
-        help:
-          message: 'Dieses Icon wird in der Navigation angezeigt.'
+ 
     footerInfoLeft:
       type: string
       ui:

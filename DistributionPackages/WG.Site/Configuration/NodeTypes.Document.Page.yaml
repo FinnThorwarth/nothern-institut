@@ -6,12 +6,4 @@
     icon: icon-file-o
     position: 100
   properties:
-    'navImage':
-      type: 'Neos\Media\Domain\Model\ImageInterface'
-      ui: 
-        label: i18n
-        reloadIfChanged: true
-        inspector:
-          group: 'document'
-        help:
-          message: 'Dieses Icon wird in der Navigation angezeigt.'
+
