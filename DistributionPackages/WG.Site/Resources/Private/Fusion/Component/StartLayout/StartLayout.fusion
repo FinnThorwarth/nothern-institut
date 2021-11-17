@@ -7,6 +7,5 @@ prototype(WG.Site:Component.StartLayout) < prototype(Neos.Fusion:Component) {
         {props.content}
     </div>
         <WG.Site:Component.Footer />
-        <WG.Site:Component.Sidebar />
     `
 }

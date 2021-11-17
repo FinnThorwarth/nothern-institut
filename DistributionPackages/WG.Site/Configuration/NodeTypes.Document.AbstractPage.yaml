@@ -18,6 +18,27 @@
           group: 'document'
         help:
           message: 'Dieses Bild wird oben auf der Seite eingefügt.'
+    'Sitebar':
+      type: string
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            preset: 'text.free'
+            formatting:
+              strong: true
+              em: true
+              sub: true
+              sup: true
+              p: true
+              h1: false
+              h2: true
+              h3: true
+              pre: false
+              ol: true
+              ul: true
+              a: true
+            placeholder: 'Seitenleiste'
   constraints:
     nodeTypes:
       'WG.Site:Document.HomePage': false

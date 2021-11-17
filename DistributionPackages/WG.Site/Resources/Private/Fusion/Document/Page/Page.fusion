@@ -3,7 +3,7 @@ prototype(WG.Site:Document.Page) < prototype(WG.Site:Document.AbstractPage) {
       head {
         titleTag = Neos.Fusion:Tag {
             tagName = 'title'
-            content = ${q(node).property('title') + ' | WG Master'}
+            content = ${q(node).property('title') + ' | Northern Institute of Thinking'}
         }
       }
 
@@ -19,7 +19,7 @@ prototype(WG.Site:Document.Page) < prototype(WG.Site:Document.AbstractPage) {
         }
 
         renderer = afx`
-            <main class="main fontface wg-page-main">
+            <main class="main position-relative wg-page-main fontface">
                 {props.main}
             </main>
         `

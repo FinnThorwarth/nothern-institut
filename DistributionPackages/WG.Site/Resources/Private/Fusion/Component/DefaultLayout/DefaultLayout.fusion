@@ -4,9 +4,17 @@ prototype(WG.Site:Component.DefaultLayout) < prototype(Neos.Fusion:Component) {
     renderer = afx`
     <div class="content-wrapper">
         <WG.Site:Component.Header />
-        {props.content}
+        <div class="grid-container">
+            <div class="grid-x">
+                <div class="cell large-9 large-order-2">
+                    {props.content}
+                </div>
+            <div class="cell large-3 large-order-1">
+                 <WG.Site:Component.Sitebar />
+            </div>
+            </div>
+        </div>
     </div>
-        <WG.Site:Component.Footer />
-        <WG.Site:Component.Sidebar />
+    <WG.Site:Component.Footer />
     `
 }

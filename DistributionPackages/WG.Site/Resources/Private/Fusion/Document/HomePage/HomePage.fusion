@@ -6,11 +6,11 @@ prototype(WG.Site:Document.HomePage) < prototype(WG.Site:Document.AbstractPage) 
       head {
         titleTag = Neos.Fusion:Tag {
             tagName = 'title'
-            content = ${q(node).property('title') + ' | WG Master'}
+            content = ${q(node).property('title') + ' | Northern Institute of Thinking'}
         }
       }
     # Alternatives Layout für die Startseite
-    body = WG.Site:Component.StartLayout {
+    body = WG.Site:Component.DefaultLayout {
         content = ''
         @process.normalize = CodeQ.UnicodeNormalizer:Normalizer
     }

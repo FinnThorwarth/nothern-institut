@@ -1,0 +1,21 @@
+prototype(WG.Site:Component.Sitebar) < prototype(Neos.Neos:ContentComponent) {
+    @context.node = ${site}
+
+    Sitebar = Neos.Neos:Editable {
+        node = ${site}
+        property = 'Sitebar'
+    }
+    renderer = afx`
+        {props.Sitebar}
+    `
+
+    @cache {
+        mode = 'cached'
+        entryIdentifier {
+            site = ${site}
+        }
+        entryTags {
+            1 = ${Neos.Caching.nodeTag(site)}
+        }
+    }
+}

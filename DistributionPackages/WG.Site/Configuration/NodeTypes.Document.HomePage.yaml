@@ -8,7 +8,6 @@
     label: i18n
     icon: icon-globe
   properties:
- 
     footerInfoLeft:
       type: string
       ui:
@@ -70,23 +69,4 @@
               ul: true
               a: true
             placeholder: i18n
-    SidebarInfo:
-      type: string
-      ui:
-        inlineEditable: true
-        inline:
-          editorOptions:
-            formatting:
-              strong: true
-              em: true
-              sub: true
-              sup: true
-              p: true
-              h1: false
-              h2: true
-              h3: true
-              pre: false
-              ol: true
-              ul: true
-              a: true
-            placeholder: i18n
+

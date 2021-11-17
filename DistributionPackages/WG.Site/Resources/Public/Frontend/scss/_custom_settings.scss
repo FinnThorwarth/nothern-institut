@@ -1,30 +1,18 @@
 // config file width native foundation classes - Wird in der app.scss nach der settings.scss eingebunden
-
 // global styles
 // --------------
-
 $global-margin: 1rem;
 $global-padding: 1rem;
 $global-position: 1rem;
-
 $global-radius: 0;
 $global-menu-padding: 0.7rem 1rem;
 $global-menu-nested-margin: 1rem;
-
 // Breakpoints
 // --------------
-$breakpoints: (
-  small: 0, 
-  medium: 480px,
-  large: 768px,
-  mobileNav: 960px, //Custom Breakpoint
-  xlarge: 991px,
-  xxlarge: 1200px, //Custom Breakpoint
-
+$breakpoints: ( small: 0, medium: 480px, large: 768px, mobileNav: 960px, //Custom Breakpoint
+xlarge: 991px, xxlarge: 1200px, //Custom Breakpoint
 );
-
 $breakpoint-classes: (small medium large mobileNav xlarge xxlarge);
-
 $unused: inherit;
 
 /*
@@ -38,105 +26,85 @@ $xs: "(max-width: 480px)";
 // --------------
 $light-gray: #e6e6e6;
 $medium-gray:#cacaca;
-$dark-gray:  #8a8a8a;
+$dark-gray: #8a8a8a;
 $darker-grey: #635f4c;
 $black: #000;
 $white: #fff;
-
-
 // custom colors (Projektfarben)
 // --------------
 $blue-dark: #006d89;
 $blue-light: #0099a9;
 $cyan: #37b5a7;
-$green: #2da450;
-$light-green: inherit;
-$red:   #e8511e;
-$himbeere: #BF409A;
-
-
-$foundation-palette: (
-  primary:   $darker-grey,
-  secondary: $dark-gray,
-  success:   $green,
-  warning:   $red,
-  alert:     $red,
-);
-
+$green: #00b050;
+$red: #d6082f;
+$foundation-palette: ( primary: $darker-grey, secondary: $dark-gray, success: $green, warning: $red, alert: $red, );
 // element-colors
 // --------------
-$col-bg: 				  $white;
-$col-bg-akzent: inherit;
-$col-bg-light:	  $light-gray;
-$col-bg-lightgreen: inherit;
-$col-bg-dark:	    $darker-grey;
-$col-bg-black:	  $black;
-$col-bg-nav:      $white;
-$col-border: 		  $darker-grey;
-$col-ruler:			  $col-border;
-$col-akzent:      $green;
-$col-important:	  $green;
-$col-warning:		  $unused;
-$col-error:			  $unused;
-$col_button:			$unused;
-$col_button_hover:$unused;
-$col_bg_button:	  $green;
-$col_bg_button_hover:	  $green;
+$col-bg: $white;
+$col-bg-light: $light-gray;
+$col-bg-dark: $darker-grey;
+$col-bg-black: $black;
+$col-bg-nav: $white;
+$col-border: $darker-grey;
+$col-ruler: $col-border;
+$col-akzent: $green;
+$col-important: $green;
+$col-warning: $unused;
+$col-error: $unused;
+$col_bg_button: $green;
 $body-background: $black;
-
-
 // font-colors
 // --------------
-$body-font-color: $darker-grey;
-$fc-h1:  				  $darker-grey;
-$fc-h2: 				  $darker-grey;
-$fc-h3: 				  $unused;
-$fc-h4: 				  $unused;
-$fc-h5: 				  $unused;
-$fc-h6: 				  $unused;
-$fc-a:					  $green;
-$fc-a-hover:		  $green;
-$fc-a-active:		  $green;
-$fc-nav:				  $green;
-$fc-subnav-hover:	$green;
-$fc-nav-mobile:   $green;
-$fc-nav-hover:	  $white;
-$fc-nav-active:	  $white;
-
-
+$body-font-color: $black;
+$fc-h1: $black;
+$fc-h2: $black;
+$fc-h3: $unused;
+$fc-h4: $unused;
+$fc-h5: $unused;
+$fc-h6: $unused;
+$fc-a: $green;
+$fc-a-hover: $green;
+$fc-a-active: $green;
+$fc-nav: $green;
+$fc-nav-mobile: $green;
+$fc-nav-hover: $white;
+$fc-nav-active: $white;
 // negative colors areas
 // --------------
-$col-neg-bg:			$green;
-$col-neg:					$white;
-$col-neg-a:				$white;
-$col-neg-active:	$white;
-
-
+$col-neg-bg: $green;
+$col-neg: $white;
+$col-neg-a: $white;
+$col-neg-active: $white;
 // base typography
 // --------------
-$global-font-size:      110%;
-$global-lineheight:     1.5;
-$global-weight-normal:  normal;
-$global-weight-bold:    bold;
-
+$global-font-size: 110%;
+$global-lineheight: 1.5;
+$global-weight-normal: normal;
+$global-weight-bold: bold;
 
 /** Webfonts:*/
 
-$webfont-regular:     'rooney-light', sans-serif;
-$webfont-book:     'rooney-light', sans-serif;
-$webfont-medium: 	    'rooney-regular', sans-serif;
-$webfont-semibold:    'rooney-regular', sans-serif;
-$webfont-bold: 		    'rooney-regular', sans-serif;
-$webfont-h1: 			    'rooney-regular', sans-serif;
-$webfont-h2: 			    'rooney-regular', sans-serif;
-$webfont-h3:          'rooney-light', sans-serif; 
-
+$webfont-regular: 'source-sans-pro-regular',
+sans-serif;
+$webfont-medium: 'source-sans-pro-regular',
+sans-serif;
+$webfont-light: 'source-sans-pro-light',
+sans-serif;
+$webfont-semibold: 'source-sans-pro-regular',
+sans-serif;
+$webfont-bold: 'source-sans-pro-bold',
+sans-serif;
+$webfont-h1: 'blinker-semibold',
+sans-serif;
+$webfont-h2: 'blinker-semibold',
+sans-serif;
+$webfont-h3: 'source-sans-pro-bold',
+sans-serif;
 $semi-bold-font-family: $webfont-semibold;
-
 $body-font-family: $webfont-regular;
-
 // base typography
 // --------------
+
 /*
 $global-font-size: rem_calc(16);
 $global-lineheight: 1.65;
@@ -147,26 +115,7 @@ $body-font-color: $blue-dark;
 $paragraph-lineheight: 1.65;
 */
 
-
-$header-styles: (
-  small: (
-    'h1': ('font-size': 21),
-    'h2': ('font-size': 21),
-    'h3': ('font-size': 18),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 18),
-    'h6': ('font-size': 16),
-  ),
-  medium: (
-    'h1': ('font-size': 21),
-    'h2': ('font-size': 21),
-    'h3': ('font-size': 18),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 18),
-    'h6': ('font-size': 16),
-  ),
-);
-
+$header-styles: ( small: ( 'h1': ('font-size': 21), 'h2': ('font-size': 21), 'h3': ('font-size': 18), 'h4': ('font-size': 18), 'h5': ('font-size': 18), 'h6': ('font-size': 16), ), medium: ( 'h1': ('font-size': 25), 'h2': ('font-size': 22), 'h3': ('font-size': 18), 'h4': ('font-size': 18), 'h5': ('font-size': 18), 'h6': ('font-size': 16), ), );
 // header styles
 // --------------
 $header-height: 100px;
@@ -177,11 +126,9 @@ $header-margin-bottom: 0.5rem;
  * Print Styles
  */
 
- $print-fs-base:		10pt;
-
+$print-fs-base: 10pt;
 // Menu
 // --------
-
 $menu-margin: 0;
 $menu-nested-margin: $global-menu-nested-margin;
 $menu-items-padding: $global-menu-padding;
@@ -193,11 +140,8 @@ $menu-item-background-hover: $col-akzent;
 $menu-state-back-compat: true;
 $menu-centered-back-compat: true;
 $menu-icons-back-compat: true;
-
-
 // 8. Accordion Menu
 // -----------------
-
 $accordionmenu-padding: $global-menu-padding;
 $accordionmenu-nested-margin: $global-menu-nested-margin;
 $accordionmenu-submenu-padding: $accordionmenu-padding;
@@ -210,10 +154,8 @@ $accordion-submenu-toggle-border: $accordionmenu-border;
 $accordionmenu-submenu-toggle-width: 40px;
 $accordionmenu-submenu-toggle-height: $accordionmenu-submenu-toggle-width;
 $accordionmenu-arrow-size: 6px;
-
 // 18. Dropdown Menu
 // -----------------
-
 $dropdownmenu-arrows: true;
 $dropdownmenu-arrow-color: $white;
 $dropdownmenu-arrow-size: 6px;
@@ -227,21 +169,15 @@ $dropdownmenu-submenu-padding: $dropdownmenu-padding;
 $dropdownmenu-border: none;
 $dropdown-menu-item-color-active: $fc-nav-active;
 $dropdown-menu-item-background-active: $col-akzent;
-
-
 //Accordion
 // --------------
-
 $accordion-plusminus: true;
 $accordion-item-color: $black;
 $accordion-background: $white;
 $accordion-item-background-hover: none;
 $accordion-content-border: 1px solid $col-bg-dark;
-
-
 //Buttons
 // --------------
-
 $button-font-family: inherit;
 $button-padding: 0.5em 0.5em;
 $button-margin: 0 0 $global-margin 0;
@@ -252,9 +188,7 @@ $button-color: $white;
 $button-color-alt: $black;
 $button-radius: $global-radius;
 $button-hollow-border-width: 1px;
-
 //Links
-
 $anchor-color: $col-akzent;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;

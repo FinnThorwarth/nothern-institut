@@ -9,10 +9,10 @@
 		//		"custom/mod/mod_newsslider",
 		//		"custom/mod/mod_terminuebersicht",
 		//		"custom/mod/mod_gallery",
-    //    "custom/mod/mod_header_picture",
+   		//    "custom/mod/mod_header_picture",
 		//    "custom/mod/mod_consent_manager",  
         "custom/typography",
-				"custom/print";
+		"custom/print";
 
 // Module aus dem Fusion Content Elementen importieren
 // Header
@@ -22,7 +22,7 @@
 @import "../../../Private/Fusion/Component/Footer/layout_footer";
 
 //Sidebar
-@import "../../../Private/Fusion/Component/Sidebar/layout_sidebar"; 
+//@import "../../../Private/Fusion/Component/Sidebar/layout_sidebar"; 
 
 // Navigation
 @import "../../../Private/Fusion/Component/Header/mod_navigations";

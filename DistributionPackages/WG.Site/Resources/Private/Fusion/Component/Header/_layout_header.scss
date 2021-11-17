@@ -1,204 +1,53 @@
-@media screen {
-    .wg-page-header {
-        transition: all 0.3s;
-        position: relative;
-        background-color: $white;
-       // border-top: $header-border solid $col-border;
-        // box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.75);
-        z-index: 30;
-        transition-duration: 0.3s;
-        // position: sticky;
-        // top: 0;
-        @include breakpoint(large) {
-        }
-        margin-bottom: 150px;
-    }
-    .wrapper-header {
-        display: grid;
-        grid-auto-flow: column;
-        align-items: center;
-        grid-template-columns: auto auto 100px;
-        @include breakpoint(large) {
-            margin-top: 30px;
-        }
-    }
-    // end .wg-page-header
-    /**
-  * Header hintergrund und grafiken
-  **/
-    .header-bg {
-        height: 345px;
-        background: linear-gradient(#c6f2ff 50%, #afc013 50%);
-        position: relative;
-        margin-top: 77px;
-    }
-    .img-header {
-        bottom: -10px;
-        position: absolute;
-        max-width: 95%;
-        @media (min-width: 800px) {
-            bottom: -20px;
-            // max-width: 100%;
-            @media (min-width: 1024px) {
-                bottom: -19px;
-                max-width: 850px;
-                // max-width: 100%;
-            }
-        }
-    }
-    .border-bottom {
-        margin-top: 84px;
-        border-bottom: 8px solid $green;
-    }
-    .frosch {
-        left: 10%;
-        bottom: -10px;
-        z-index: 100;
-    }
-    .blatt {
-        display: none;
-        right: 6%;
-        bottom: 0px;
-        z-index: 99;
-        @media (min-width: 1490px) {
-            display: block;
-        }
-    }
-    .pilz {
-        display: none;
-        left: 6%;
-        bottom: -44px;
-        z-index: 99;
-        @media (min-width: 1490px) {
-            display: block;
-        }
-    }
-    .blatt2 {
-        position: absolute;
-        bottom: -14px;
-        right: 13%;
-        display: none;
-        @media (min-width: 1890px) {
-            display: block;
-        }
-    }
+//Header Container
+.main-header {
+}
 
-    /**
-  * Logo
-  **/
-    .logo {
-        display: none;
-        @media (min-width: 1024px) {
-            display: block;
-            position: absolute;
-            margin: 10px;
-            bottom: -9px;
-            // text-align: right;
-        }
-        .logo-img {
-            min-height: 412px;
-            min-width: auto;
-        }
-    }
+// Header Bild
+.header-image {
+}
 
-    /** 
-  * Linie
-  **/
-    .border-green {
-        border-top: 8px solid #005f39;
-    }
+.header-wrapper {
+    padding: 20px 10px;
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
 
-    /**
-  * Button Header
-  **/
-    .button-rechts-link {
-        position: fixed;
-        right: 0px;
-        z-index: 100;
-        transform: translateY(8px);
+// Logo
+.page-logo {
+}
 
-        &.default {
-            position: fixed;
-            right: 0px;
-            z-index: 100;
-            transform: inherit;
-            top: 202px;
-        }
-    }
-    .button-rechts {
+// Menü
+.menu-trigger {
+    &:hover {
         cursor: pointer;
-        height: 345px;
-        width: auto;
-
-        &:hover {
-            .button-rechts-st1 {
-         //       fill: $light-green;
-            }
+    }
+    width: 40px;
+    &.close {
+        display: none;
+    }
+    &.nav-open {
+        &.close {
+            display: block;
         }
-    }
-
-    /**
-  * Grafiken
-  **/
-
-    .menu-image {
-        max-height: 40px;
-        width: auto;
-        max-width: 50px;
-        margin-left: 5px;
-    }
-
-    /**
- * Navigation Trigger
- */
-    button.mainnav-trigger,
-    button.mglnav-trigger {
-        cursor: pointer;
-        position: absolute;
-        right: 1rem;
-        top: 50%;
-        width: 41px;
-        height: 41px;
-        margin: 0;
-        border: none;
-        transition-duration: 0.3s;
-        transition-property: top;
-        transform: translateY(-50%);
-        @include breakpoint(mobileNav) {
+        &.open {
             display: none;
         }
     }
-    button.mglnav-trigger {
-        .closed {
-            display: block;
-        }
-        .open {
-            display: none;
-        }
-        .mgl-nav-open & {
-            .closed {
-                display: none;
-            }
-            .open {
-                display: block;
+    // Menü Farbe
+    .color-menu {
+        fill: black;
+    }
+}
+
+// HeaderIMG
+.main {
+    > .neos-contentcollection {
+        > .container-image {
+            img {
+                margin-bottom: 30px;
             }
         }
     }
-    button.mainnav-trigger {
-        background: transparent url("../images/icon_menu.svg") no-repeat center center;
-        .nav-open & {
-            background: transparent url("../images/icon_menu_x.svg") no-repeat center center;
-        }
-    }
-    // end #nav-trigger
 }
-
-// end media screen
-//Anpassungen damit die absolut positionierten Elemente im Header sich an das Grid halten
-
-/*
-.position-header {
-position: relative;
-height: $header-height -$header-border;
-}
-*/

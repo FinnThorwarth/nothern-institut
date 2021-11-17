@@ -1,290 +1,115 @@
 @media screen {
-
-  /**
-* Animation für die Navigationselemente Ebene 1
-**/
-  @keyframes animationnav {
-    0% {
-      margin-left: 50%;
-      transform: translateX(-50%);
-      width: 0%;
-    }
-
-    100% {
-      margin-left: 0%;
-      transform: translateX(0%);
-      width: 100%;
-    }
-  }
-
   /* Allgemein */
-  .mainnav {
-    background-color: white;
-    width: 100%;
-    font-family: $nav-font-family;
-    height: 125px;
-    box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.75);
-    z-index: 30;
-
-    ul {
-      margin: 0;
-      list-style: none;
-    }
-
-    li {
-      // margin: 0 0 0 10px;
-      padding: 0;
-      display: inline;
-
-      @include breakpoint(xlarge down) {
-        &.is-submenu-item {
-          a {
-            padding-left: 40px;
-          }
-        }
-      }
-    }
-
-    a {
-      text-decoration: none;
-      // text-transform: uppercase;
-      font-size: rem-calc(20px);
-      letter-spacing: 0.6px;
-      color: $fc-nav;
-
-      @include breakpoint(xlarge down) {
-        background-color: white;
-
-      }
-
-      &:hover {
-        text-decoration: none !important;
-      }
-    }
-  }
-
-  .main-nav {
-    @include breakpoint(xlarge down) {
-      position: absolute;
-      display: none;
-      background-color: white;
-      width: 100%;
-      top: 100%;
-      z-index: 100;
-      left: 0;
-    }
-
-    @include breakpoint(mobileNav) {
-      display: flex !important;
-    }
-  }
-
-  // Überschreiben der Foundation Standards
-  .mainnav {
-    .grid-container {
-      width: 100%;
-    }
-
-    z-index: 99;
-    width: 100%;
-    position: sticky;
-    top: 0;
-
-    &.open {
-      display: block;
-
-      .is-drilldown {
-        max-width: 100% !important;
-      }
-    }
-
-    // Zurück Button für Drilldown
-    .js-drilldown-back {
-      background-color: $white;
-      padding-bottom: 1rem;
-
-      // border-bottom: 1px solid $white;
-      a {
-        margin-left: 44px;
-        position: relative;
-      }
-    }
-
-    // Styles Desktop
-    @include breakpoint(mobileNav) {
-      display: flex !important;
-      background-color: $col-bg-nav;
-
-      // Erste Ebene
-      ul.menu:first-child {
-        justify-content: flex-end;
-
-        &>li {
-          margin: 0 13px;
-
-          a {
-            font-size: rem_calc(20);
-            height: 100%;
-            padding: 0 20px;
-            align-items: center;
-            display: flex;
-
-            &:hover,
-            &.current {
-              span {
-                color: $fc-nav-hover;
-              }
-            }
-          }
-
-          &.navigation-item--state-current,
-          &.navigation-item--state-active {
-            >a {
-              color: $fc-nav-hover;
-              box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
-            }
-          }
-
-          // Links auf der ersten Ebene
-          &>a {
-            &:hover {
-              color: $fc-nav-hover;
-              box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
-            }
-          }
-        }
-      }
-
-      &>ul.dropdown.menu {
-        text-align: left;
-
-        &>li {
-
-          // Erste Ebene active + hover
-          &:hover,
-          &.is-active,
-          &.active,
-          &.open {
-            &>a {
-              position: relative;
-            }
-          }
-
-          &:first-of-type {
-            a {
-              padding-left: 0px;
-            }
-          }
-
-          &:last-of-type {
-            a {
-              padding-right: 0px;
-            }
-          }
-        }
-      }
-
-      // Zweite Ebene
-      ul.subnavigation {
-        background-color: $green;
-
-        .is-submenu-item {
-          a {
-            color: white;
-            padding: 5px 10px !important;
-
-            &:hover {
-              color: $fc-subnav-hover;
-            }
-          }
-        }
-
-        li.navigation-item--state-current {
-          a {
-            color: $fc-nav-active;
-          }
-        }
-
-        li {
-
-          &.navigation-item--state-current,
-          &.navigation-item--state-active {
-            >a {
-              color: $fc-nav-hover;
-              box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
-            }
-          }
-        }
-      }
-    }
-
-    // Styles Mobile 
-    @include breakpoint(xlarge down) {
-
+  nav {
       ul {
-        li {
-
-          &.navigation-item--state-current,
-          &.navigation-item--state-active {
-            >a {
-              color: $fc-nav-hover;
-            }
-          }
-        }
+          margin: 0;
+          list-style: none;
       }
-    }
+      li {
+          margin: 0;
+          padding: 0;
+      }
+      a {
+          font-family: "source-sans-pro-light";
+          text-decoration: none;
+      }
+      a:hover {
+          text-decoration: none;
+      }
   }
-}
-
-// Nav Icon
-
-$menu-height: 7px;
-
-.menu-trigger {
-  position: absolute;
-  top: 50%;
-  right: $menu-height;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  transition: 0.5s ease;
-  height: 50px;
-
-  &:hover .bar {
-    box-shadow: 1px 1px 7px 1px RGBa(0, 0, 0, 0.3);
+  // Navipunkte und Active Status
+  ul.main-nav {
+      margin: 15px 0px;
+      display: none;
+      @include breakpoint(mobileNav) {
+          display: flex !important;
+      }
+      &>li {
+          margin: 0px 10px;
+          position: relative;
+          margin-right: 2em;
+      }
+      li a {
+          transition: all 0.3s;
+          color: black;
+          padding: 0px 0px 2px 0px !important;
+          border-bottom: solid 2px transparent;
+      }
+      li:hover>a,
+      li.navigation-item--state-current>a,
+      li.navigation-item--state-active>a,
+      li.is-active>a {
+          border-bottom: solid 2px #28a951;
+          padding-bottom: 2px;
+      }
+      // Submenü
+      .subnavigation {
+          padding: 10px;
+          margin-top: 10px;
+          li {
+              margin-bottom: 5px;
+          }
+      }
+      .is-dropdown-submenu-parent {
+          a {
+              padding-right: 20px !important;
+          }
+      }
+      @include breakpoint(large down) {
+          ul.subnavigation {
+              padding-left: 15px;
+          }
+      }
   }
-
-  .bar {
-    width: 55px;
-    height: $menu-height;
-    background: black;
-    box-shadow: 1px 1px 3px RGBa(0, 0, 0, 0.4);
-    border-radius: 2px;
-    transition: 0.4s ease;
-
-    &:not(:first-child) {
-      margin-top: 10px;
-    }
+  // Foundation Überschreiben
+  .dropdown.menu.mobileNav-horizontal>li.is-dropdown-submenu-parent>a::after {
+      margin-top: 0px;
   }
-}
-
-.menu-trigger.nav-open {
-  transform: translate(-50%, -50%) rotatey(180deg);
-
-  .bar {
-    transform: rotatey(180deg) rotatex(360deg);
-
-    &:first-child {
-      transform: rotate(-45deg);
-      margin-top: 14px;
-    }
-
-    &:nth-child(2) {
-      opacity: 0;
-    }
-
-    &:nth-child(3) {
-      margin-top: -25px;
-      transform: rotate(45deg);
-    }
+  .accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle)>a::after {
+      position: inherit;
+      top: inherit;
+      margin-top: inherit;
+      right: inherit;
+      margin-left: 15px;
+      display: inline-block;
+      transform: translateY(-50%);
+  }
+  nav.main-navigation {
+      @include breakpoint(large down) {
+          position: absolute;
+          top: 100%;
+          width: 100%;
+          background-color: white;
+          margin: 0 -0.5681818182rem;
+          overflow-x: hidden;
+          a.link-node {
+              margin: 0 0 10px 0;
+          }
+      }
+      @include breakpoint(mobileNav) {
+          ul.main-nav {
+              justify-content: flex-end;
+          }
+      }
+  }
+  // Icons
+  .instagram {
+      &:hover {
+          fill: $green;
+      }
+  }
+  .instagram-link {
+      display: flex;
+      padding-bottom: 7px;
+      margin-right: 30px;
+      @include breakpoint (mobileNav) {
+          margin-right: 0;
+          padding-bottom: 2px;
+      }
+  }
+  .trenner-nav {
+      margin-right: 30px;
+      font-size: 30px;
+      padding-bottom: 4px;
   }
 }

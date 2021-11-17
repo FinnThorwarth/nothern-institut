@@ -1,33 +1,33 @@
 jQuery(document).foundation();
 
-jQuery(document).ready(function () {
+jQuery(document).ready(function() {
 
-  /**
-  * Functions on page load
-  */
+    /**
+     * Functions on page load
+     */
 
-  initJs();
+    initJs();
 
-  /**
-   * Functions on window resize
-   */
+    /**
+     * Functions on window resize
+     */
 
-  $(window).resize(function () {
-    reInitJs();
-    // headerHeight();
-    footerHeight();
-    //priv_ctrlNav();
-  });
+    $(window).resize(function() {
+        reInitJs();
+        // headerHeight();
+        footerHeight();
+        //priv_ctrlNav();
+    });
 
-  /**
-   * Functions on scrolling
-   */
+    /**
+     * Functions on scrolling
+     */
 
-  $(window).scroll(function () {
-    //closeOpenElements();
-    //headerControle();
-    //hideLayer();
-  });
+    $(window).scroll(function() {
+        //closeOpenElements();
+        //headerControle();
+        //hideLayer();
+    });
 
 });
 
@@ -41,41 +41,41 @@ var w = false;
 var breakpoint = 600;
 
 function initJs() {
-  resizeFn();             // resize Funktionen on page load
-  wg_toggleNav();         // Navigation ein- und ausblenden
-  wg_toggleSubItems();    // Subitems ein- und ausblenden
-  wg_setStartActive();    // Den Nav Eintrag zur Startseite active setzten
-  //wg_toggleLanguageNav(); // Sprach-Navigation ein- und ausblenden
-  //wg_toggleSidebar();     // Sidebar ein und ausblenden
-  wg_moveUp();            // scrolls to top of the page
-  wg_shrinkNav();         // Shrinknav
-  // headerHeight();
-  footerHeight();
-  // wg_showIconInfo();      // Iconset Infos
+    resizeFn(); // resize Funktionen on page load
+    wg_toggleNav(); // Navigation ein- und ausblenden
+    wg_toggleSubItems(); // Subitems ein- und ausblenden
+    wg_setStartActive(); // Den Nav Eintrag zur Startseite active setzten
+    //wg_toggleLanguageNav(); // Sprach-Navigation ein- und ausblenden
+    //wg_toggleSidebar();     // Sidebar ein und ausblenden
+    wg_moveUp(); // scrolls to top of the page
+    wg_shrinkNav(); // Shrinknav
+    // headerHeight();
+    footerHeight();
+    // wg_showIconInfo();      // Iconset Infos
 }
 
 
 function reInitJs() {
-  var wNew = $(window).width();
-  if ((wNew >= breakpoint && w < breakpoint) || (wNew < breakpoint && w >= breakpoint)) { resizeFn(); }
-  /* debug
-  if(wNew >= breakpoint && w < breakpoint) { alert("change to large device: "+w+"-"+wNew); w = wNew; return true; }
-  if(wNew < breakpoint && w >= breakpoint) { alert("change to small device: "+w+"-"+wNew); w = wNew; return true; }
-  alert("no change: "+w+"-"+wNew); w = wNew; return false;
-  */
+    var wNew = $(window).width();
+    if ((wNew >= breakpoint && w < breakpoint) || (wNew < breakpoint && w >= breakpoint)) { resizeFn(); }
+    /* debug
+    if(wNew >= breakpoint && w < breakpoint) { alert("change to large device: "+w+"-"+wNew); w = wNew; return true; }
+    if(wNew < breakpoint && w >= breakpoint) { alert("change to small device: "+w+"-"+wNew); w = wNew; return true; }
+    alert("no change: "+w+"-"+wNew); w = wNew; return false;
+    */
 }
 
 
 function resizeFn() {
-  w = $(window).width();
+    w = $(window).width();
 
-  if (w >= breakpoint) {
-    //alert("large device: "+w);
+    if (w >= breakpoint) {
+        //alert("large device: "+w);
 
-  } else {
-    //alert("small device: "+w);
+    } else {
+        //alert("small device: "+w);
 
-  }
+    }
 }
 
 
@@ -87,16 +87,16 @@ function resizeFn() {
 
 
 /**
-* Navigationseintrag für die Startseite active setzten
+ * Navigationseintrag für die Startseite active setzten
  */
 function wg_setStartActive() {
-  if (window.location.href === "https://relaunch.zahnarzt-friedrichs.de/" || window.location.href === "https://www.zahnarzt-friedrichs.de/" || window.location.href === "http://127.0.0.1:8081/") {
-    $("a").each(function () {
-      if ($(this).attr("href") === "/") {
-        $(this).parent(".navigation-item").addClass("navigation-item--state-current");
-      }
-    })
-  }
+    if (window.location.href === "http://s887868066.online.de/" || window.location.href === "https://www.bio-eckbremen.de/" || window.location.href === "http://127.0.0.1:8081/") {
+        $("a").each(function() {
+            if ($(this).attr("href") === "/") {
+                $(this).parent(".navigation-item").addClass("navigation-item--state-current");
+            }
+        })
+    }
 }
 
 
@@ -104,22 +104,22 @@ function wg_setStartActive() {
  * Static Header Height
  */
 function headerHeight() {
-  var height = $(".main-header").outerHeight();
-  if ($("body").hasClass("neos-backend")) {
-    // Do Nothing
-  } else {
-    // console.log(height);
-    //  $(".header-image").css("margin-top", height);
-  }
+    var height = $(".main-header").outerHeight();
+    if ($("body").hasClass("neos-backend")) {
+        // Do Nothing
+    } else {
+        // console.log(height);
+        //  $(".header-image").css("margin-top", height);
+    }
 }
 
 /*
-* Footer Height
-*/
+ * Footer Height
+ */
 function footerHeight() {
-  var fHeight = $(".main-footer").outerHeight();
-  // console.log(fHeight);
-  $(".content-wrapper").css("min-height", "calc(100vh - " + fHeight + "px)");
+    var fHeight = $(".main-footer").outerHeight();
+    // console.log(fHeight);
+    $(".content-wrapper").css("min-height", "calc(100vh - " + fHeight + "px)");
 }
 
 /**
@@ -128,40 +128,40 @@ function footerHeight() {
 
 function wg_toggleNav() {
 
-  $(".menu-trigger").click(function () {
-    //var trigger = $(this);
-    $('.main-nav').toggle();
-    $(".menu-trigger").toggleClass('nav-open');
-  });
+    $(".menu-trigger").click(function() {
+        //var trigger = $(this);
+        $('.main-nav').toggle();
+        $(".menu-trigger").toggleClass('nav-open');
+    });
 
-}  // end function toggleLayer()
+} // end function toggleLayer()
 
 
 function wg_toggleSubItems() {
-  $("#mainnav .trigger").click(function () {
-    $(this).parents("li").toggleClass('current', 500);
-    $(this).toggleClass('current', 500);
-  });
+    $("#mainnav .trigger").click(function() {
+        $(this).parents("li").toggleClass('current', 500);
+        $(this).toggleClass('current', 500);
+    });
 }
 
 function wg_toggleLanguageNav() {
 
-  $("#lg-trigger").click(function () {
-    $(this).next('nav').slideToggle(500);
-    //var trigger = $(this);
-    //$('#lg-nav').toggle();
-    //$("#nav-trigger").toggleClass('open');
-  });
+    $("#lg-trigger").click(function() {
+        $(this).next('nav').slideToggle(500);
+        //var trigger = $(this);
+        //$('#lg-nav').toggle();
+        //$("#nav-trigger").toggleClass('open');
+    });
 
-}  // end function toggleLayer()
+} // end function toggleLayer()
 
 /**
  * Toggle Sidebar
  */
 function wg_toggleSidebar() {
-  $("#sidebar-trigger").click(function () {
-    $('.sidebar').toggleClass('open', 500);
-  });
+    $("#sidebar-trigger").click(function() {
+        $('.sidebar').toggleClass('open', 500);
+    });
 }
 
 
@@ -169,18 +169,18 @@ function wg_toggleSidebar() {
  * Scroll Detection
  */
 function wg_shrinkNav() {
-  $(window).scroll(function () {
-    var winTop = $(window).scrollTop();
-    if ($("body").hasClass("neos-backend")) {
-      // Do Nothing
-    } else {
-      if (winTop >= 20) {
-        $("body").addClass("sticky-shrinknav");
-      } else {
-        $("body").removeClass("sticky-shrinknav");
-      }
-    }
-  });
+    $(window).scroll(function() {
+        var winTop = $(window).scrollTop();
+        if ($("body").hasClass("neos-backend")) {
+            // Do Nothing
+        } else {
+            if (winTop >= 20) {
+                $("body").addClass("sticky-shrinknav");
+            } else {
+                $("body").removeClass("sticky-shrinknav");
+            }
+        }
+    });
 };
 
 
@@ -188,21 +188,21 @@ function wg_shrinkNav() {
 // Navigation scrollbar machen, wenn erforderlich
 function priv_ctrlNav() {
 
-  var nav = $('#navigation');
-  var navheight = $(nav).outerHeight();
-  var windowheight = $(window).height();
-  //alert( navheight );
-  //alert( $(window).height() );
+    var nav = $('#navigation');
+    var navheight = $(nav).outerHeight();
+    var windowheight = $(window).height();
+    //alert( navheight );
+    //alert( $(window).height() );
 
-  if (navheight > windowheight) {
-    if ($(nav).hasClass('scrollable') === false) {
-      $(nav).addClass('scrollable');
+    if (navheight > windowheight) {
+        if ($(nav).hasClass('scrollable') === false) {
+            $(nav).addClass('scrollable');
+        }
+    } else {
+        if ($(nav).hasClass('scrollable')) {
+            $(nav).removeClass('scrollable');
+        }
     }
-  } else {
-    if ($(nav).hasClass('scrollable')) {
-      $(nav).removeClass('scrollable');
-    }
-  }
 }
 
 
@@ -213,12 +213,12 @@ function priv_ctrlNav() {
 
 function wg_moveUp() {
 
-  $("#toplink").click(function (event) {
-    event.preventDefault();
-    $('html, body').animate({
-      scrollTop: $("body").offset().top
-    }, 1000);
-  });
+    $("#toplink").click(function(event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("body").offset().top
+        }, 1000);
+    });
 
 } // end function moveUp()
 
@@ -229,9 +229,9 @@ function wg_moveUp() {
 
 function wg_moveToAnker(ankerID) {
 
-  $('html, body').animate({
-    scrollTop: $("#" + ankerID).offset().top - 100
-  }, 1000);
+    $('html, body').animate({
+        scrollTop: $("#" + ankerID).offset().top - 100
+    }, 1000);
 
 } // end function wg_moveToAnker()
 
@@ -242,37 +242,37 @@ function wg_moveToAnker(ankerID) {
 
 function closeOpenElements() {
 
-  if ($('.sidebar').hasClass('open')) {
-    $('.sidebar').toggleClass('open', 500);
-  }
-  /*
-    if( $('#navigation').css("display") == 'block' ) {
-      $('#navigation').hide();
-      $('#nav-trigger').removeClass('open');    
+    if ($('.sidebar').hasClass('open')) {
+        $('.sidebar').toggleClass('open', 500);
     }
-  */
+    /*
+      if( $('#navigation').css("display") == 'block' ) {
+        $('#navigation').hide();
+        $('#nav-trigger').removeClass('open');    
+      }
+    */
 } // end function moveUp()
 
 
 // Maps
 
-$(".confirm.google").on('click', function(){
-  maps_laden();
+$(".confirm.google").on('click', function() {
+    maps_laden();
 })
 
-$(".delete.google").on('click', function(){
-  maps_loeschen();
+$(".delete.google").on('click', function() {
+    maps_loeschen();
 })
 
 function maps_laden() {
-  Cookies.set('customMaps', 'yes')
-  location.reload();
+    Cookies.set('customMaps', 'yes')
+    location.reload();
 }
 
 
 function maps_loeschen() {
-  Cookies.remove('customMaps');
-  location.reload();
+    Cookies.remove('customMaps');
+    location.reload();
 }
 
 
