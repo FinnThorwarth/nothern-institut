@@ -1,115 +1,89 @@
 @media screen {
-  /* Allgemein */
-  nav {
-      ul {
-          margin: 0;
-          list-style: none;
-      }
-      li {
-          margin: 0;
-          padding: 0;
-      }
-      a {
-          font-family: "source-sans-pro-light";
-          text-decoration: none;
-      }
-      a:hover {
-          text-decoration: none;
-      }
-  }
-  // Navipunkte und Active Status
-  ul.main-nav {
-      margin: 15px 0px;
-      display: none;
-      @include breakpoint(mobileNav) {
-          display: flex !important;
-      }
-      &>li {
-          margin: 0px 10px;
-          position: relative;
-          margin-right: 2em;
-      }
-      li a {
-          transition: all 0.3s;
-          color: black;
-          padding: 0px 0px 2px 0px !important;
-          border-bottom: solid 2px transparent;
-      }
-      li:hover>a,
-      li.navigation-item--state-current>a,
-      li.navigation-item--state-active>a,
-      li.is-active>a {
-          border-bottom: solid 2px #28a951;
-          padding-bottom: 2px;
-      }
-      // Submenü
-      .subnavigation {
-          padding: 10px;
-          margin-top: 10px;
-          li {
-              margin-bottom: 5px;
-          }
-      }
-      .is-dropdown-submenu-parent {
-          a {
-              padding-right: 20px !important;
-          }
-      }
-      @include breakpoint(large down) {
-          ul.subnavigation {
-              padding-left: 15px;
-          }
-      }
-  }
-  // Foundation Überschreiben
-  .dropdown.menu.mobileNav-horizontal>li.is-dropdown-submenu-parent>a::after {
-      margin-top: 0px;
-  }
-  .accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle)>a::after {
-      position: inherit;
-      top: inherit;
-      margin-top: inherit;
-      right: inherit;
-      margin-left: 15px;
-      display: inline-block;
-      transform: translateY(-50%);
-  }
-  nav.main-navigation {
-      @include breakpoint(large down) {
-          position: absolute;
-          top: 100%;
-          width: 100%;
-          background-color: white;
-          margin: 0 -0.5681818182rem;
-          overflow-x: hidden;
-          a.link-node {
-              margin: 0 0 10px 0;
-          }
-      }
-      @include breakpoint(mobileNav) {
-          ul.main-nav {
-              justify-content: flex-end;
-          }
-      }
-  }
-  // Icons
-  .instagram {
-      &:hover {
-          fill: $green;
-      }
-  }
-  .instagram-link {
-      display: flex;
-      padding-bottom: 7px;
-      margin-right: 30px;
-      @include breakpoint (mobileNav) {
-          margin-right: 0;
-          padding-bottom: 2px;
-      }
-  }
-  .trenner-nav {
-      margin-right: 30px;
-      font-size: 30px;
-      padding-bottom: 4px;
-  }
+    /* Allgemein */
+    nav {
+        ul {
+            margin: 0;
+            list-style: none;
+        }
+        li {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            font-family: "source-sans-pro-light";
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    }
+    // Navipunkte und Active Status
+    ul.main-nav {
+        margin: 15px 0px;
+        display: none;
+        @include breakpoint(mobileNav) {
+            display: flex !important;
+        }
+        & > li {
+            margin: 0px 10px;
+            position: relative;
+            margin-right: 2em;
+        }
+        li a {
+            transition: all 0.3s;
+            color: black;
+            padding: 0px 0px 2px 0px !important;
+            border-bottom: solid 2px transparent;
+        }
+        li:hover > a,
+        li.navigation-item--state-current > a,
+        li.navigation-item--state-active > a,
+        li.is-active > a {
+            border-bottom: solid 2px #28a951;
+            padding-bottom: 2px;
+        }
+        // Submenü
+        .subnavigation {
+            padding: 10px;
+            margin-top: 10px;
+            li {
+                margin-bottom: 5px;
+            }
+        }
+        .is-dropdown-submenu-parent {
+            a {
+                padding-right: 20px !important;
+            }
+        }
+        @include breakpoint(large down) {
+            ul.subnavigation {
+                padding-left: 15px;
+            }
+        }
+    }
+    // Foundation Überschreiben
+    .dropdown.menu.mobileNav-horizontal > li.is-dropdown-submenu-parent > a::after {
+        margin-top: 0px;
+    }
+    .accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after {
+        position: inherit;
+        top: inherit;
+        margin-top: inherit;
+        right: inherit;
+        margin-left: 15px;
+        display: inline-block;
+        transform: translateY(-50%);
+    }
+    nav.main-navigation {
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background-color: white;
+        overflow-x: hidden;
+        a.link-node {
+            margin: 0 0 10px 0;
+        }
+    }
 }
+// Icons

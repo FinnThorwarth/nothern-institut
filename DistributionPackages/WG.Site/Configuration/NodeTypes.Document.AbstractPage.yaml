@@ -18,6 +18,14 @@
           group: 'document'
         help:
           message: 'Dieses Bild wird oben auf der Seite eingefügt.'
+    'SitebarHeadline':
+      type: string
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            preset: 'text.plainHeadline'
+            placeholder: 'Seitenleiste Überschrift'
     'Sitebar':
       type: string
       ui:

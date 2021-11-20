@@ -1,13 +1,17 @@
-prototype(WG.Site:Component.Sitebar) < prototype(Neos.Neos:ContentComponent) {
+prototype(WG.Site:Component.SitebarHeadline) < prototype(Neos.Neos:ContentComponent) {
     @context.node = ${site}
 
-    Sitebar = Neos.Neos:Editable {
+    SitebarHeadline = Neos.Neos:Editable {
         node = ${site}
-        property = 'Sitebar'
+        property = 'SitebarHeadline'
     }
 
     renderer = afx`
-        {props.Sitebar}
+    <div class="headline">
+        <h2>
+            {props.SitebarHeadline}
+        </h2>
+    </div>
     `
 
     @cache {
