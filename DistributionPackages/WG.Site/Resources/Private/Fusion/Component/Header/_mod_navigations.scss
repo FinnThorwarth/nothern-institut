@@ -85,5 +85,23 @@
             margin: 0 0 10px 0;
         }
     }
+
+    .lang-nav {
+        display: flex;
+        justify-content: end;
+        ul {
+            display: flex;
+            list-style: none;
+            li {
+                font-family: 'montserrat-light';
+                padding-left: 10px;
+                color: $blue-light;
+
+                &.current {
+                    color: $blue-dark;
+                }
+            }
+        }
+    }
 }
 // Icons

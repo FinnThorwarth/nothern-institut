@@ -15,15 +15,15 @@ Neos:
         defaultPreset: de
         presets:
           de:
-            label: Deutsch
+            label: DE
             values:
               - de
-            uriSegment: ""
-          #en:
-          # label: English
-          # values:
-          #   - en
-          # uriSegment: 'en'
+            uriSegment: 'de'
+          en:
+           label: EN
+           values:
+              - en
+           uriSegment: 'en'
   Neos:
     userInterface:
       defaultLanguage: de

@@ -29,7 +29,7 @@
 $body-font-family: $webfont-light;
 $h1-font-family: $webfont-h1;
 $h2-font-family: $webfont-h2;
-$nav-font-family: 'montserrat-light';
+$nav-font-family: "montserrat-light";
 // Font Colors
 // --------------
 $col-h1: $fc-h1;
@@ -89,6 +89,12 @@ address {
     }
     .col-red {
         color: $red;
+    }
+
+    //Links
+
+    a {
+        color: $fc-a;
     }
 }
 

@@ -7,6 +7,10 @@ prototype(WG.Site:Component.Header) < prototype(Neos.Fusion:Component) {
         maximumLevels = 3
     }
 
+    languageMenu = Neos.Neos:DimensionsMenu {
+      dimension = 'language'
+    }
+
     // Logo Referenzieren
     includeLogo = Neos.Fusion:Tag {
       tagName = 'img'
@@ -62,7 +66,9 @@ prototype(WG.Site:Component.Header) < prototype(Neos.Fusion:Component) {
                 </a>
               </div>
               <div class="cell small-3 large-offset-2 text-right">
-                Sozial
+                <div class="lang-nav">
+                  {props.languageMenu}
+                </div>
               </div>
             </div>
             </div>
