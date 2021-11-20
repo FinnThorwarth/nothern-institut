@@ -4,36 +4,32 @@
 /* Schriften einbinden */
 
 @font-face {
-    font-family: 'source-sans-pro-regular';
-    src: url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+    font-family: "montserrat-light";
+    src: url("../fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
 }
-
 @font-face {
-    font-family: 'source-sans-pro-light';
-    src: url('../fonts/SourceSansPro-Light.ttf') format('truetype');
+    font-family: "montserrat-bold";
+    src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
 }
-
 @font-face {
-    font-family: 'source-sans-pro-bold';
-    src: url('../fonts/SourceSansPro-Bold.ttf') format('truetype');
+    font-family: "aleo-light";
+    src: url("../fonts/Aleo/Aleo-Light.ttf") format("truetype");
 }
-
 @font-face {
-    font-family: 'source-sans-pro-italic';
-    src: url('../fonts/SourceSansPro-Italic.ttf') format('truetype');
+    font-family: "aleo-regular";
+    src: url("../fonts/Aleo/Aleo-Regular.ttf") format("truetype");
 }
-
 @font-face {
-    font-family: 'blinker-semibold';
-    src: url('../fonts/Blinker-SemiBold.ttf') format('truetype');
+    font-family: "danielblack";
+    src: url("../fonts/DanielBlack/danielbk.ttf") format("truetype");
 }
 
 // Font Family
 // --------------
-$body-font-family: $webfont-regular;
+$body-font-family: $webfont-light;
 $h1-font-family: $webfont-h1;
 $h2-font-family: $webfont-h2;
-$nav-font-family: $webfont-regular;
+$nav-font-family: 'montserrat-light';
 // Font Colors
 // --------------
 $col-h1: $fc-h1;
