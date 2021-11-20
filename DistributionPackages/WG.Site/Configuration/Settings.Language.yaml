@@ -9,9 +9,7 @@ Neos:
       language:
         label: Languages
         icon: icon-language
-        # The default dimension that is applied when creating nodes without specifying a dimension
         default: de
-        # The default preset to use if no URI segment was given when resolving languages in the router
         defaultPreset: de
         presets:
           de:

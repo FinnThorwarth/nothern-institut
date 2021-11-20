@@ -130,8 +130,7 @@ function wg_toggleNav() {
 
     $(".menu-trigger").click(function() {
         //var trigger = $(this);
-        $('.main-nav').toggle();
-        $(".menu-trigger").toggleClass('nav-open');
+        $('.main-navigation-wrapper').toggleClass('open');
     });
 
 } // end function toggleLayer()
@@ -337,3 +336,9 @@ function test_encryption(s, enc_s) {
   alert('decrypted: ' + dec_s);
 }
 */
+
+$(document).ready(function(){
+	$('#nav-icon').click(function(){
+		$(this).toggleClass('open');
+	});
+});

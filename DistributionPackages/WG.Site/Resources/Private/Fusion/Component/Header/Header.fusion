@@ -7,10 +7,6 @@ prototype(WG.Site:Component.Header) < prototype(Neos.Fusion:Component) {
         maximumLevels = 3
     }
 
-    languageMenu = Neos.Neos:DimensionsMenu {
-      dimension = 'language'
-    }
-
     // Logo Referenzieren
     includeLogo = Neos.Fusion:Tag {
       tagName = 'img'
@@ -56,9 +52,16 @@ prototype(WG.Site:Component.Header) < prototype(Neos.Fusion:Component) {
         <header class="main-header">
         <div class="header-wrapper">
           <div class="grid-container position-relative">
-            <div class="grid-x">
+            <div class="grid-x align-middle">
               <div class="cell small-3">
-              Trigger
+                <a id="nav-icon" class="menu-trigger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
               </div>
                <div class="cell small-6 large-4">
                 <a class="logo page-logo" href={props.homeLink}>
@@ -67,7 +70,7 @@ prototype(WG.Site:Component.Header) < prototype(Neos.Fusion:Component) {
               </div>
               <div class="cell small-3 large-offset-2 text-right">
                 <div class="lang-nav">
-                  {props.languageMenu}
+                  <WG.Site:Component.Header.LanguageMenu />
                 </div>
               </div>
             </div>

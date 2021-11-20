@@ -1,0 +1,32 @@
+prototype(WG.Site:Component.Header.LanguageMenu) < prototype(Neos.Fusion:Component) {
+    menuItems = Neos.Neos:DimensionsMenuItems {
+        dimension = 'language'
+    }
+
+    renderer = afx`
+        <div class="language-menu">
+            <ul>
+                <Neos.Fusion:Loop items={props.menuItems}>
+                    <li @if.hasNode={item.node}>
+                        <Neos.Neos:NodeLink node={item.node} >
+                            <span class="language-menu-full">{item.label}</span>
+                        </Neos.Neos:NodeLink>
+                    </li>
+                    <li @if.hasNoNode={!item.node}>
+                        <span class="language-menu-full">{item.label}</span>
+                    </li>
+                </Neos.Fusion:Loop>
+            </ul>
+        </div>
+    `
+
+    @cache {
+        mode = 'cached'
+        entryIdentifier {
+            documentNode = ${documentNode}
+        }
+        entryTags {
+            1 = ${Neos.Caching.nodeTypeTag('Neos.Neos:Document', documentNode)}
+        }
+    }
+}

@@ -17,10 +17,26 @@
             text-decoration: none;
         }
     }
+
+    .main-navigation-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: white;
+        z-index: 90;
+        transform: translateX(-100%);
+        transition: all 0.5s;
+        padding-top: 120px;
+
+        &.open {
+            transform: translateX(0%);
+        }
+    }
+
     // Navipunkte und Active Status
     ul.main-nav {
         margin: 15px 0px;
-        display: none;
         @include breakpoint(mobileNav) {
             display: flex !important;
         }
@@ -75,10 +91,6 @@
         transform: translateY(-50%);
     }
     nav.main-navigation {
-        display: none;
-        position: absolute;
-        top: 100%;
-        width: 100%;
         background-color: white;
         overflow-x: hidden;
         a.link-node {
@@ -93,7 +105,7 @@
             display: flex;
             list-style: none;
             li {
-                font-family: 'montserrat-light';
+                font-family: "montserrat-light";
                 padding-left: 10px;
                 color: $blue-light;
 

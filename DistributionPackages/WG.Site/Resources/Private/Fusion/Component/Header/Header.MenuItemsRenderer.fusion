@@ -3,8 +3,10 @@ prototype(WG.Site:Component.Header.MenuItemsRenderer) < prototype(Neos.Fusion:Co
 
     @if.has = ${this.items}
     renderer = afx`
+    <div class="main-navigation-wrapper">
+    <div class="grid-container">
     <nav class="main-navigation">
-        <ul class="vertical menu mobileNav-horizontal main-nav" data-responsive-menu="accordion mobileNav-dropdown">
+        <ul class="vertical menu main-nav">
             <Neos.Fusion:Loop items={props.items} itemName="menuItem" @children="itemRenderer">
                 <li class={'navigation-item ' + (menuItem.state ? 'navigation-item--state-' + menuItem.state : '') }>
                     <Carbon.Link:Link
@@ -19,6 +21,8 @@ prototype(WG.Site:Component.Header.MenuItemsRenderer) < prototype(Neos.Fusion:Co
             </Neos.Fusion:Loop>
         </ul>
       </nav>
+      </div>
+      </div>
     `
 }
 

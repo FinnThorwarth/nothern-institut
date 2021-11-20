@@ -1,19 +1,23 @@
 @media screen {
-  @keyframes fadein {
-      0% {
-          opacity: 0;
-      }
-      100% {
-          opacity: 1;
-      }
-  }
-  .main-footer {
-      padding: 10px 0px;
-      background-color: $white;
-      opacity: 0;
-      animation: fadein 0.5s forwards;
-      animation-delay: 0.3s;
-  }
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .main-footer {
+        padding: 10px 0px;
+        background-color: $blue-dark;
+        color: $blue-light;
+        opacity: 0;
+        animation: fadein 0.5s forwards;
+        animation-delay: 0.3s;
+        a {
+            color: $blue-light;
+        }
+    }
 }
 
 // end media screen
