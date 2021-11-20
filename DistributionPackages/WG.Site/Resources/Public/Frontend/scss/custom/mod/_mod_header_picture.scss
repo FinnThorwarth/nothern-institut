@@ -1,15 +1,5 @@
-// Hero IMG vollbreites IMG in Picture
-// --------------
-.hero-image {
-  margin-bottom: 130px;
-
-  @include breakpoint (small only) {
-    margin-bottom: 240px;
+.header-image {
+  img {
+    margin-bottom: 1rem;
   }
-
-  picture {
-    img {
-      width: 100%;
-    }
-  }
-}
+} 

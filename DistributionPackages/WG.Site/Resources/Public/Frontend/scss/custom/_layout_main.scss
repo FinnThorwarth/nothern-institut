@@ -49,23 +49,45 @@
 * Bredcrumb
 */
 
-.breadcrumb {
-  ul {
-    display: flex;
-    list-style: none;
-    li {
-      padding: 0 5px;
-      &:first-of-type {
-        &::before {
-          content: "\\";
-        }
-      }
-      &:not(:first-of-type) {
-        &::before {
-          content: " >";
-        }
+ul.breadcrumb {
+  color: $blue-light;
+  letter-spacing: 0.01;
+  margin-left: 0;
+  display: flex;
+  list-style: none;
+  a {
+    color: $blue-light;
+  }
+  li {
+    padding: 0 5px;
+    &:first-of-type {
+      &::before {
+        content: "\\";
       }
     }
+    &:not(:first-of-type) {
+      &::before {
+        content: " >";
+      }
+    }
+  }
+}
+
+.headline.sitebar {
+  @include breakpoint(large) {
+    margin-top: 2.6rem;
+  }
+}
+
+.trenner {
+  @include breakpoint(large) {
+    border-left: 1px solid $blue-light;
+    height: 100%;
+    margin-right: 1rem;
+  }
+  @include breakpoint(medium down) {
+    width: 100%;
+    border-top: 1px solid $blue-light;
   }
 }
 
