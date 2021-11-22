@@ -98,16 +98,22 @@
         }
     }
 
+    .language-menu {
+        display: flex;
+    }
+
     .lang-nav {
         display: flex;
         justify-content: end;
         ul {
             display: flex;
             list-style: none;
+            margin: 0;
             li {
-                font-family: "montserrat-light";
+                font-family: "montserrat-bold";
                 padding-left: 10px;
                 color: $blue-light;
+                font-size: 1.12em;
 
                 &.current {
                     color: $blue-dark;

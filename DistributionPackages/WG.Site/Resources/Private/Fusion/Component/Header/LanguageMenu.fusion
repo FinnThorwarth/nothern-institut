@@ -3,8 +3,24 @@ prototype(WG.Site:Component.Header.LanguageMenu) < prototype(Neos.Fusion:Compone
         dimension = 'language'
     }
 
+        // Facebook Icon
+    includeFacebook = Neos.Fusion:Tag {
+      tagName = 'img'
+      attributes {
+        src = Neos.Fusion:ResourceUri {
+          path = 'resource://WG.Site/Public/Frontend/images/facebook.svg'
+
+        }
+        class = 'facebook-icon'
+      }
+    }
+
+
     renderer = afx`
         <div class="language-menu">
+             <a href="#">
+                {props.includeFacebook}
+            </a>
             <ul>
                 <Neos.Fusion:Loop items={props.menuItems}>
                     <li @if.hasNode={item.node}>
@@ -18,6 +34,9 @@ prototype(WG.Site:Component.Header.LanguageMenu) < prototype(Neos.Fusion:Compone
                 </Neos.Fusion:Loop>
             </ul>
         </div>
+    <Neos.Fusion:Debug.Console>
+            <Neos.Neos:DimensionsMenuItems dimension="language" @path="value" />
+    </Neos.Fusion:Debug.Console>
     `
 
     @cache {
@@ -30,3 +49,4 @@ prototype(WG.Site:Component.Header.LanguageMenu) < prototype(Neos.Fusion:Compone
         }
     }
 }
+

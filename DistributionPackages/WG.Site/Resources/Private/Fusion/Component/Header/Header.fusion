@@ -17,6 +17,7 @@ prototype(WG.Site:Component.Header) < prototype(Neos.Fusion:Component) {
       }
     }
 
+
   // Header Img 
 	lazy = ${q(node).prev().is()}
 
