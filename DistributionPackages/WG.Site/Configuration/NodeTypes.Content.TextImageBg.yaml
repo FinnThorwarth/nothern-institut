@@ -1,4 +1,5 @@
 'WG.Site:Content.TextImageBg':
+  abstract: true
   superTypes:
     'Neos.Neos:Content': true
     'Neos.NodeTypes.BaseMixins:TextMixin': true #Wenn man CSS Styles wählen können soll.

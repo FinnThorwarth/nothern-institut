@@ -2,9 +2,10 @@
 # Google Maps Einbindung
 #
 'WG.Site:Content.GoogleMaps':
+  abstract: true
   superTypes:
     'Neos.Neos:Content': true
-  ui:
+  ui: 
     label: GoogleMaps
     icon: 'icon-map'
     inspector:

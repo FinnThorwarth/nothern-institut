@@ -29,12 +29,13 @@ prototype(WG.Site:Component.Header) < prototype(Neos.Fusion:Component) {
             }
         }
         dummyImage {
-          //  condition = ${site.context.inBackend}
+            condition = ${site.context.inBackend || !site.context.inBackend}
             renderer = Sitegeist.Kaleidoscope:ResourceImageSource{
                path = 'resource://WG.Site/Public/Frontend/images/fallback.jpg'
             }
         }
     }
+
    imageAlt = ${String.isBlank( q(node).property('alternativeText') ) ? this.image.caption : q(node).property('alternativeText')}
 
   // Header Img ENDE
@@ -80,7 +81,14 @@ prototype(WG.Site:Component.Header) < prototype(Neos.Fusion:Component) {
             </div>
             </div>
               <WG.Site:Component.Header.MenuItemsRenderer items={props.menuItems} />
-            <picture class="header-image">
+            <picture class="header-image" @if.hasMaps={props.headerImageSrc}>
+              <source srcset={props.headerImageSrc.setWidth(420).setHeight(280).src()} media="(max-width: 420px)" />
+              <source srcset={props.headerImageSrc.setWidth(799).setHeight(480).src()} media="(max-width: 799px)" />
+              <source srcset={props.headerImageSrc.srcset('800w,1240w,1440w')} media="(min-width: 800px)" />
+              <source srcset={props.headerImageSrc.srcset('1920w,2500w')} media="(min-width: 1900px)" />
+              <img src={props.headerImageSrc.src()} />
+            </picture>
+             <picture class="header-image" @if.hasMaps={!props.headerImageSrc}>
               <source srcset={props.headerImageSrc.setWidth(420).setHeight(280).src()} media="(max-width: 420px)" />
               <source srcset={props.headerImageSrc.setWidth(799).setHeight(480).src()} media="(max-width: 799px)" />
               <source srcset={props.headerImageSrc.srcset('800w,1240w,1440w')} media="(min-width: 800px)" />

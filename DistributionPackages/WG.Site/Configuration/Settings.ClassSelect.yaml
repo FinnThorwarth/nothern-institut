@@ -13,44 +13,6 @@ Neos:
 # Achtung!!! Die Definierten Klassen müssen in der CSS Datei definiert sein!!!
 TechDivision:
  CkStyles:
-  InlineStyles:
-    presets:
-      'fontColor':
-        label: 'Schriftfarbe'
-        options:
-          'gruen':
-            label: 'Grün'
-            cssClass: 'color-green'
-          'schwarz':
-            label: 'Schwarz'
-            cssClass: 'color-black'
-      'fontStyle':
-        label: 'Schriftart'
-        options:
-          'regular':
-            label: 'Regular'
-            cssClass: 'font-regular'
-          'medium':
-            label: 'Medium'
-            cssClass: 'font-medium'
-          'bold':
-            label: 'Bold'
-            cssClass: 'font-bold'      
-      'linkStyle':
-        label: 'Link Styles'
-        options:
-          'negativ':
-            label: 'Link auf Hintergrund'
-            cssClass: 'link-negative'
-          'main':
-            label: 'Link mit >>'
-            cssClass: 'link-main'
-          'bold':
-            label: 'Link Fett'
-            cssClass: 'link-bold'
-          'mail':
-            label: 'Link E-Mail'
-            cssClass: 'email'
   BlockStyles:
     presets:
       'textAlign':
@@ -65,9 +27,3 @@ TechDivision:
           'right':
             label: 'Text rechts'
             cssClass: 'text-right'
-      'listStyle':
-        label: 'Listen Styles'
-        options:
-          'plus':
-            label: 'Liste Plus'
-            cssClass: 'list-plus'  

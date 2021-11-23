@@ -1,4 +1,5 @@
 'WG.Site:Content.ImageHeader':
+  abstract: true
   superTypes:
     'Neos.Neos:Content': true
     'WG.Site:Mixin.Image': true
