@@ -29,8 +29,10 @@ prototype(WG.Site:Component.Header) < prototype(Neos.Fusion:Component) {
             }
         }
         dummyImage {
-            condition = ${site.context.inBackend}
-            renderer = Sitegeist.Kaleidoscope:DummyImageSource
+          //  condition = ${site.context.inBackend}
+            renderer = Sitegeist.Kaleidoscope:ResourceImageSource{
+               path = 'resource://WG.Site/Public/Frontend/images/fallback.jpg'
+            }
         }
     }
    imageAlt = ${String.isBlank( q(node).property('alternativeText') ) ? this.image.caption : q(node).property('alternativeText')}
