@@ -27,9 +27,12 @@ Neos:
           loadingDepth: 4
         structureTree:
           loadingDepth: 4
+      defaultLanguage: de
       translation:
         autoInclude:
-          WG.Site: ['NodeTypes/*']
+          WG.Site:
+            - Main
+            - "NodeTypes/*"
     fusion:
       autoInclude:
         WG.Site: true

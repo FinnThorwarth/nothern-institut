@@ -6,7 +6,7 @@ prototype(WG.Site:Component.Header.MenuItemsRenderer) < prototype(Neos.Fusion:Co
     <div class="main-navigation-wrapper">
     <div class="grid-container">
     <nav class="main-navigation">
-        <ul class="vertical menu main-nav">
+        <ul class="vertical menu accordion-menu main-nav" data-accordion-menu>
             <Neos.Fusion:Loop items={props.items} itemName="menuItem" @children="itemRenderer">
                 <li class={'navigation-item ' + (menuItem.state ? 'navigation-item--state-' + menuItem.state : '') }>
                     <Carbon.Link:Link
@@ -32,7 +32,7 @@ prototype(WG.Site:Component.Header.MenuSubItemsRenderer) < prototype(Neos.Fusion
 
     @if.has = ${this.items}
     renderer = afx`
-        <ul class="vertical menu subnavigation">
+        <ul class="vertical menu nested subnavigation">
             <Neos.Fusion:Loop items={props.items} itemName="menuItem" @children="itemRenderer">
                 <li class={'subnavigation-item navigation-item ' + (menuItem.state ? 'navigation-item--state-' + menuItem.state : '') }>
                     <Carbon.Link:Link

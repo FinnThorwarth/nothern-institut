@@ -37,7 +37,7 @@
     // Navipunkte und Active Status
     ul.main-nav {
         font-family: "montserrat-light";
-        margin: 15px 0px;
+        margin: 50px 0px;
         @include breakpoint(mobileNav) {
             display: flex !important;
         }
@@ -70,10 +70,26 @@
                 text-transform: capitalize;
             }
         }
-        .is-dropdown-submenu-parent {
-            a {
-                padding-right: 20px !important;
+        .is-accordion-submenu-parent {
+            position: relative;
+            & > a {
+                // padding-right: 20px !important;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 14px !important;
+                    height: 18px !important;
+                    background-image: url("../images/nav-arrow.svg");
+                    background-size: cover;
+                    border: none !important;
+                    transform: unset !important;
+                    transition: all 0.3s;
+                }
             }
+        }
+        .is-accordion-submenu-parent[aria-expanded="true"] > a::after {
+            transition: all 0.3s;
+            transform: rotate(90deg) !important;
         }
         @include breakpoint(large down) {
             ul.subnavigation {

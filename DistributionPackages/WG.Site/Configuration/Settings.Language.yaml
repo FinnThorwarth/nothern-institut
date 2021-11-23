@@ -7,7 +7,7 @@ Neos:
   ContentRepository:
     contentDimensions:
       language:
-        label: Languages
+        label: Sprachen
         icon: icon-language
         default: de
         defaultPreset: de
@@ -18,15 +18,7 @@ Neos:
               - de
             uriSegment: 'de'
           en:
-           label: EN
-           values:
+            label: EN
+            values:
               - en
-           uriSegment: 'en'
-  Neos:
-    userInterface:
-      defaultLanguage: de
-      translation:
-        autoInclude:
-          WG.Site:
-            - Main
-            - "NodeTypes/*"
+            uriSegment: 'en'
