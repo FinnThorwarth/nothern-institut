@@ -79,6 +79,12 @@ ul.breadcrumb {
   }
 }
 
+.wrapper-trenner {
+  @include breakpoint(large) {
+    width: auto;
+  }
+} 
+
 .trenner {
   @include breakpoint(large) {
     border-left: 1px solid $blue-light;
@@ -88,6 +94,7 @@ ul.breadcrumb {
   @include breakpoint(medium down) {
     width: 100%;
     border-top: 1px solid $blue-light;
+
   }
 }
 

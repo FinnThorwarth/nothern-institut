@@ -18,7 +18,7 @@ prototype(WG.Site:Component.Header.LanguageMenu) < prototype(Neos.Fusion:Compone
 
     renderer = afx`
         <div class="language-menu">
-             <a href="#">
+             <a href="#" class="show-for-large">
                 {props.includeFacebook}
             </a>
             <ul>

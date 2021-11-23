@@ -10,7 +10,7 @@
             padding: 0;
         }
         a {
-         //   font-family: "source-sans-pro-light";
+            //   font-family: "source-sans-pro-light";
             text-decoration: none;
         }
         a:hover {
@@ -36,7 +36,7 @@
 
     // Navipunkte und Active Status
     ul.main-nav {
-        font-family: 'montserrat-light';
+        font-family: "montserrat-light";
         margin: 15px 0px;
         @include breakpoint(mobileNav) {
             display: flex !important;
@@ -51,15 +51,15 @@
             transition: all 0.3s;
             color: $fc-nav;
             padding: 0px 0px 2px 0px !important;
-          //  border-bottom: solid 2px transparent;
+            //  border-bottom: solid 2px transparent;
         }
         li:hover > a,
         li.navigation-item--state-current > a,
         li.navigation-item--state-active > a,
         li.is-active > a {
-          //  border-bottom: solid 2px #28a951;
-          //  padding-bottom: 2px;
-          color: $fc-nav-hover;
+            //  border-bottom: solid 2px #28a951;
+            //  padding-bottom: 2px;
+            color: $fc-nav-hover;
         }
         // Submenü
         .subnavigation {
@@ -104,6 +104,10 @@
 
     .language-menu {
         display: flex;
+
+        @include breakpoint(medium down) {
+            font-size: 14px;
+        }
     }
 
     .lang-nav {

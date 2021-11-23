@@ -12,7 +12,7 @@ breadcrumb = Neos.Neos:BreadcrumbMenu
                     {props.breadcrumb}
                     {props.content}
                 </div>
-            <div class="cell shrink large-order-2">
+            <div class="cell wrapper-trenner large-order-2">
                 <div class="trenner"></div>
             </div>
             <div class="cell large-3 large-order-1">

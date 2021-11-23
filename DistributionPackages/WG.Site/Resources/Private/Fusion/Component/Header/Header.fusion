@@ -80,16 +80,13 @@ prototype(WG.Site:Component.Header) < prototype(Neos.Fusion:Component) {
             </div>
             </div>
               <WG.Site:Component.Header.MenuItemsRenderer items={props.menuItems} />
-            <Sitegeist.Lazybones:Picture
-            class="header-image"
-            lazy={true}
-            lazyWidth={200}
-            imageSource={props.headerImageSrc}
-            srcset="320w, 400w, 480w, 600w, 768w, 800w, 960w, 1024px, 1280w, 1440w, 1680w, 1920w"
-            sizes={props.sizes}
-            alt={props.imageAlt}
-            formats="webp, jpeg"
-            />
+            <picture class="header-image">
+              <source srcset={props.headerImageSrc.setWidth(420).setHeight(280).src()} media="(max-width: 420px)" />
+              <source srcset={props.headerImageSrc.setWidth(799).setHeight(480).src()} media="(max-width: 799px)" />
+              <source srcset={props.headerImageSrc.srcset('800w,1240w,1440w')} media="(min-width: 800px)" />
+              <source srcset={props.headerImageSrc.srcset('1920w,2500w')} media="(min-width: 1900px)" />
+              <img src={props.headerImageSrc.src()} />
+            </picture>
         </header>
     `
 
