@@ -84,8 +84,8 @@ prototype(WG.Site:Component.Header) < prototype(Neos.Fusion:Component) {
             <picture class="header-image" @if.hasMaps={props.headerImageSrc}>
               <source srcset={props.headerImageSrc.setWidth(420).setHeight(280).src()} media="(max-width: 420px)" />
               <source srcset={props.headerImageSrc.setWidth(799).setHeight(480).src()} media="(max-width: 799px)" />
-              <source srcset={props.headerImageSrc.srcset('800w,1240w,1440w')} media="(min-width: 800px)" />
-              <source srcset={props.headerImageSrc.srcset('1920w,2500w')} media="(min-width: 1900px)" />
+              <source srcset={props.headerImageSrc.setWidth(1240).setHeight(500).src()} media="(min-width: 800px)" />
+              <source srcset={props.headerImageSrc.setWidth(1920).setHeight(700).src()} media="(min-width: 1900px)" />
               <img src={props.headerImageSrc.src()} />
             </picture>
              <picture class="header-image" @if.hasMaps={!props.headerImageSrc}>
