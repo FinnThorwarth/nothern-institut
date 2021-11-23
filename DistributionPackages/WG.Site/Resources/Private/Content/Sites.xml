@@ -354,20 +354,6 @@
       </node>
      </node>
      <node identifier="d74a195e-ac8b-487d-8f88-8109ddcc3973" nodeName="node-gj1kmtfsbqiif">
-      <variant sortingIndex="200" workspace="live" nodeType="WG.Site:Document.Page" version="3" removed="" hidden="" hiddenInIndex="">
-       <dimensions>
-        <language>de</language>
-       </dimensions>
-       <accessRoles __type="array"/>
-       <creationDateTime __type="object" __classname="DateTime">2021-11-20T19:45:20+00:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2021-11-20T19:45:33+00:00</lastModificationDateTime>
-       <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-20T19:45:33+00:00</lastPublicationDateTime>
-       <properties>
-        <uriPathSegment __type="string">regionalentwicklung</uriPathSegment>
-        <title __type="string">Regionalentwicklung</title>
-        <headerImage __type="object" __identifier="7693cc59-7615-45fa-81ed-0e1f72767fd0" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;7693cc59-7615-45fa-81ed-0e1f72767fd0&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;211109_Dektop_Northern-PICS.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;4c477ee997d488aeed756438975df101ec025ba0&quot;,&quot;hash&quot;:&quot;4c477ee997d488aeed756438975df101ec025ba0&quot;,&quot;__identity&quot;:&quot;0620f165-6ec0-4783-9207-c8d3c9d6df23&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]}</headerImage>
-       </properties>
-      </variant>
       <variant sortingIndex="200" workspace="live" nodeType="WG.Site:Document.Page" version="2" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en</language>
@@ -380,6 +366,20 @@
         <uriPathSegment __type="string">regionalentwicklung</uriPathSegment>
         <title __type="string">Regionalentwicklung</title>
         <headerImage __type="object" __identifier="7693cc59-7615-45fa-81ed-0e1f72767fd0" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;7693cc59-7615-45fa-81ed-0e1f72767fd0&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;211109_Dektop_Northern-PICS.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;4c477ee997d488aeed756438975df101ec025ba0&quot;,&quot;hash&quot;:&quot;4c477ee997d488aeed756438975df101ec025ba0&quot;,&quot;__identity&quot;:&quot;0620f165-6ec0-4783-9207-c8d3c9d6df23&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]}</headerImage>
+       </properties>
+      </variant>
+      <variant sortingIndex="200" workspace="live" nodeType="WG.Site:Document.Page" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2021-11-20T19:45:20+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2021-11-23T23:38:09+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-23T23:38:09+00:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">regionalentwicklung</uriPathSegment>
+        <title __type="string">Regionalentwicklung</title>
+        <headerImage __type="object" __identifier="e3c9a076-dcfb-44f8-bad1-b20cfe22ff7d" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;e3c9a076-dcfb-44f8-bad1-b20cfe22ff7d&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;211109_Dektop_Northern-PICS2.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;858ccc85c7e6b90977f47dc7ef382f86930be513&quot;,&quot;hash&quot;:&quot;858ccc85c7e6b90977f47dc7ef382f86930be513&quot;,&quot;__identity&quot;:&quot;6d2f7d05-3583-42e5-95ce-c17e2bd0db3c&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]}</headerImage>
        </properties>
       </variant>
       <node identifier="648d9288-5d75-7a36-2126-4ff0f1aaa24b" nodeName="main">
@@ -403,6 +403,36 @@
         <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-20T21:01:00+00:00</lastPublicationDateTime>
         <properties/>
        </variant>
+       <node identifier="6fa64c0e-c997-47a5-8eae-1a38ea7bed66" nodeName="node-jsr6s1nsbfnkv">
+        <variant sortingIndex="150" workspace="live" nodeType="WG.Site:Content.Text" version="4" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2021-11-23T23:38:19+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2021-11-23T23:38:55+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-23T23:38:55+00:00</lastPublicationDateTime>
+         <properties>
+          <text __type="string">&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</text>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="e7cd4881-6448-4f9f-beb1-f5e9805c025a" nodeName="node-kzeduzkchsheh">
+        <variant sortingIndex="100" workspace="live" nodeType="WG.Site:Content.Headline" version="5" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2021-11-23T23:38:15+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2021-11-23T23:38:43+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-23T23:38:43+00:00</lastPublicationDateTime>
+         <properties>
+          <title __type="string">&lt;h1&gt;Das Northern Institute of Thinking ...&lt;/h1&gt;</title>
+          <alignVertical __type="string"></alignVertical>
+          <alignHorizontal __type="string"></alignHorizontal>
+         </properties>
+        </variant>
+       </node>
       </node>
      </node>
      <node identifier="1c543155-8ee2-4805-9122-429d4c5a3c60" nodeName="node-q45xfdec2wprz">
