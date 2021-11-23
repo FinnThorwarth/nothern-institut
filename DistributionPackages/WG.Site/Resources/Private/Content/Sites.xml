@@ -6,21 +6,477 @@
     <variant sortingIndex="100" workspace="live" nodeType="WG.Site:Document.HomePage" version="1" removed="" hidden="" hiddenInIndex="">
      <dimensions/>
      <accessRoles __type="array"/>
-     <creationDateTime __type="object" __classname="DateTime">2018-06-26T23:20:17+02:00</creationDateTime>
-     <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T23:20:17+02:00</lastModificationDateTime>
+     <creationDateTime __type="object" __classname="DateTime">2018-06-26T23:20:17+00:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T23:20:17+00:00</lastModificationDateTime>
      <properties>
       <title __type="string">Home</title>
       <uriPathSegment __type="string">home</uriPathSegment>
+     </properties>
+    </variant>
+    <variant sortingIndex="100" workspace="live" nodeType="WG.Site:Document.HomePage" version="4" removed="" hidden="" hiddenInIndex="">
+     <dimensions>
+      <language>en</language>
+     </dimensions>
+     <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2021-11-20T16:20:26+00:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2021-11-20T16:20:49+00:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-20T16:20:49+00:00</lastPublicationDateTime>
+     <properties>
+      <title __type="string">Home</title>
+      <uriPathSegment __type="string">home</uriPathSegment>
+      <SitebarHeadline __type="string">Sitebar</SitebarHeadline>
+      <headerImage __type="object" __identifier="7693cc59-7615-45fa-81ed-0e1f72767fd0" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;7693cc59-7615-45fa-81ed-0e1f72767fd0&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;211109_Dektop_Northern-PICS.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;4c477ee997d488aeed756438975df101ec025ba0&quot;,&quot;hash&quot;:&quot;4c477ee997d488aeed756438975df101ec025ba0&quot;,&quot;__identity&quot;:&quot;0620f165-6ec0-4783-9207-c8d3c9d6df23&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]}</headerImage>
+     </properties>
+    </variant>
+    <variant sortingIndex="100" workspace="live" nodeType="WG.Site:Document.HomePage" version="19" removed="" hidden="" hiddenInIndex="">
+     <dimensions>
+      <language>de</language>
+     </dimensions>
+     <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2021-11-16T21:56:12+00:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2021-11-23T21:14:03+00:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-23T21:14:03+00:00</lastPublicationDateTime>
+     <properties>
+      <title __type="string">Start</title>
+      <uriPathSegment __type="string">home</uriPathSegment>
+      <headerImage __type="object" __identifier="32020b4a-abb0-497c-8ef6-7124d5f5a0f5" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;32020b4a-abb0-497c-8ef6-7124d5f5a0f5&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;211109_Dektop_Northern-PICS9.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;7049ce5fe87c0987c8edcc3e3f55497c099726e9&quot;,&quot;hash&quot;:&quot;7049ce5fe87c0987c8edcc3e3f55497c099726e9&quot;,&quot;__identity&quot;:&quot;7a118432-92dd-4074-815d-06d6d0499ab2&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]}</headerImage>
+      <Sitebar __type="string">–&lt;br&gt;12.-22.11.21&lt;br&gt;Messe der Innovation&lt;br&gt;–&lt;br&gt;6.12.21&lt;br&gt;Kochen mit Wilke&lt;br&gt;Varel</Sitebar>
+      <SitebarHeadline __type="string">Termintipps</SitebarHeadline>
+      <footerInfoMiddle __type="string">&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;node://b6250e5e-8916-4309-8dae-37778de526d9&quot;&gt;Impressum&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;node://bc636d46-25c1-478b-a7dc-da99f579940e&quot;&gt;Datenschutz&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</footerInfoMiddle>
      </properties>
     </variant>
     <node identifier="6c302e0e-1d54-4697-a7ec-88d4e0d010cf" nodeName="main">
      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="1" removed="" hidden="" hiddenInIndex="">
       <dimensions/>
       <accessRoles __type="array"/>
-      <creationDateTime __type="object" __classname="DateTime">2018-06-26T23:20:17+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T23:20:17+02:00</lastModificationDateTime>
+      <creationDateTime __type="object" __classname="DateTime">2018-06-26T23:20:17+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-06-26T23:20:17+00:00</lastModificationDateTime>
       <properties/>
      </variant>
+     <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2021-11-16T21:56:12+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2021-11-16T21:56:13+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-16T21:56:13+00:00</lastPublicationDateTime>
+      <properties/>
+     </variant>
+     <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>en</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2021-11-20T16:20:26+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2021-11-20T16:20:29+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-20T16:20:29+00:00</lastPublicationDateTime>
+      <properties/>
+     </variant>
+     <node identifier="c7401240-ffe6-44e3-982b-85bed877492e" nodeName="node-9v42sd71zly2j">
+      <variant sortingIndex="300" workspace="live" nodeType="WG.Site:Content.Text" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2021-11-23T21:12:38+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2021-11-23T21:12:42+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-23T21:12:42+00:00</lastPublicationDateTime>
+       <properties>
+        <text __type="string">&lt;p&gt;... ist Denkwerkstatt und Ideenschmiede für innovative Konzepte zur modernen Regionalentwicklung. Schwerpunkte sind Wirtschaftsförderung und Standortentwicklung, daneben Innovationsberatung, so- wie die Ländliche Entwicklung mit einem Schwerpunkt in den Bereichen Klima schutz und nachhaltiges Landmanagement.&lt;/p&gt;</text>
+       </properties>
+      </variant>
+     </node>
+     <node identifier="44806b26-9a93-455d-b6d6-64d1a19b859d" nodeName="node-cpfw5bl9mduhd">
+      <variant sortingIndex="200" workspace="live" nodeType="WG.Site:Content.Headline" version="11" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2021-11-20T16:21:31+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2021-11-20T16:21:57+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-20T16:21:57+00:00</lastPublicationDateTime>
+       <properties>
+        <title __type="string">&lt;h1&gt;Northern Institut of Thinking&lt;/h1&gt;</title>
+        <alignVertical __type="string"></alignVertical>
+        <alignHorizontal __type="string"></alignHorizontal>
+       </properties>
+      </variant>
+     </node>
+     <node identifier="87e6e962-8b2a-4b78-a35e-e64500a1e313" nodeName="node-tt7xlm1ynbop9">
+      <variant sortingIndex="100" workspace="live" nodeType="WG.Site:Content.Headline" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2021-11-17T21:37:26+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2021-11-17T21:45:15+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-17T21:45:15+00:00</lastPublicationDateTime>
+       <properties>
+        <title __type="string">&lt;h1&gt;Das Northern Institut of Thinking&lt;/h1&gt;</title>
+        <alignVertical __type="string"></alignVertical>
+        <alignHorizontal __type="string"></alignHorizontal>
+       </properties>
+      </variant>
+     </node>
+    </node>
+    <node identifier="189ce768-8e2f-43dd-abae-4bb4f5fa9b44" nodeName="node-alqdoxmseehd4">
+     <variant sortingIndex="238" workspace="live" nodeType="WG.Site:Document.Page" version="5" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2021-11-22T20:18:35+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2021-11-22T20:24:25+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-22T20:24:25+00:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">kontakt</uriPathSegment>
+       <title __type="string">Kontakt</title>
+       <headerImage __type="object" __identifier="32020b4a-abb0-497c-8ef6-7124d5f5a0f5" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;32020b4a-abb0-497c-8ef6-7124d5f5a0f5&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;211109_Dektop_Northern-PICS9.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;7049ce5fe87c0987c8edcc3e3f55497c099726e9&quot;,&quot;hash&quot;:&quot;7049ce5fe87c0987c8edcc3e3f55497c099726e9&quot;,&quot;__identity&quot;:&quot;7a118432-92dd-4074-815d-06d6d0499ab2&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]}</headerImage>
+      </properties>
+     </variant>
+     <variant sortingIndex="450" workspace="live" nodeType="WG.Site:Document.Page" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>en</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2021-11-22T20:17:22+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2021-11-22T20:19:24+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-22T20:19:24+00:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">kontakt</uriPathSegment>
+       <title __type="string">Kontakt</title>
+       <headerImage __type="object" __identifier="32020b4a-abb0-497c-8ef6-7124d5f5a0f5" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;32020b4a-abb0-497c-8ef6-7124d5f5a0f5&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;211109_Dektop_Northern-PICS9.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;7049ce5fe87c0987c8edcc3e3f55497c099726e9&quot;,&quot;hash&quot;:&quot;7049ce5fe87c0987c8edcc3e3f55497c099726e9&quot;,&quot;__identity&quot;:&quot;7a118432-92dd-4074-815d-06d6d0499ab2&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]}</headerImage>
+      </properties>
+     </variant>
+     <node identifier="e7a7ee2b-7274-f6d9-6278-121c4eb51708" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2021-11-22T20:17:22+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2021-11-22T20:17:26+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-22T20:17:26+00:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2021-11-22T20:18:35+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2021-11-22T20:20:47+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-22T20:20:47+00:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+      <node identifier="6803dc4a-e27c-41fb-acda-71f3a7947e48" nodeName="node-6v4epz5l1oi4q">
+       <variant sortingIndex="100" workspace="live" nodeType="WG.Site:Content.Headline" version="10" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2021-11-22T20:17:43+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2021-11-22T20:18:25+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-22T20:18:25+00:00</lastPublicationDateTime>
+        <properties>
+         <title __type="string">&lt;h1&gt;Kontakt&lt;/h1&gt;</title>
+         <alignVertical __type="string"></alignVertical>
+         <alignHorizontal __type="string"></alignHorizontal>
+        </properties>
+       </variant>
+       <variant sortingIndex="100" workspace="live" nodeType="WG.Site:Content.Headline" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2021-11-22T20:18:35+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2021-11-22T20:19:09+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-22T20:19:08+00:00</lastPublicationDateTime>
+        <properties>
+         <title __type="string">&lt;h1&gt;Kontakt&lt;/h1&gt;</title>
+         <alignVertical __type="string"></alignVertical>
+         <alignHorizontal __type="string"></alignHorizontal>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="ddc9ef32-f6cb-4492-bcbd-4fa3798fb156" nodeName="node-i1rcukng57c0t">
+       <variant sortingIndex="150" workspace="live" nodeType="WG.Site:Content.Text" version="6" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2021-11-22T20:17:56+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2021-11-22T20:18:25+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-22T20:18:25+00:00</lastPublicationDateTime>
+        <properties>
+         <text __type="string">&lt;p&gt;Das ist ein Text&lt;/p&gt;</text>
+        </properties>
+       </variant>
+       <variant sortingIndex="150" workspace="live" nodeType="WG.Site:Content.Text" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2021-11-22T20:18:35+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2021-11-22T20:36:34+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-22T20:36:33+00:00</lastPublicationDateTime>
+        <properties>
+         <text __type="string">&lt;p&gt;Das ist ein Text&lt;/p&gt;</text>
+        </properties>
+       </variant>
+      </node>
+     </node>
+    </node>
+    <node identifier="4125eaf8-597a-4a9f-a87d-d601e678790d" nodeName="node-b58y3fh5hfg96">
+     <variant sortingIndex="175" workspace="live" nodeType="WG.Site:Document.Page" version="4" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2021-11-20T19:44:18+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2021-11-20T19:44:43+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-20T19:44:43+00:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">arbeitsbereiche</uriPathSegment>
+       <title __type="string">Arbeitsbereiche</title>
+       <headerImage __type="object" __identifier="7693cc59-7615-45fa-81ed-0e1f72767fd0" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;7693cc59-7615-45fa-81ed-0e1f72767fd0&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;211109_Dektop_Northern-PICS.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;4c477ee997d488aeed756438975df101ec025ba0&quot;,&quot;hash&quot;:&quot;4c477ee997d488aeed756438975df101ec025ba0&quot;,&quot;__identity&quot;:&quot;0620f165-6ec0-4783-9207-c8d3c9d6df23&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]}</headerImage>
+      </properties>
+     </variant>
+     <variant sortingIndex="175" workspace="live" nodeType="WG.Site:Document.Page" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>en</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2021-11-20T21:00:54+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2021-11-20T21:01:03+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-20T21:01:03+00:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">arbeitsbereiche</uriPathSegment>
+       <title __type="string">Arbeitsbereiche</title>
+       <headerImage __type="object" __identifier="7693cc59-7615-45fa-81ed-0e1f72767fd0" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;7693cc59-7615-45fa-81ed-0e1f72767fd0&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;211109_Dektop_Northern-PICS.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;4c477ee997d488aeed756438975df101ec025ba0&quot;,&quot;hash&quot;:&quot;4c477ee997d488aeed756438975df101ec025ba0&quot;,&quot;__identity&quot;:&quot;0620f165-6ec0-4783-9207-c8d3c9d6df23&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]}</headerImage>
+      </properties>
+     </variant>
+     <node identifier="0bf6aff1-8386-b455-9ede-2d09b0d32e06" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2021-11-20T19:44:18+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2021-11-20T19:44:43+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-20T19:44:43+00:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2021-11-20T21:00:54+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2021-11-20T21:01:03+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-20T21:01:03+00:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+     <node identifier="415cc1b7-0120-4619-a608-2504fe4aac7a" nodeName="node-09xg2m96tp5sl">
+      <variant sortingIndex="250" workspace="live" nodeType="WG.Site:Document.Page" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2021-11-23T20:53:18+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2021-11-23T20:53:35+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-23T20:53:35+00:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">auftragsmanagement</uriPathSegment>
+        <title __type="string">Auftragsmanagement</title>
+       </properties>
+      </variant>
+      <node identifier="4f11bbaa-5ece-0172-4e44-92b9db7d5b02" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2021-11-23T20:53:18+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2021-11-23T20:53:35+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-23T20:53:35+00:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+      </node>
+     </node>
+     <node identifier="d74a195e-ac8b-487d-8f88-8109ddcc3973" nodeName="node-gj1kmtfsbqiif">
+      <variant sortingIndex="200" workspace="live" nodeType="WG.Site:Document.Page" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2021-11-20T19:45:20+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2021-11-20T19:45:33+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-20T19:45:33+00:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">regionalentwicklung</uriPathSegment>
+        <title __type="string">Regionalentwicklung</title>
+        <headerImage __type="object" __identifier="7693cc59-7615-45fa-81ed-0e1f72767fd0" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;7693cc59-7615-45fa-81ed-0e1f72767fd0&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;211109_Dektop_Northern-PICS.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;4c477ee997d488aeed756438975df101ec025ba0&quot;,&quot;hash&quot;:&quot;4c477ee997d488aeed756438975df101ec025ba0&quot;,&quot;__identity&quot;:&quot;0620f165-6ec0-4783-9207-c8d3c9d6df23&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]}</headerImage>
+       </properties>
+      </variant>
+      <variant sortingIndex="200" workspace="live" nodeType="WG.Site:Document.Page" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2021-11-20T21:00:54+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2021-11-20T21:01:00+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-20T21:01:00+00:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">regionalentwicklung</uriPathSegment>
+        <title __type="string">Regionalentwicklung</title>
+        <headerImage __type="object" __identifier="7693cc59-7615-45fa-81ed-0e1f72767fd0" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;7693cc59-7615-45fa-81ed-0e1f72767fd0&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;211109_Dektop_Northern-PICS.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;4c477ee997d488aeed756438975df101ec025ba0&quot;,&quot;hash&quot;:&quot;4c477ee997d488aeed756438975df101ec025ba0&quot;,&quot;__identity&quot;:&quot;0620f165-6ec0-4783-9207-c8d3c9d6df23&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]}</headerImage>
+       </properties>
+      </variant>
+      <node identifier="648d9288-5d75-7a36-2126-4ff0f1aaa24b" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2021-11-20T19:45:20+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2021-11-20T19:45:23+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-20T19:45:23+00:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+       <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2021-11-20T21:00:54+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2021-11-20T21:01:00+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-20T21:01:00+00:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+      </node>
+     </node>
+    </node>
+    <node identifier="bc636d46-25c1-478b-a7dc-da99f579940e" nodeName="node-d16sc01wjywv6">
+     <variant sortingIndex="350" workspace="live" nodeType="WG.Site:Document.Page" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>en</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2021-11-22T20:17:12+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2021-11-22T20:19:09+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-22T20:19:08+00:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">datenschutz</uriPathSegment>
+       <title __type="string">Datenschutz</title>
+      </properties>
+     </variant>
+     <variant sortingIndex="350" workspace="live" nodeType="WG.Site:Document.Page" version="4" removed="" hidden="" hiddenInIndex="1">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2021-11-22T20:19:36+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2021-11-22T20:21:29+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-22T20:21:29+00:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">datenschutz</uriPathSegment>
+       <title __type="string">Datenschutz</title>
+       <headerImage __type="object" __identifier="7693cc59-7615-45fa-81ed-0e1f72767fd0" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;7693cc59-7615-45fa-81ed-0e1f72767fd0&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;211109_Dektop_Northern-PICS.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;4c477ee997d488aeed756438975df101ec025ba0&quot;,&quot;hash&quot;:&quot;4c477ee997d488aeed756438975df101ec025ba0&quot;,&quot;__identity&quot;:&quot;0620f165-6ec0-4783-9207-c8d3c9d6df23&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]}</headerImage>
+      </properties>
+     </variant>
+     <node identifier="786595b2-e905-987c-1a31-a54cfd78893a" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2021-11-22T20:17:12+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2021-11-22T20:19:09+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-22T20:19:08+00:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2021-11-22T20:19:36+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2021-11-22T20:19:41+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-22T20:19:41+00:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="ba605460-987b-447f-be10-05ea93b7c9aa" nodeName="node-uwesc52mjm485">
+     <variant sortingIndex="150" workspace="live" nodeType="Neos.Neos:Shortcut" version="4" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2021-11-17T21:36:52+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2021-11-17T21:37:07+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-17T21:37:07+00:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">start</uriPathSegment>
+       <metaRobotsNoindex __type="boolean">1</metaRobotsNoindex>
+       <targetMode __type="string">parentNode</targetMode>
+       <title __type="string">Start</title>
+      </properties>
+     </variant>
+    </node>
+    <node identifier="b6250e5e-8916-4309-8dae-37778de526d9" nodeName="node-vrahiojr5m4vc">
+     <variant sortingIndex="300" workspace="live" nodeType="WG.Site:Document.Page" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>en</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2021-11-22T20:16:58+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2021-11-22T20:19:09+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-22T20:19:08+00:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">impressum</uriPathSegment>
+       <title __type="string">Impressum</title>
+      </properties>
+     </variant>
+     <variant sortingIndex="300" workspace="live" nodeType="WG.Site:Document.Page" version="4" removed="" hidden="" hiddenInIndex="1">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2021-11-22T20:19:55+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2021-11-22T20:21:19+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-22T20:21:19+00:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">impressum</uriPathSegment>
+       <title __type="string">Impressum</title>
+       <headerImage __type="object" __identifier="32020b4a-abb0-497c-8ef6-7124d5f5a0f5" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;32020b4a-abb0-497c-8ef6-7124d5f5a0f5&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;211109_Dektop_Northern-PICS9.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;7049ce5fe87c0987c8edcc3e3f55497c099726e9&quot;,&quot;hash&quot;:&quot;7049ce5fe87c0987c8edcc3e3f55497c099726e9&quot;,&quot;__identity&quot;:&quot;7a118432-92dd-4074-815d-06d6d0499ab2&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]}</headerImage>
+      </properties>
+     </variant>
+     <node identifier="80fd2a74-2e32-81e4-b62d-943697413d0d" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2021-11-22T20:16:58+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2021-11-22T20:19:09+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-22T20:19:08+00:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2021-11-22T20:19:55+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2021-11-22T20:19:58+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2021-11-22T20:19:58+00:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
     </node>
    </node>
   </nodes>
