@@ -55,10 +55,12 @@ ul.breadcrumb {
   margin-left: 0;
   display: flex;
   list-style: none;
+  flex-flow: row wrap;
   a {
     color: $blue-light;
   }
   li {
+    white-space: nowrap;
     padding: 0 5px;
     &:first-of-type {
       &::before {
