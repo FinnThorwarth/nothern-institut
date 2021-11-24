@@ -96,6 +96,12 @@ function wg_setStartActive() {
                 $(this).parent(".navigation-item").addClass("navigation-item--state-current");
             }
         })
+    }else if(window.location.href === "https://northern.finnthorwarth.de/en" || window.location.href === "https://www.joergwilke.de/en" || window.location.href === "http://127.0.0.1:8081/en"){
+        $("a").each(function() {
+            if ($(this).attr("href") === "/en") {
+                $(this).parent(".navigation-item").addClass("navigation-item--state-current");
+            }
+        })
     }
 }
 
