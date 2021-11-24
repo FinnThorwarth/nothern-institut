@@ -3,6 +3,10 @@ prototype(WG.Site:Component.Header.LanguageMenu) < prototype(Neos.Fusion:Compone
         dimension = 'language'
     }
 
+    LanguageMenu = Neos.Neos:DimensionsMenu {
+        dimension = 'language'
+    }
+
         // Facebook Icon
     includeFacebook = Neos.Fusion:Tag {
       tagName = 'img'
@@ -21,22 +25,9 @@ prototype(WG.Site:Component.Header.LanguageMenu) < prototype(Neos.Fusion:Compone
              <a href="#" class="show-for-large">
                 {props.includeFacebook}
             </a>
-            <ul>
-                <Neos.Fusion:Loop items={props.menuItems}>
-                    <li @if.hasNode={item.node}>
-                        <Neos.Neos:NodeLink node={item.node} >
-                            <span class="language-menu-full">{item.label}</span>
-                        </Neos.Neos:NodeLink>
-                    </li>
-                    <li @if.hasNoNode={!item.node}>
-                        <span class="language-menu-full">{item.label}</span>
-                    </li>
-                </Neos.Fusion:Loop>
-            </ul>
+
+           {props.LanguageMenu}
         </div>
-    <Neos.Fusion:Debug.Console>
-            <Neos.Neos:DimensionsMenuItems dimension="language" @path="value" />
-    </Neos.Fusion:Debug.Console>
     `
 
     @cache {
