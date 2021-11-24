@@ -90,7 +90,7 @@ function resizeFn() {
  * Navigationseintrag für die Startseite active setzten
  */
 function wg_setStartActive() {
-    if (window.location.href === "http://s887868066.online.de/" || window.location.href === "https://www.bio-eckbremen.de/" || window.location.href === "http://127.0.0.1:8081/") {
+    if (window.location.href === "https://northern.finnthorwarth.de/" || window.location.href === "https://www.joergwilke.de/" || window.location.href === "http://127.0.0.1:8081/") {
         $("a").each(function() {
             if ($(this).attr("href") === "/") {
                 $(this).parent(".navigation-item").addClass("navigation-item--state-current");
