@@ -147,11 +147,13 @@
             li {
                 font-family: "montserrat-bold";
                 padding-left: 10px;
-                color: $blue-light;
+                color: $blue-dark;
                 font-size: 1.12em;
 
                 &.current {
-                    color: $blue-dark;
+                    padding: 10px 5px;
+                    background-color: $blue-dark;
+                    color: white;
                 }
             }
         }
