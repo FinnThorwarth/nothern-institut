@@ -28,6 +28,7 @@
         transform: translateX(-100%);
         transition: all 0.5s;
         padding-top: 120px;
+        box-shadow: 0px 0px 5px gray;
 
         &.open {
             transform: translateX(0%);
@@ -46,6 +47,7 @@
             position: relative;
             margin-right: 2em;
             text-transform: uppercase;
+            border-top: 1px solid #87abc6;
         }
         li a {
             font-size: 1.4em;
@@ -62,11 +64,19 @@
             //  padding-bottom: 2px;
             color: $fc-nav-hover;
         }
+
+        li.navigation-item--state-current > a,
+        li.navigation-item--state-active > a,
+        li.is-active > a {
+            font-family: "montserrat-bold";
+        }
+
         // Submenü
         .subnavigation {
             padding: 10px;
             margin-top: 10px;
             li {
+                border-top: 1px solid #e1eaf1;
                 margin-bottom: 5px;
                 text-transform: capitalize;
             }
@@ -115,7 +125,7 @@
         background-color: white;
         overflow-x: hidden;
         a.link-node {
-            margin: 0 0 10px 0;
+            margin: 8px 0;
         }
     }
 

@@ -9,12 +9,17 @@
     }
     .main-footer {
         padding: 10px 0px;
-        background-color: $blue-dark;
+        padding-top: 50px;
+       // background-color: $blue-dark;
         color: $blue-light;
         opacity: 0;
         animation: fadein 0.5s forwards;
         animation-delay: 0.3s;
         position: relative;
+        background-image: url("../images/footer-bg.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         a {
             color: $blue-light;
         }

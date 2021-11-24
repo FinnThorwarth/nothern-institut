@@ -29,7 +29,7 @@ prototype(WG.Site:Component.Footer) < prototype(Neos.Neos:ContentComponent) {
       tagName = 'img'
       attributes {
         src = Neos.Fusion:ResourceUri {
-          path = 'resource://WG.Site/Public/Frontend/images/welle.svg'
+          path = 'resource://WG.Site/Public/Frontend/images/welle_2.svg'
         }
         class = 'welle-footer'
       }
@@ -38,9 +38,6 @@ prototype(WG.Site:Component.Footer) < prototype(Neos.Neos:ContentComponent) {
 
     renderer = afx`
         <footer class="main-footer">
-        <div class="welle-wrapper">
-        {props.includeWelle}
-        </div>
         <div class="grid-container">
           <div class="neos-contentcollection">
             <div class="grid-x grid-padding-x grid-padding-y align-middle align-center">
