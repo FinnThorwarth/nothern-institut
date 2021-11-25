@@ -7,25 +7,10 @@ prototype(WG.Site:Component.Header.LanguageMenu) < prototype(Neos.Fusion:Compone
         dimension = 'language'
     }
 
-        // Facebook Icon
-    includeFacebook = Neos.Fusion:Tag {
-      tagName = 'img'
-      attributes {
-        src = Neos.Fusion:ResourceUri {
-          path = 'resource://WG.Site/Public/Frontend/images/facebook.svg'
-
-        }
-        class = 'facebook-icon'
-      }
-    }
 
 
     renderer = afx`
         <div class="language-menu">
-             <a href="#" class="show-for-large">
-                {props.includeFacebook}
-            </a>
-
            {props.LanguageMenu}
         </div>
     `
