@@ -1,61 +1,69 @@
 body {
-    background-color: $col-bg;
-    color: $black;
-    .print {
-        display: none;
-    }
+  background-color: $col-bg;
+  color: $black;
+
+  .print {
+    display: none;
+  }
 }
 
 .content-wrapper {
-    padding-bottom: 50px;
+  padding-bottom: 2rem;
+
+  @include breakpoint(large) {
+    padding-bottom: 4rem;
+  }
 }
+
 
 // Button
 // --------------
 .button {
-    border: 1px solid $white;
-    font-size: 1.2rem;
-    &:hover,
-    &:focus {
-        color: $col-akzent;
-        a {
-            color: $col-akzent;
-            text-decoration: none;
-        }
+  border: 1px solid $white;
+  font-size: 1.2rem;
+
+  &:hover,
+  &:focus {
+    color: $col-akzent;
+
+    a {
+      color: $col-akzent;
+      text-decoration: none;
     }
+  }
 }
 
 // Hintergrund für Textfelder
 // --------------
 .bg-color-light {
-    background-color: $col-bg-light;
+  background-color: $col-bg-light;
 }
 
 // Modulauswahl Styles
 // --------------
 .column-2 {
-    column-count: 2;
+  column-count: 2;
 }
 
 // Positionen Styles
 // --------------
 .position-relative {
-    position: relative;
+  position: relative;
 }
 
 .position-absolute {
-    position: absolute;
+  position: absolute;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .container-image img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .border-top-dotted {
-    border-top: dotted 2px black;
+  border-top: dotted 2px black;
 }

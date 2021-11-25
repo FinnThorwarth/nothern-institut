@@ -26,7 +26,7 @@
 
 // Font Family
 // --------------
-$body-font-family: $webfont-light;
+$body-font-family: 'aleo-light';
 $h1-font-family: $webfont-h1;
 $h2-font-family: $webfont-h2;
 $nav-font-family: "montserrat-light";
@@ -44,6 +44,7 @@ address {
 @media all {
     body {
         color: $body-font-color;
+        font-family: $body-font-family;
     }
     h1,
     .h1 {
