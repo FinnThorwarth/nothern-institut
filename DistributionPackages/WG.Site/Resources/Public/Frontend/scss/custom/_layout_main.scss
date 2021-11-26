@@ -63,9 +63,11 @@ ul.breadcrumb {
     white-space: nowrap;
     padding: 0 5px;
     &:first-of-type {
+      /*
       &::before {
         content: "\\";
       }
+      */
     }
     &:not(:first-of-type) {
       &::before {

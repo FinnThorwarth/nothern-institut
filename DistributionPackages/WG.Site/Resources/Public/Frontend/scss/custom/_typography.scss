@@ -23,7 +23,10 @@
     font-family: "danielblack";
     src: url("../fonts/DanielBlack/danielbk.ttf") format("truetype");
 }
-
+@font-face {
+    font-family: "danielbold";
+    src: url("../fonts/DanielBlack/Daniel-Bold-webfont.ttf") format("truetype");
+}
 // Font Family
 // --------------
 $body-font-family: $webfont-light;
