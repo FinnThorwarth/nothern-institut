@@ -64,6 +64,7 @@ ul.breadcrumb {
     padding: 0 10px;
     position: relative;
     &:first-of-type {
+      padding-left: 0;
       /*
       &::before {
         content: "\\";
