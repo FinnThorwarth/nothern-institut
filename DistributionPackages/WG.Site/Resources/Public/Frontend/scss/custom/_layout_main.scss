@@ -66,12 +66,14 @@ ul.breadcrumb {
       /*
       &::before {
         content: "\\";
+        margin-right: 5px;
       }
       */
     }
     &:not(:first-of-type) {
       &::before {
         content: " >";
+        margin-right: 5px;
       }
     }
   }

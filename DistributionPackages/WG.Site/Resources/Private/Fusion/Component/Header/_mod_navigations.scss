@@ -149,11 +149,11 @@
                 font-family: "montserrat-bold";
                 padding: 5px 5px;
                 color: $blue-dark;
-                font-size: 1.12em;
+                font-size: 0.9em;
 
                 @include breakpoint(large) {
                     padding: 10px 5px;
-                    margin-left: 10px;
+                    margin-left: 5px;
                 }
 
                 &.current {

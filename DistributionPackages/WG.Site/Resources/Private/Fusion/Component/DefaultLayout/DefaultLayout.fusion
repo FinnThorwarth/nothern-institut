@@ -1,7 +1,7 @@
 prototype(WG.Site:Component.DefaultLayout) < prototype(Neos.Fusion:Component) {
     content = ''
 
-breadcrumb = Neos.Neos:BreadcrumbMenu
+    breadcrumb = Neos.Neos:BreadcrumbMenu
 
     renderer = afx`
     <div class="content-wrapper">

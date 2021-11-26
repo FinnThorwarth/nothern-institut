@@ -67,12 +67,12 @@ prototype(WG.Site:Component.Header) < prototype(Neos.Fusion:Component) {
                   <span></span>
                 </a>
               </div>
-               <div class="cell small-6 large-4">
+               <div class="cell small-6 large-offset-1 large-4">
                 <a class="logo page-logo" href={props.homeLink}>
                   {props.includeLogo}
                 </a>
               </div>
-              <div class="cell small-3 large-offset-2 text-right">
+              <div class="cell small-3 large-offset-1 text-right">
                 <div class="lang-nav">
                   <WG.Site:Component.Header.LanguageMenu />
                 </div>

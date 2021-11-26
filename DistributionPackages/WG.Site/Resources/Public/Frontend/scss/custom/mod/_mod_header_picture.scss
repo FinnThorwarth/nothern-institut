@@ -1,5 +1,8 @@
 .header-image {
   img {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    @include breakpoint(large) {
+      margin-bottom: 4rem;
+    }
   }
 } 
