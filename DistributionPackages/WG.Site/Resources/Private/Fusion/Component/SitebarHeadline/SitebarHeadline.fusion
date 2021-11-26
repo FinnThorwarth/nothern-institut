@@ -8,7 +8,7 @@ prototype(WG.Site:Component.SitebarHeadline) < prototype(Neos.Neos:ContentCompon
 
     renderer = afx`
     <div class="headline sitebar">
-        <h2>
+        <h2 class="h1">
             {props.SitebarHeadline}
         </h2>
     </div>

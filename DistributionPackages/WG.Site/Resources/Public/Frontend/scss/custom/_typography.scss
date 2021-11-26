@@ -29,7 +29,7 @@
 }
 // Font Family
 // --------------
-$body-font-family: 'aleo-light';
+$body-font-family: "aleo-light";
 $h1-font-family: $webfont-h1;
 $h2-font-family: $webfont-h2;
 $nav-font-family: "montserrat-light";
@@ -50,9 +50,10 @@ address {
         font-family: $body-font-family;
     }
     h1,
-    .h1 {
+    .h1,
+    h2.h1 {
         font-family: $h1-font-family;
-        font-weight: 700;
+        //font-weight: 700;
         color: $fc-h1;
     }
     h2,
@@ -75,7 +76,7 @@ address {
     // Navigation
     ul.menu {
         li a {
-            font-family: 'montserrat-light';
+            font-family: "montserrat-light";
             font-size: 1.12em;
         }
     }
