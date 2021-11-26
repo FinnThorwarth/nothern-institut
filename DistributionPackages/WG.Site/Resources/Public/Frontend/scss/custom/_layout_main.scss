@@ -61,7 +61,8 @@ ul.breadcrumb {
   }
   li {
     white-space: nowrap;
-    padding: 0 5px;
+    padding: 0 10px;
+    position: relative;
     &:first-of-type {
       /*
       &::before {
@@ -72,8 +73,18 @@ ul.breadcrumb {
     }
     &:not(:first-of-type) {
       &::before {
-        content: " >";
+        content: "";
         margin-right: 5px;
+        width: 10px;
+        height: 10px;
+        background-image: url("../images/breadcrumb-arrow.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        top: 50%;
+        position: absolute;
+        transform: translateY(-50%);
+        left: -5px;
       }
     }
   }
