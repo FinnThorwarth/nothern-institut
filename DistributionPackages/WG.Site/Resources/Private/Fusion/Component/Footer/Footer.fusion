@@ -52,7 +52,7 @@ prototype(WG.Site:Component.Footer) < prototype(Neos.Neos:ContentComponent) {
         <footer class="main-footer">
         <div class="grid-container">
           <div class="neos-contentcollection">
-            <div class="grid-x grid-padding-x grid-padding-y align-middle align-center">
+            <div class="grid-x grid-padding-x align-middle align-center">
               <div class="cell shrink flex align-middle">
                 {props.includeIcon}
                 {props.footerInfoMiddle}

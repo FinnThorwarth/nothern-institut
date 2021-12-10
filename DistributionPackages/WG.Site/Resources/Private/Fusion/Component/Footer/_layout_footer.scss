@@ -8,10 +8,11 @@
         }
     }
     .main-footer {
+        margin-top: 75px;
         padding: 10px 0px;
-        padding-top: 50px;
+        padding-top: 25px;
        // background-color: $blue-dark;
-        color: $blue-light;
+        color: $white;
         opacity: 0;
         animation: fadein 0.5s forwards;
         animation-delay: 0.3s;
@@ -21,7 +22,7 @@
         background-size: cover;
         background-position: center;
         a {
-            color: $blue-light;
+            color: $white;
         }
 
         ul {
@@ -30,7 +31,7 @@
             li {
                 list-style: none;
                 padding: 0 15px;
-                border-right: 1px solid $blue-light;
+                border-right: 1px solid $white;
                 line-height: 1;
             }
         }
