@@ -56,9 +56,6 @@ prototype(WG.Site:Component.Footer) < prototype(Neos.Neos:ContentComponent) {
               <div class="cell shrink flex align-middle">
                 {props.includeIcon}
                 {props.footerInfoMiddle}
-                <a href="#" class="fb-icon-wrapper">
-                {props.includeFacebook}
-                </a>
               </div>
             </div>
           </div>
