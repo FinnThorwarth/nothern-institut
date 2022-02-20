@@ -175,6 +175,49 @@
     height: auto;
 }
 .fb-icon-wrapper {
-   // border-left: 1px solid $blue-light;
+    // border-left: 1px solid $blue-light;
     padding: 0 15px;
+}
+
+.slogan {
+    font-family: $webfont-bold;
+    color: $blue-dark;
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+
+    @include breakpoint(xlarge) {
+        color: white;
+        transform: translate(-50%, -50%);
+        font-size: rem-calc(35px);
+        position: absolute;
+        margin: inherit;
+    }
+
+    width: 100%;
+    text-align: center;
+
+    svg {
+        width: 12px;
+        height: auto;
+        margin: 0 10px;
+        @include breakpoint(xlarge) {
+            width: 20px;
+        }
+    }
+}
+
+.arrow-cls-1 {
+    fill: #005781;
+    @include breakpoint(xlarge) {
+        fill: #dadada;
+    }
+}
+.arrow-cls-2 {
+    fill: #a0c9ed;
+    @include breakpoint(xlarge) {
+        fill: white;
+    }
 }

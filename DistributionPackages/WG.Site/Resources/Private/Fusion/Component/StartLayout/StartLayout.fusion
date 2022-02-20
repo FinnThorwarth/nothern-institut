@@ -1,11 +1,24 @@
 prototype(WG.Site:Component.StartLayout) < prototype(Neos.Fusion:Component) {
     content = ''
 
+  breadcrumb = Neos.Neos:BreadcrumbMenu
+
     renderer = afx`
     <div class="content-wrapper">
-        <WG.Site:Component.Header />
-        {props.content}
+        <WG.Site:Component.HeaderStart />
+        <div class="grid-container">
+            <div class="grid-x">
+                <div class="cell large-9 large-order-2">
+                    {props.breadcrumb}
+                    {props.content}
+                </div>
+            <div class="cell large-3 large-order-1">
+            <WG.Site:Component.SitebarHeadline />
+                <WG.Site:Component.Sitebar />
+            </div>
+            </div>
+        </div>
     </div>
-        <WG.Site:Component.Footer />
+    <WG.Site:Component.Footer />
     `
-}
+}   

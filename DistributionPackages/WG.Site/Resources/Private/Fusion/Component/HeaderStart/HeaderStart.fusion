@@ -1,5 +1,5 @@
 prototype(WG.Site:Component.HeaderStart) < prototype(Neos.Fusion:Component) {
-    homeLink = Neos.Neos:NodeUri {
+     homeLink = Neos.Neos:NodeUri {
         node = ${site}
     }
     menuItems = Neos.Neos:MenuItems {
@@ -12,10 +12,11 @@ prototype(WG.Site:Component.HeaderStart) < prototype(Neos.Fusion:Component) {
       tagName = 'img'
       attributes {
         src = Neos.Fusion:ResourceUri {
-          path = 'resource://WG.Site/Public/Frontend/images/logo.png'
+          path = 'resource://WG.Site/Public/Frontend/images/logo.svg'
         }
       }
     }
+
 
   // Header Img 
 	lazy = ${q(node).prev().is()}
@@ -28,10 +29,13 @@ prototype(WG.Site:Component.HeaderStart) < prototype(Neos.Fusion:Component) {
             }
         }
         dummyImage {
-            condition = ${site.context.inBackend}
-            renderer = Sitegeist.Kaleidoscope:DummyImageSource
+            condition = ${site.context.inBackend || !site.context.inBackend}
+            renderer = Sitegeist.Kaleidoscope:ResourceImageSource{
+               path = 'resource://WG.Site/Public/Frontend/images/fallback.jpg'
+            }
         }
     }
+
    imageAlt = ${String.isBlank( q(node).property('alternativeText') ) ? this.image.caption : q(node).property('alternativeText')}
 
   // Header Img ENDE
@@ -50,27 +54,68 @@ prototype(WG.Site:Component.HeaderStart) < prototype(Neos.Fusion:Component) {
 
     renderer = afx`
         <header class="main-header">
+        <div class="header-wrapper">
           <div class="grid-container position-relative">
-            <div class="menu-trigger open hide-for-mobileNav">
-              <svg version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-                <g>
-                  <rect class="color-menu" x="4" y="5" width="16" height="2"/>
-                  <rect class="color-menu" x="4" y="11" width="16" height="2"/>
-                  <rect class="color-menu" x="4" y="17" width="16" height="2"/>
-                </g>
-              </svg>
+            <div class="grid-x align-middle">
+              <div class="cell small-3">
+                <a id="nav-icon" class="menu-trigger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+              </div>
+               <div class="cell small-6 large-offset-1 large-4">
+                <a class="logo page-logo" href={props.homeLink}>
+                  {props.includeLogo}
+                </a>
+              </div>
+              <div class="cell small-3 large-offset-1 text-right">
+                <!--
+                <div class="lang-nav">
+                  <WG.Site:Component.Header.LanguageMenu />
+                </div>
+                -->
+              </div>
             </div>
-            <div class="menu-trigger close hide-for-mobileNav">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-                <polygon class="color-menu" points="18.707,6.707 17.293,5.293 12,10.586 6.707,5.293 5.293,6.707 10.586,12 5.293,17.293 6.707,18.707 12,13.414 17.293,18.707 18.707,17.293 13.414,12 "/>
-              </svg>
+            </div>
             </div>
               <WG.Site:Component.Header.MenuItemsRenderer items={props.menuItems} />
-              <a class="logo page-logo position-absolute" href={props.homeLink}>
-                {props.includeLogo}
-              </a>
+              <div class="wrapper-header position-relative">
+                <picture class="header-image" @if.hasMaps={props.headerImageSrc}>
+                  <source srcset={props.headerImageSrc.setWidth(420).setHeight(280).src()} media="(max-width: 420px)" />
+                  <source srcset={props.headerImageSrc.setWidth(799).setHeight(480).src()} media="(max-width: 799px)" />
+                  <source srcset={props.headerImageSrc.setWidth(1240).setHeight(500).src()} media="(min-width: 800px)" />
+                  <source srcset={props.headerImageSrc.setWidth(1920).setHeight(700).src()} media="(min-width: 1900px)" />
+                  <img src={props.headerImageSrc.src()} />
+                </picture>
+                <picture class="header-image" @if.hasMaps={!props.headerImageSrc}>
+                  <source srcset={props.headerImageSrc.setWidth(420).setHeight(280).src()} media="(max-width: 420px)" />
+                  <source srcset={props.headerImageSrc.setWidth(799).setHeight(480).src()} media="(max-width: 799px)" />
+                  <source srcset={props.headerImageSrc.srcset('800w,1240w,1440w')} media="(min-width: 800px)" />
+                  <source srcset={props.headerImageSrc.srcset('1920w,2500w')} media="(min-width: 1900px)" />
+                  <img src={props.headerImageSrc.src()} />
+                </picture>
+                <div class="slogan">
+                    NAVIGIEREN 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.99 15.19">
+                      <g>
+                        <polygon class="arrow-cls-1" points="0.03 0 11.98 7.62 4.19 7.6 0.03 0" />
+                        <polygon class="arrow-cls-2" points="0 15.19 11.99 7.61 4.19 7.6 0 15.19" />
+                      </g>
+                    </svg>
+                      FÖRDERN 
+                      
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.99 15.19">
+                          <g>
+                            <polygon class="arrow-cls-1" points="0.03 0 11.98 7.62 4.19 7.6 0.03 0" />
+                            <polygon class="arrow-cls-2" points="0 15.19 11.99 7.61 4.19 7.6 0 15.19" />
+                          </g>
+                      </svg>                      
+                      UNTERSTÜTZEN
+                </div>
             </div>
         </header>
     `
@@ -85,3 +130,4 @@ prototype(WG.Site:Component.HeaderStart) < prototype(Neos.Fusion:Component) {
 		}
 	}
 }
+
