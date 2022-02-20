@@ -49,7 +49,7 @@ prototype(WG.Site:Component.Footer) < prototype(Neos.Neos:ContentComponent) {
 
               <div class="cell large-9">
                 <div class="grid-x grid-padding-x">
-                  <div class="cell large-4">
+                  <div class="cell large-4 show-for-large">
                     {props.footerInfoLeft}
                   </div>
                    <div class="cell large-4">
