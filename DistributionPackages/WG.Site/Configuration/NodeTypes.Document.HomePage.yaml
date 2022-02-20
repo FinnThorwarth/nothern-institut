@@ -9,47 +9,12 @@
     icon: icon-globe
   properties:
     footerInfoLeft:
-      type: string
-      ui:
-        inlineEditable: true
-        inline:
-          editorOptions:
-            preset: 'text.free'
-            formatting:
-              strong: true
-              em: true
-              sub: true
-              sup: true
-              p: true
-              h1: false
-              h2: true
-              h3: true
-              pre: false
-              ol: true
-              ul: true
-              a: true
-            placeholder: i18n
+        options:
+        preset: 'text.free'
     footerInfoMiddle:
       options:
         preset: 'text.free'
     footerInfoRight:
-      type: string
-      ui:
-        inlineEditable: true
-        inline:
-          editorOptions:
-            formatting:
-              strong: true
-              em: true
-              sub: true
-              sup: true
-              p: true
-              h1: false
-              h2: true
-              h3: true
-              pre: false
-              ol: true
-              ul: true
-              a: true
-            placeholder: i18n
+       options:
+        preset: 'text.free'
 
