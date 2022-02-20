@@ -21,4 +21,4 @@ prototype(WG.Site:Component.DefaultLayout) < prototype(Neos.Fusion:Component) {
     </div>
     <WG.Site:Component.Footer />
     `
-}
+}   

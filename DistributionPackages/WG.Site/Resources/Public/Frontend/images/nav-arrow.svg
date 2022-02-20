@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.99 15.19"><defs><style>.cls-1{fill:#005781;}.cls-2{fill:#a0c9ed;}</style></defs><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_6" data-name="Ebene 6"><polygon class="cls-1" points="0.03 0 11.98 7.62 4.19 7.6 0.03 0"/><polygon class="cls-2" points="0 15.19 11.99 7.61 4.19 7.6 0 15.19"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.99 15.19">
+		<g>
+			<polygon class="arrow-cls-1" points="0.03 0 11.98 7.62 4.19 7.6 0.03 0" />
+			<polygon class="arrow-cls-2" points="0 15.19 11.99 7.61 4.19 7.6 0 15.19" />
+		</g>
+</svg>
