@@ -25,6 +25,17 @@ prototype(WG.Site:Component.Footer) < prototype(Neos.Neos:ContentComponent) {
       }
     }
 
+    includeIconMobile = Neos.Fusion:Tag {
+      tagName = 'img'
+      attributes {
+        src = Neos.Fusion:ResourceUri {
+          path = 'resource://WG.Site/Public/Frontend/images/arrow-footer-mobile.svg'
+        }
+        class = 'icon-footer-mobile'
+      }
+    }
+
+
         // Facebook Icon
     includeFacebook = Neos.Fusion:Tag {
       tagName = 'img'
@@ -47,7 +58,7 @@ prototype(WG.Site:Component.Footer) < prototype(Neos.Neos:ContentComponent) {
                   {props.includeIcon}
                 </div>
 
-              <div class="cell xlarge-9">
+              <div class="cell xlarge-9 position-relative">
                 <div class="grid-x grid-padding-x">
                   <div class="cell large-4 show-for-large">
                     {props.footerInfoLeft}
@@ -58,6 +69,9 @@ prototype(WG.Site:Component.Footer) < prototype(Neos.Neos:ContentComponent) {
                    <div class="cell large-4">
                     {props.footerInfoRight}
                   </div>
+                  <span class="hide-for-xlarge position-absolute wrapper-icon-mobile">
+                    {props.includeIconMobile}
+                  </span>
                 </div>
               </div>
             </div>
