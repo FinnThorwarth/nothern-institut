@@ -187,22 +187,31 @@
     left: 50%;
     margin-top: -1rem;
     margin-bottom: 1rem;
+    margin-left: 15px;
 
-    @include breakpoint(xlarge) {
+    @include breakpoint(large) {
+        width: 100%;
         color: white;
         transform: translate(-50%, -50%);
-        font-size: rem-calc(35px);
         position: absolute;
         margin: inherit;
+        text-align: center;
+        font-size: rem-calc(25px);
     }
 
-    width: 100%;
-    text-align: center;
+    @include breakpoint(xlarge) {
+        font-size: rem-calc(35px);
+    }
 
     svg {
         width: 12px;
         height: auto;
         margin: 0 10px;
+
+        @include breakpoint(large) {
+            width: 18px;
+        }
+
         @include breakpoint(xlarge) {
             width: 20px;
         }
@@ -211,13 +220,13 @@
 
 .arrow-cls-1 {
     fill: #005781;
-    @include breakpoint(xlarge) {
+    @include breakpoint(large) {
         fill: #dadada;
     }
 }
 .arrow-cls-2 {
     fill: #a0c9ed;
-    @include breakpoint(xlarge) {
+    @include breakpoint(large) {
         fill: white;
     }
 }
