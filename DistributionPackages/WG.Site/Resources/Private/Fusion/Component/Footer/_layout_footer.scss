@@ -11,57 +11,37 @@
         margin-top: 75px;
         padding: 10px 0px;
         padding-top: 25px;
-        // background-color: $blue-dark;
-        color: $white;
-        opacity: 0;
-        animation: fadein 0.5s forwards;
-        animation-delay: 0.3s;
-        position: relative;
-        background-image: url("../images/footer-bg.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        background-color: #eaedf1;
+        color: $blue-dark;
+        box-shadow: 0px 6px 15px black;
+
         a {
-            color: $white;
-        }
+            color: $blue-dark;
+        } 
 
         ul {
-            display: flex;
+           // display: flex;
             margin: 0;
             li {
                 list-style: none;
-                padding: 0 15px;
+                padding: 7px 0px;
                 line-height: 1;
-                border-right: 1px solid $white;
+                // border-right: 1px solid $white;
+                border-top: 1px dashed #afc3d4;
                 &:last-of-type {
-                    border-right: none;
+                    border-bottom: 1px dashed #afc3d4;
                 }
             }
-        }
-
-        .background-img {
-            height: 10px;
-            position: absolute;
-            top: -10px;
-            width: 100%;
-            // background-image: url("../images/welle.svg");
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .welle-footer {
-            position: absolute;
-            width: 100%;
-            height: auto;
-            top: 0;
-            left: 0;
-            right: 0;
-            transform: translateY(-100%);
-            max-width: inherit;
         }
     }
     .icon-footer {
         width: 20px;
         height: auto;
+
+        @include breakpoint(large){
+            width: 90px;
+            height: auto;
+        }
     }
 }
 

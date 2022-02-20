@@ -19,19 +19,9 @@ prototype(WG.Site:Component.Footer) < prototype(Neos.Neos:ContentComponent) {
       tagName = 'img'
       attributes {
         src = Neos.Fusion:ResourceUri {
-          path = 'resource://WG.Site/Public/Frontend/images/favicon.png'
+          path = 'resource://WG.Site/Public/Frontend/images/arrow-footer.svg'
         }
         class = 'icon-footer'
-      }
-    }
-
-    includeWelle = Neos.Fusion:Tag {
-      tagName = 'img'
-      attributes {
-        src = Neos.Fusion:ResourceUri {
-          path = 'resource://WG.Site/Public/Frontend/images/welle_2.svg'
-        }
-        class = 'welle-footer'
       }
     }
 
@@ -52,10 +42,23 @@ prototype(WG.Site:Component.Footer) < prototype(Neos.Neos:ContentComponent) {
         <footer class="main-footer">
         <div class="grid-container">
           <div class="neos-contentcollection">
-            <div class="grid-x grid-padding-x align-middle align-center">
-              <div class="cell shrink flex align-middle">
-                {props.includeIcon}
-                {props.footerInfoMiddle}
+            <div class="grid-x grid-padding-x">
+              <div class="cell show-for-large large-3">
+                  {props.includeIcon}
+                </div>
+
+              <div class="cell large-9">
+                <div class="grid-x grid-padding-x">
+                  <div class="cell large-4">
+                    {props.footerInfoLeft}
+                  </div>
+                   <div class="cell large-4">
+                    {props.footerInfoMiddle}
+                  </div>
+                   <div class="cell large-4">
+                    {props.footerInfoRight}
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -8,13 +8,10 @@ prototype(WG.Site:Component.DefaultLayout) < prototype(Neos.Fusion:Component) {
         <WG.Site:Component.Header />
         <div class="grid-container">
             <div class="grid-x">
-                <div class="cell large-auto large-order-3">
+                <div class="cell large-9 large-order-2">
                     {props.breadcrumb}
                     {props.content}
                 </div>
-            <div class="cell wrapper-trenner large-order-2">
-                <div class="trenner"></div>
-            </div>
             <div class="cell large-3 large-order-1">
             <WG.Site:Component.SitebarHeadline />
                 <WG.Site:Component.Sitebar />

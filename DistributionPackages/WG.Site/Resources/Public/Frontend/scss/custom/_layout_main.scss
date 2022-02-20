@@ -65,12 +65,11 @@ ul.breadcrumb {
     position: relative;
     &:first-of-type {
       padding-left: 0;
-      /*
+
       &::before {
         content: "\\";
         margin-right: 5px;
       }
-      */
     }
     &:not(:first-of-type) {
       &::before {
@@ -101,7 +100,7 @@ ul.breadcrumb {
   @include breakpoint(large) {
     width: auto;
   }
-} 
+}
 
 .trenner {
   @include breakpoint(large) {
@@ -112,7 +111,6 @@ ul.breadcrumb {
   @include breakpoint(medium down) {
     width: 100%;
     border-top: 1px solid $blue-light;
-
   }
 }
 

@@ -73,9 +73,11 @@ prototype(WG.Site:Component.Header) < prototype(Neos.Fusion:Component) {
                 </a>
               </div>
               <div class="cell small-3 large-offset-1 text-right">
+                <!--
                 <div class="lang-nav">
                   <WG.Site:Component.Header.LanguageMenu />
                 </div>
+                -->
               </div>
             </div>
             </div>
