@@ -43,11 +43,11 @@ prototype(WG.Site:Component.Footer) < prototype(Neos.Neos:ContentComponent) {
         <div class="grid-container">
           <div class="neos-contentcollection">
             <div class="grid-x grid-padding-x">
-              <div class="cell show-for-large large-3">
+              <div class="cell show-for-xlarge xlarge-3">
                   {props.includeIcon}
                 </div>
 
-              <div class="cell large-9">
+              <div class="cell xlarge-9">
                 <div class="grid-x grid-padding-x">
                   <div class="cell large-4 show-for-large">
                     {props.footerInfoLeft}
