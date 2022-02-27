@@ -187,7 +187,11 @@
     left: 50%;
     margin-top: -1rem;
     margin-bottom: 1rem;
-    margin-left: 15px;
+    margin-left: 10px;
+
+    @include breakpoint(medium) {
+        margin-left: 15px;
+    }
 
     @include breakpoint(large) {
         width: 100%;
