@@ -36,7 +36,7 @@
 
         .grid-x {
             .cell {
-                @include breakpoint(medium only) {
+                @include breakpoint(large down) {
                     padding-left: 0;
                 }
             }
