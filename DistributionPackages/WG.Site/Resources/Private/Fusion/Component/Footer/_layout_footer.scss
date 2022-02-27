@@ -33,6 +33,14 @@
                 }
             }
         }
+
+        .grid-x {
+            .cell {
+                @include breakpoint(small only) {
+                    padding-left: 0;
+                }
+            }
+        }
     }
     .icon-footer {
         width: 20px;
