@@ -51,8 +51,8 @@ prototype(WG.Site:Component.Footer) < prototype(Neos.Neos:ContentComponent) {
 
     renderer = afx`
         <footer class="main-footer">
-        <div class="grid-container">
           <div class="neos-contentcollection">
+            <div class="grid-container">
             <div class="grid-x">
               <div class="cell show-for-xlarge xlarge-3">
                   {props.includeIcon}
